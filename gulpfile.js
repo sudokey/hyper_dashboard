@@ -1,6 +1,6 @@
 const gulp = require('gulp');
-const runSequence = require('run-sequence');
 const plumber = require('gulp-plumber');
+const runSequence = require('run-sequence');
 
 gulp.task('less', function () {
   const less = require('gulp-less');
@@ -18,19 +18,43 @@ gulp.task('nunjucks', function () {
 
   return gulp.src(['sources/templates/**/*.nunjucks', '!sources/templates/includes/**/*.nunjucks'])
     .pipe(plumber())
-    .pipe(nunjucks({
-      path: 'sources/templates/includes'
-    }))
+    .pipe(nunjucks({ path: 'sources/templates/includes' }))
     .pipe(gulp.dest('public'));
+});
+
+gulp.task('img', function () {
+  const imagemin = require('gulp-imagemin');
+  const pngquant = require('imagemin-pngquant');
+
+  return gulp.src('sources/img/**/*')
+    .pipe(imagemin({
+      progressive: true,
+      use: [pngquant()]
+    }))
+    .pipe(gulp.dest('public/img'));
+});
+
+gulp.task('vendor', function () {
+  return gulp.src('sources/vendor/**/*')
+    .pipe(gulp.dest('public/vendor'));
+});
+
+gulp.task('clean', function () {
+  const clean = require('gulp-clean');
+
+  return gulp.src('public', { read: false })
+    .pipe(clean());
 });
 
 gulp.task('watch', function (cb) {
   gulp.watch('sources/templates/**/*.nunjucks', ['nunjucks']);
   gulp.watch('sources/less/**/*.less', ['less']);
+  gulp.watch('sources/img/**/*.*', ['img']);
+  gulp.watch('sources/vendor/**/*.*', ['vendor']);
   cb();
 });
 
 gulp.task('default', function (cb) {
-  runSequence('nunjucks', 'less', 'watch');
+  runSequence('clean', 'nunjucks', 'less', 'img', 'vendor', 'watch');
   cb();
 });
