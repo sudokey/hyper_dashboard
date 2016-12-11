@@ -1,0 +1,49 @@
+<header class="header">
+  <div class="header__inner">
+    <div class="header__section header__section_logo">
+      <a class="logo" href="#">Hyper</a>
+    </div>
+
+    <div class="header__section header__section_nav">
+      <nav class="nav">
+        <a class="nav__item nav__item_active" href="#">Monetize</a>
+        <a class="nav__item" href="#">Promote</a>
+        <a class="nav__item" href="#">Segments</a>
+      </nav>
+    </div>
+
+    <div class="header__section header__section_user">
+      <div class="inline">
+        <div class="inline__item">
+          <a href="#">Docs</a>
+        </div>
+        <div class="inline__item">
+          <a href="#">Support</a>
+        </div>
+        <div class="inline__item">
+          <a href="#">Account</a>
+        </div>
+        <div class="inline__item">
+          <a href="#" class="user-pick">
+            <img src="img/user_pick.png" alt="Vasya Pupkin">
+          </a>
+        </div>
+        <div class="inline__item">
+          <div class="get-started-progress">
+            <div class="get-started-progress__title">
+              <div class="inline">
+                <div class="inline__item">Getting Started</div>
+                <div class="inline__item get-started-progress__steps">1/4</div>
+              </div>
+            </div>
+            <div class="get-started-progress__status">
+              <div class="progress-bar">
+                <div class="progress-bar__indicator"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
