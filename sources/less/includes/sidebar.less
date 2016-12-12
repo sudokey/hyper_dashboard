@@ -1,7 +1,9 @@
 .sidebar {
   position: relative;
+  box-sizing: border-box;
   width: 260px;
   min-height: ~'calc(100% - 80px)';
+  padding: 0 0 100px;
   background: #f8fafb;
 
   .menu {
@@ -24,4 +26,35 @@
   font-size: 12px;
   text-transform: uppercase;
   color: @gray;
+}
+
+.sidebar__copy {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 0 20px 30px;
+  font-size: 13px;
+  color: @gray;
+
+  a {
+    color: @gray;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0 0 20px;
+    padding: 0;
+  }
+
+  li {
+    margin: 0 0 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
 }
