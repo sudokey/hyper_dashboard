@@ -1,0 +1,123 @@
+.icon {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  vertical-align: middle;
+
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &:after {
+    z-index: 1;
+  }
+
+  &:before {
+    display: none;
+    z-index: 0;
+  }
+}
+
+.icon_dashboard {
+  &:after,
+  &:before {
+    width: 21px;
+    height: 14px;
+  }
+
+  &:after {
+    background-image: data-uri('../img/icon_dashboard.png');
+  }
+
+  &:before {
+    background-image: data-uri('../img/icon_dashboard_blue.png');
+  }
+}
+
+.icon_apps {
+  &:after,
+  &:before {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:after {
+    background-image: data-uri('../img/icon_apps.png');
+  }
+
+  &:before {
+    background-image: data-uri('../img/icon_apps_blue.png');
+  }
+}
+
+.icon_analytics {
+  &:after,
+  &:before {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:after {
+    background-image: data-uri('../img/icon_analytics.png');
+  }
+
+  &:before {
+    background-image: data-uri('../img/icon_analytics_blue.png');
+  }
+}
+
+.icon_referrals {
+  &:after,
+  &:before {
+    width: 21px;
+    height: 21px;
+  }
+
+  &:after {
+    background-image: data-uri('../img/icon_referrals.png');
+  }
+
+  &:before {
+    background-image: data-uri('../img/icon_referrals_blue.png');
+  }
+}
+
+.icon_payments {
+  &:after,
+  &:before {
+    width: 11px;
+    height: 18px;
+  }
+
+  &:after {
+    background-image: data-uri('../img/icon_payments.png');
+  }
+
+  &:before {
+    background-image: data-uri('../img/icon_payments_blue.png');
+  }
+}
+
+.icon_balance {
+  &:after,
+  &:before {
+    width: 20px;
+    height: 19px;
+  }
+
+  &:after {
+    background-image: data-uri('../img/icon_balance.png');
+  }
+
+  &:before {
+    background-image: data-uri('../img/icon_balance_blue.png');
+  }
+}

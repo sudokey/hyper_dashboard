@@ -1,5 +1,55 @@
 <div class="sidebar">
   <div class="sidebar__section">
+    <div class="sidebar__title">Monetize</div>
 
+    <nav class="menu">
+      <div class="menu-item menu-item_active">
+        <a class="menu-item__link" href="#">
+          <span class="icon icon_dashboard"></span>
+          Dashboard
+        </a>
+      </div>
+      <div class="menu-item">
+        <a class="menu-item__link" href="#">
+          <span class="icon icon_apps"></span>
+          Apps & Placements
+        </a>
+      </div>
+      <div class="menu-item">
+        <a class="menu-item__link" href="#">
+          <span class="icon icon_analytics"></span>
+          Analytics
+        </a>
+      </div>
+      <div class="menu-item">
+        <a class="menu-item__link" href="#">
+          <span class="icon icon_referrals"></span>
+          Referrals
+        </a>
+      </div>
+      <div class="menu-item">
+        <a class="menu-item__link" href="#">
+          <span class="icon icon_payments"></span>
+          Payments
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="sidebar__section">
+    <nav class="menu">
+      <a class="menu-item" href="#">
+        <div class="menu-item__link">
+          <span class="icon icon_balance"></span>
+          Balance
+        </div>
+        <div class="menu-item__info">
+          Pending: <strong>$1.206</strong>
+        </div>
+        <div class="menu-item__info">
+          Approved: <strong>$2.456</strong>
+        </div>
+      </a>
+    </nav>
   </div>
 </div>
