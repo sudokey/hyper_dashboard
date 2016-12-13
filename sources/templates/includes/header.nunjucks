@@ -24,11 +24,6 @@
           <a href="#">Account</a>
         </div>
         <div class="inline__item">
-          <a href="#" class="user-pick">
-            <img src="img/user_pick.png" alt="Vasya Pupkin">
-          </a>
-        </div>
-        <div class="inline__item">
           <div class="get-started-progress">
             <div class="get-started-progress__title">
               <div class="inline">
@@ -42,6 +37,9 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="inline__item">
+          <a href="#" class="logout-button"></a>
         </div>
       </div>
     </div>

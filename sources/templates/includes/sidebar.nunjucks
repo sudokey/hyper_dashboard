@@ -5,31 +5,31 @@
 
       <nav class="menu">
         <div class="menu-item menu-item_active">
-          <a class="menu-item__link" href="#">
+          <a class="menu-item__title" href="#">
             <span class="menu-icon menu-icon_dashboard"></span>
             Dashboard
           </a>
         </div>
         <div class="menu-item">
-          <a class="menu-item__link" href="#">
+          <a class="menu-item__title" href="#">
             <span class="menu-icon menu-icon_apps"></span>
             Apps & Placements
           </a>
         </div>
         <div class="menu-item">
-          <a class="menu-item__link" href="#">
+          <a class="menu-item__title" href="#">
             <span class="menu-icon menu-icon_analytics"></span>
             Analytics
           </a>
         </div>
         <div class="menu-item">
-          <a class="menu-item__link" href="#">
+          <a class="menu-item__title" href="#">
             <span class="menu-icon menu-icon_referrals"></span>
             Referrals
           </a>
         </div>
         <div class="menu-item">
-          <a class="menu-item__link" href="#">
+          <a class="menu-item__title" href="#">
             <span class="menu-icon menu-icon_payments"></span>
             Payments
           </a>
@@ -39,8 +39,8 @@
 
     <div class="sidebar__section">
       <nav class="menu">
-        <a class="menu-item" href="#">
-          <div class="menu-item__link">
+        <div class="menu-item" href="#">
+          <div class="menu-item__title">
             <span class="menu-icon menu-icon_balance"></span>
             Balance
           </div>
@@ -50,7 +50,7 @@
           <div class="menu-item__info">
             Approved: <strong>$2.456</strong>
           </div>
-        </a>
+        </div>
       </nav>
     </div>
   </div>
