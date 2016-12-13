@@ -1,0 +1,33 @@
+.grid {
+  margin: -10px -10px 10px;
+
+  &:after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+
+.grid_size_4 {
+  .grid__section {
+    width: 25%;
+  }
+}
+
+.grid_size_2 {
+  .grid__section {
+    width: 50%;
+  }
+}
+
+.grid_size_1 {
+  .grid__section {
+    width: 100%;
+  }
+}
+
+.grid__section {
+  box-sizing: border-box;
+  float: left;
+  padding: 10px;
+}

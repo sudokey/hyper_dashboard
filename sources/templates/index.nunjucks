@@ -5,5 +5,352 @@
 {% endblock %}
 
 {% block content_right %}
-  <h1 class="title">Dashboard <span class="icon icon_dashboard"></span></h1>
+  <div class="content__title">
+    <div class="pan">
+      <div class="pan__section pan__section_left">
+        <div class="inline">
+          <div class="inline__item inline__item_space_md">
+            <h1 class="title">Dashboard</h1>
+          </div>
+
+          <div class="inline__item inline__item_space_md">
+            <div class="popover js-popover">
+              <div class="popover__toggler js-popover-toggle">
+                <span class="icon icon_settings"></span>
+              </div>
+              <div class="popover__content popover__content_bottom-center">
+                <div class="panel panel_popover">
+                  <label class="checkbox">
+                    <input type="checkbox" checked>
+                    <span class="checkbox__content">
+                      <span class="checkbox__ctrl"></span>
+                      <span class="checkbox__label">Performance Stats</span>
+                    </span>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" checked>
+                    <span class="checkbox__content">
+                      <span class="checkbox__ctrl"></span>
+                      <span class="checkbox__label">Top Placements</span>
+                    </span>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" checked>
+                    <span class="checkbox__content">
+                      <span class="checkbox__ctrl"></span>
+                      <span class="checkbox__label">Top Countries</span>
+                    </span>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <span class="checkbox__content">
+                      <span class="checkbox__ctrl"></span>
+                      <span class="checkbox__label">Operating Systems</span>
+                    </span>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <span class="checkbox__content">
+                      <span class="checkbox__ctrl"></span>
+                      <span class="checkbox__label">Audience Overview</span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pan__section pan__section_right">
+        <button class="button button_green">
+          <span class="icon icon_plus"></span>
+          <span class="button__text">Create New App</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid_size_4">
+    <div class="grid__section">
+      <div class="panel panel_apps">
+        <div class="indicator">
+          <div class="indicator__value indicator__value_blue">3</div>
+          <div class="indicator__name">Active Apps</div>
+        </div>
+      </div>
+    </div>
+    <div class="grid__section">
+      <div class="panel panel_placements">
+        <div class="indicator">
+          <div class="indicator__value indicator__value_green">14</div>
+          <div class="indicator__name">Active Placements</div>
+        </div>
+      </div>
+    </div>
+    <div class="grid__section">
+      <div class="panel panel_audience">
+        <div class="indicator">
+          <div class="indicator__value indicator__value_yellow">946.782</div>
+          <div class="indicator__name">Audience</div>
+        </div>
+      </div>
+    </div>
+    <div class="grid__section">
+      <div class="panel panel_users">
+        <div class="indicator">
+          <div class="indicator__value indicator__value_red">5.678</div>
+          <div class="indicator__name">New Users</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid_size_1">
+    <div class="grid__section">
+      <div class="chart-panel">
+        <div class="chart-panel__header">
+          <div class="pan">
+            <div class="pan__section pan__section_left">
+              <div class="inline">
+                <div class="inline__item">
+                  <h3 class="title title_size_md">Perfomance</h3>
+                </div>
+                <div class="inline__item">
+                  <button class="button button_bordered_blue button_small">
+                    <span class="icon icon_plus-blue"></span>
+                    <span class="button__text">Add Filters</span>
+                    <span class="badge">6</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="pan__section pan__section_right">
+              <div class="inline">
+                <div class="inline__item">
+                  <div class="popover js-perfomance-date-range">
+                    <a class="popover__toggler js-popover-toggle" href="javascript:void(0)">Choose Date</a>
+
+                    <div class="popover__content popover__content_bottom-right">
+                      <div class="panel panel_popover">
+                        <div class="daterange">
+                          <div class="daterange__ctrl daterange__ctrl_left">
+                            <div class="datepicker js-date-start"></div>
+                          </div
+                          ><div class="daterange__ctrl daterange__ctrl_right">
+                            <div class="datepicker js-date-end"></div>
+                          </div>
+                          <div class="daterange__actions">
+                            <a href="javascript:void(0)">Reset</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="inline__item">
+                  <div class="tabs js-perfomance-tabs">
+                    <div class="tabs__item tabs__item_active js-tab">Day</div>
+                    <div class="tabs__item js-tab">Week</div>
+                    <div class="tabs__item js-tab">Month</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-panel__data">
+          <div class="pan">
+            <div class="pan__section pan__section_left">
+              <div class="inline">
+                <div class="inline__item inline__item_space_lg">
+                  <div class="indicator">
+                    <div class="indicator__value indicator__value_small">1.246.787</div>
+                    <div class="indicator__name indicator__name_light">Ad Requests</div>
+                  </div>
+                </div>
+                <div class="inline__item inline__item_space_lg">
+                  <div class="indicator">
+                    <div class="indicator__value indicator__value_small">945.785</div>
+                    <div class="indicator__name indicator__name_light">Impressions</div>
+                  </div>
+                </div>
+                <div class="inline__item inline__item_space_lg">
+                  <div class="indicator">
+                    <div class="indicator__value indicator__value_small">100%</div>
+                    <div class="indicator__name indicator__name_light">Fill Rate</div>
+                  </div>
+                </div>
+                <div class="inline__item inline__item_space_lg">
+                  <div class="indicator">
+                    <div class="indicator__value indicator__value_small">45.678</div>
+                    <div class="indicator__name indicator__name_light">Clicks</div>
+                  </div>
+                </div>
+                <div class="inline__item inline__item_space_lg">
+                  <div class="indicator">
+                    <div class="indicator__value indicator__value_small">15.3%</div>
+                    <div class="indicator__name indicator__name_light">CTR</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pan__section pan__section_right">
+              <div class="inline">
+                <div class="inline__item inline__item_space_lg">
+                  <div class="indicator">
+                    <div class="indicator__value indicator__value_small">$1.367</div>
+                    <div class="indicator__name indicator__name_light">Ad Earnings</div>
+                  </div>
+                </div>
+                <div class="inline__item inline__item_space_lg">
+                  <div class="indicator">
+                    <div class="indicator__value indicator__value_small">$1.4</div>
+                    <div class="indicator__name indicator__name_light">eCPM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-panel__plot">
+          <div class="chart">
+            <div class="chart__plot">
+              <canvas class="js-perfomance-chart" height="280"></canvas>
+            </div>
+            <div class="chart__description">
+              <div class="inline">
+                <div class="inline__item">
+                  <span class="chart__legend chart__legend_blue"></span>
+                  Impressions
+                </div>
+                <div class="inline__item">
+                  <span class="chart__legend chart__legend_red"></span>
+                  Ad Revenue
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid_size_2">
+    <div class="grid__section">
+      <div class="table-panel">
+        <div class="table-panel__header">
+          <h3 class="title title_size_md">
+            <span class="inline">
+              <span class="inline__item inline__item_space_xs">Top Perfoming Placements</span>
+              <span class="inline__item inline__item_space_xs">
+                <span class="tooltip">
+                  <span class="icon icon_tooltip"></span>
+                  <span class="tooltip__content">
+                    This is the Top<br>Perfoming Placements
+                  </span>
+                </span>
+              </span>
+            </span>
+          </h3>
+        </div>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Placement</th>
+              <th>Impressions</th>
+              <th>Clicks</th>
+              <th>eCPM</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table__cell_full-width"><a href="#">Angry place adv</a></td>
+              <td>945.785</td>
+              <td>45.622</td>
+              <td><strong>$1.6</strong></td>
+            </tr>
+            <tr>
+              <td class="table__cell_full-width"><a href="#">PokemonGo</a></td>
+              <td>85.211</td>
+              <td>0</td>
+              <td><strong>$0.2</strong></td>
+            </tr>
+            <tr>
+              <td class="table__cell_full-width"><a href="#">MyFirstPlacement</a></td>
+              <td>397.614</td>
+              <td>644.997</td>
+              <td><strong>$8.2</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="grid__section">
+      <div class="table-panel">
+        <div class="table-panel__header">
+          <h3 class="title title_size_md">
+            <span class="inline">
+              <span class="inline__item inline__item_space_xs">Top Perfoming Countries</span>
+              <span class="inline__item inline__item_space_xs">
+                <span class="tooltip">
+                  <span class="icon icon_tooltip"></span>
+                  <span class="tooltip__content">
+                    This is the Top<br>Perfoming Placements
+                  </span>
+                </span>
+              </span>
+            </span>
+          </h3>
+        </div>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Country</th>
+              <th>Impressions</th>
+              <th>Clicks</th>
+              <th>eCPM</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table__cell_full-width"><a href="#">Unated States</a></td>
+              <td>945.785</td>
+              <td>45.622</td>
+              <td><strong>$1.6</strong></td>
+            </tr>
+            <tr>
+              <td class="table__cell_full-width"><a href="#">Canada</a></td>
+              <td>85.211</td>
+              <td>0</td>
+              <td><strong>$0.2</strong></td>
+            </tr>
+            <tr>
+              <td class="table__cell_full-width"><a href="#">Germany</a></td>
+              <td>397.614</td>
+              <td>644.997</td>
+              <td><strong>$8.2</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    (function () {
+      'use strict';
+
+      var page = new window.app.DashboardPageView();
+    })();
+  </script>
 {% endblock %}

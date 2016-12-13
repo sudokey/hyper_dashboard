@@ -1,0 +1,26 @@
+.tabs {
+  overflow: hidden;
+  border: 1px solid @gray;
+  font-size: 13px;
+  color: @blue;
+  border-radius: 8px;
+}
+
+.tabs__item {
+  float: left;
+  box-sizing: border-box;
+  min-width: 70px;
+  padding: 10px 15px;
+  text-align: center;
+  border-right: 1px solid @gray;
+  cursor: pointer;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.tabs__item_active {
+  background: @gray;
+  color: #fff;
+}

@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <title>Hyper Dashboard</title>
 
+  <link rel="stylesheet" href="vendor/rome/rome.min.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <div class="page">
+  <div class="page js-page">
     {% block header %}
       {% include "header.nunjucks" %}
     {% endblock %}
@@ -22,5 +23,24 @@
       </div>
     </div>
   </div>
+
+  {#TODO: Собрать все js один файл#}
+  <script src="vendor/jquery/jquery-3.1.1.min.js"></script>
+  <script src="vendor/underscore/underscore-min.js"></script>
+  <script src="vendor/backbone/backbone-min.js"></script>
+  <script src="vendor/moment/moment.min.js"></script>
+  <script src="vendor/rome/rome.standalone.min.js"></script>
+  <script src="vendor/chart_js/Chart.min.js"></script>
+
+  <script src="js/app.js"></script>
+  <script src="js/config/chart.js"></script>
+  <script src="js/views/popover.js"></script>
+  <script src="js/views/daterange.js"></script>
+  <script src="js/views/tabs.js"></script>
+  <script src="js/views/perfomance_chart.js"></script>
+  <script src="js/views/page.js"></script>
+  <script src="js/views/dashboard_page.js"></script>
+
+  {% block scripts %}{% endblock %}
 </body>
 </html>

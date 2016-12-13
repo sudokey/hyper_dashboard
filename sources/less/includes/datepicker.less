@@ -1,0 +1,37 @@
+.datepicker {
+  .rd-container {
+    padding: 0;
+    border: none;
+  }
+
+  .rd-month-label {
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+
+  .rd-day-head {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: @blue;
+  }
+
+  .rd-day-body,
+  .rd-day-head {
+    min-width: 30px;
+    height: 30px;
+  }
+
+  .rd-day-selected {
+    border-radius: 30px;
+    background: @blue;
+
+    &.rd-day-disabled {
+      background: @gray;
+      color: #fff;
+    }
+  }
+
+  .rd-day-disabled {
+    color: @gray;
+  }
+}

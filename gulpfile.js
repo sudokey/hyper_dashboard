@@ -1,6 +1,13 @@
 const gulp = require('gulp');
 const plumber = require('gulp-plumber');
 const runSequence = require('run-sequence');
+const concat = require('gulp-concat');
+
+// TODO: Собрать все скрипты в один файл
+gulp.task('js', function () {
+  return gulp.src('sources/js/**/*')
+    .pipe(gulp.dest('public/js'));
+});
 
 gulp.task('less', function () {
   const less = require('gulp-less');
@@ -47,6 +54,7 @@ gulp.task('clean', function () {
 });
 
 gulp.task('watch', function (cb) {
+  gulp.watch('sources/js/**/*.js', ['js']);
   gulp.watch('sources/templates/**/*.nunjucks', ['nunjucks']);
   gulp.watch('sources/less/**/*.less', ['less']);
   gulp.watch('sources/img/**/*.*', ['img']);
@@ -55,6 +63,6 @@ gulp.task('watch', function (cb) {
 });
 
 gulp.task('default', function (cb) {
-  runSequence('clean', 'nunjucks', 'less', 'img', 'vendor', 'watch');
+  runSequence('clean', 'nunjucks', 'js', 'less', 'img', 'vendor', 'watch');
   cb();
 });

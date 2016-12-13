@@ -1,0 +1,62 @@
+.icon {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  vertical-align: middle;
+
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &:before {
+    z-index: 0;
+  }
+
+  &:after {
+    z-index: 1;
+  }
+}
+
+.icon_settings {
+  width: 32px;
+  height: 32px;
+
+  &:after {
+    background-image: data-uri('../img/icon_settings.png');
+  }
+}
+
+.icon_plus {
+  width: 14px;
+  height: 14px;
+
+  &:after {
+    background-image: data-uri('../img/icon_plus.png');
+  }
+}
+
+.icon_plus-blue {
+  width: 14px;
+  height: 14px;
+
+  &:after {
+    background-image: data-uri('../img/icon_plus_blue.png');
+  }
+}
+
+.icon_tooltip {
+  width: 18px;
+  height: 18px;
+
+  &:after {
+    background-image: data-uri('../img/icon_tooltip.png');
+  }
+}
