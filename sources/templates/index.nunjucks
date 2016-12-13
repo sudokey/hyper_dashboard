@@ -1,5 +1,9 @@
 {% extends "layout.nunjucks" %}
 
-{% block content %}
-  <div class="content"></div>
+{% block content_left %}
+  {% include "sidebar_monetize.nunjucks" %}
+{% endblock %}
+
+{% block content_right %}
+  <h1 class="title">Dashboard <span class="icon icon_dashboard"></span></h1>
 {% endblock %}

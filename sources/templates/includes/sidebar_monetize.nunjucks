@@ -1,5 +1,5 @@
 <div class="sidebar">
-  <div>
+  <div class="sidebar__menu">
     <div class="sidebar__section">
       <div class="sidebar__title">Monetize</div>
 
@@ -56,14 +56,6 @@
   </div>
 
   <div class="sidebar__copy">
-    <ul>
-      <li>
-        <a href="#">Terms & Condition</a>
-      </li>
-      <li>
-        <a href="#">Privacy Policy</a>
-      </li>
-    </ul>
-    <p>© 2016. Hyper Adx</p>
+    {% include "copy.nunjucks" %}
   </div>
 </div>
