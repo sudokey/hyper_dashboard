@@ -1,4 +1,5 @@
 .button {
+  display: inline-block;
   box-sizing: border-box;
   line-height: 1;
   margin: 0;
@@ -7,7 +8,7 @@
   border: 1px solid transparent;
   border-radius: 5px;
   white-space: nowrap;
-  text-decoration: none;
+  text-decoration: none !important;
   font-weight: bold;
   font-size: 14px;
   box-shadow: 0 0 10px rgba(0,0,0,0.15);
@@ -23,6 +24,11 @@
   }
 }
 
+.button_blue {
+  background: @blue;
+  color: #fff;
+}
+
 .button_green {
   background: @green;
   color: #fff;
@@ -35,10 +41,15 @@
 }
 
 .button_small {
-  padding: 9px;
+  padding: 7px 10px;
   font-size: 13px;
   font-weight: normal;
   text-transform: capitalize;
+}
+
+.button_sm {
+  padding: 9px 20px;
+  font-size: 12px;
 }
 
 .button__text {

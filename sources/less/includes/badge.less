@@ -1,9 +1,29 @@
 .badge {
+  box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
   line-height: 1;
-  padding: 2px 5px;
+  padding: 3px 5px;
   border-radius: 20px;
+  text-align: center;
   font-weight: bold;
   background: #f2f5f7;
+}
+
+.badge_sm {
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.badge_md {
+  min-width: 32px;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.badge_green {
+  background: @green;
+  color: #fff;
 }

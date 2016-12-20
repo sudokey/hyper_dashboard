@@ -4,14 +4,14 @@
       <div class="sidebar__title">Monetize</div>
 
       <nav class="menu">
-        <div class="menu-item menu-item_active">
-          <a class="menu-item__title" href="#">
+        <div class="menu-item {% if activePage == 'dashboard' %} menu-item_active {% endif %}">
+          <a class="menu-item__title" href="index.html">
             <span class="menu-icon menu-icon_dashboard"></span>
             Dashboard
           </a>
         </div>
-        <div class="menu-item">
-          <a class="menu-item__title" href="#">
+        <div class="menu-item {% if activePage == 'apps' %} menu-item_active {% endif %}">
+          <a class="menu-item__title" href="apps.html">
             <span class="menu-icon menu-icon_apps"></span>
             Apps & Placements
           </a>

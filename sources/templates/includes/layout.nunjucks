@@ -37,6 +37,7 @@
   <script src="js/views/popover.js"></script>
   <script src="js/views/daterange.js"></script>
   <script src="js/views/tabs.js"></script>
+  <script src="js/views/collapsed.js"></script>
   <script src="js/views/perfomance_chart.js"></script>
   <script src="js/views/page.js"></script>
   <script src="js/views/dashboard_page.js"></script>

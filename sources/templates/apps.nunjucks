@@ -1,0 +1,177 @@
+{% set activePage = 'apps' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content_left %}
+  {% include "sidebar_monetize.nunjucks" %}
+{% endblock %}
+
+{% block content_right %}
+  <div class="content__title">
+    <div class="pan">
+      <div class="pan__section pan__section_left">
+        <div class="inline">
+          <div class="inline__item inline__item_space_md">
+            <h1 class="title">Apps & Placements</h1>
+          </div>
+        </div>
+      </div>
+      <div class="pan__section pan__section_right">
+        <button class="button button_green">
+          <span class="icon icon_plus"></span>
+          <span class="button__text">Create New App</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid_size_1">
+    <div class="grid__section">
+      <div class="panel">
+        <div class="apps-grid js-collapsed">
+          <div class="apps-grid__row apps-grid__row_header">
+            <div class="apps-grid__section apps-grid__section_name">Your Apps</div>
+            <div class="apps-grid__section apps-grid__section_placement">Placement</div>
+            <div class="apps-grid__section apps-grid__section_id">Placement ID</div>
+            <div class="apps-grid__section apps-grid__section_integration">Integration</div>
+            <div class="apps-grid__section apps-grid__section_status">Status</div>
+            <div class="apps-grid__section apps-grid__section_count"></div>
+          </div>
+
+          <div class="apps-grid__row apps-grid__row_main js-toggle">
+            <div class="apps-grid__section apps-grid__section_name">
+              <span class="inline">
+                <span class="inline__item inline__item_space_sm">
+                  <span class="icon icon_apple"></span>
+                </span>
+                <span class="inline__item inline__item_space_sm">
+                  <img class="pick pick_app" src="img/slack.png">
+                </span>
+                <span class="inline__item inline__item_space_sm">
+                  <a href="#">Slack — Be less busy</a>
+                </span>
+                <span class="inline__item inline__item_space_sm">
+                  <span class="icon icon_settings"></span>
+                </span>
+              </span>
+            </div>
+            <div class="apps-grid__section apps-grid__section_placement apps-grid__section_placement_full">
+              <a href="#" class="button button_blue button_sm">Add Placement</a>
+            </div>
+            <div class="apps-grid__section apps-grid__section_count">
+              <div class="inline inline_fixed">
+                <div class="inline__item inline__item_space_md">
+                  <span class="badge badge_md">2</span>
+                </div>
+                <div class="inline__item inline__item_space_md">
+                  <span class="icon icon_cursor icon_cursor_right"></span>
+                  <span class="icon icon_cursor icon_cursor_down"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="apps-grid__row apps-grid__row_extra">
+            <div class="apps-grid__section apps-grid__section_name"></div>
+            <div class="apps-grid__section apps-grid__section_placement">
+              <a href="#">newsfeed</a>
+            </div>
+            <div class="apps-grid__section apps-grid__section_id">Xy3dsdjZD</div>
+            <div class="apps-grid__section apps-grid__section_integration">
+              <a href="#">Tag & SDK</a>
+            </div>
+            <div class="apps-grid__section apps-grid__section_status">
+              <span class="badge badge_green badge_sm">Active</span>
+            </div>
+            <div class="apps-grid__section apps-grid__section_count">
+              <a href="#">Edit</a>
+            </div>
+          </div>
+
+          <div class="apps-grid__row apps-grid__row_extra">
+            <div class="apps-grid__section apps-grid__section_name"></div>
+            <div class="apps-grid__section apps-grid__section_placement">
+              <a href="#">idaprikol native (ios app)</a>
+            </div>
+            <div class="apps-grid__section apps-grid__section_id">OJ8BVq8m</div>
+            <div class="apps-grid__section apps-grid__section_integration">
+              <a href="#">Tag & SDK</a>
+            </div>
+            <div class="apps-grid__section apps-grid__section_status">
+              <span class="badge badge_green badge_sm">Active</span>
+            </div>
+            <div class="apps-grid__section apps-grid__section_count">
+              <a href="#">Edit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__section">
+      <div class="panel">
+        <div class="apps-grid js-collapsed">
+          <div class="apps-grid__row apps-grid__row_main js-toggle">
+            <div class="apps-grid__section apps-grid__section_name">
+              <span class="inline">
+                <span class="inline__item inline__item_space_sm">
+                  <span class="icon icon_android"></span>
+                </span>
+                <span class="inline__item inline__item_space_sm">
+                  <img class="pick pick_app" src="img/evernote.png">
+                </span>
+                <span class="inline__item inline__item_space_sm">
+                  <a href="#">Evernote</a>
+                </span>
+                <span class="inline__item inline__item_space_sm">
+                  <span class="icon icon_settings"></span>
+                </span>
+              </span>
+            </div>
+            <div class="apps-grid__section apps-grid__section_placement apps-grid__section_placement_full">
+              <a href="#" class="button button_blue button_sm">Add Placement</a>
+            </div>
+            <div class="apps-grid__section apps-grid__section_count">
+              <div class="inline inline_fixed">
+                <div class="inline__item inline__item_space_md">
+                  <span class="badge badge_md">1</span>
+                </div>
+                <div class="inline__item inline__item_space_md">
+                  <span class="icon icon_cursor icon_cursor_right"></span>
+                  <span class="icon icon_cursor icon_cursor_down"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="apps-grid__row apps-grid__row_extra">
+            <div class="apps-grid__section apps-grid__section_name"></div>
+            <div class="apps-grid__section apps-grid__section_placement">
+              <a href="#">newsfeed</a>
+            </div>
+            <div class="apps-grid__section apps-grid__section_id">Xy3dsdjZD</div>
+            <div class="apps-grid__section apps-grid__section_integration">
+              <a href="#">Tag & SDK</a>
+            </div>
+            <div class="apps-grid__section apps-grid__section_status">
+              <span class="badge badge_green badge_sm">Active</span>
+            </div>
+            <div class="apps-grid__section apps-grid__section_count">
+              <a href="#">Edit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    (function () {
+      'use strict';
+
+      var page = new window.app.PageView();
+    })();
+  </script>
+{% endblock %}
