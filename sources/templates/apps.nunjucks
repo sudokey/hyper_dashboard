@@ -17,10 +17,10 @@
         </div>
       </div>
       <div class="pan__section pan__section_right">
-        <button class="button button_green">
+        <a href="create_app.html" class="button button_green">
           <span class="icon icon_plus"></span>
           <span class="button__text">Create New App</span>
-        </button>
+        </a>
       </div>
     </div>
   </div>
