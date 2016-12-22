@@ -1,0 +1,47 @@
+.collapsed-panel {
+  &:extend(.panel);
+  position: relative;
+  padding: 0;
+
+  &.active {
+    .collapsed-panel__content {
+      position: static;
+      visibility: visible;
+    }
+
+    .icon_cursor_down {
+      display: inline-block;
+      opacity: 0.5;
+    }
+
+    .icon_cursor_right {
+      display: none;
+    }
+  }
+}
+
+.collapsed-panel__header {
+  position: relative;
+  padding: 20px 30px;
+  cursor: pointer;
+
+  .icon_cursor {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -4.5px;
+  }
+
+  .icon_cursor_down {
+    display: none;
+  }
+}
+
+.collapsed-panel__content {
+  position: absolute;
+  z-index: -9999;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  padding: 0 30px 25px;
+}

@@ -8,7 +8,8 @@
 
     render: function () {
       this.$el.select2({
-        minimumResultsForSearch: Infinity
+        minimumResultsForSearch: Infinity,
+        placeholder: this.$el.attr('placeholder')
       });
     }
   });

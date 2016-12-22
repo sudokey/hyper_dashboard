@@ -48,10 +48,10 @@
                   <img class="pick pick_app" src="img/slack.png">
                 </span>
                 <span class="inline__item inline__item_space_sm">
-                  <a href="#">Slack — Be less busy</a>
+                  <a href="app_settings.html" class="js-stop-propagation">Slack — Be less busy</a>
                 </span>
                 <span class="inline__item inline__item_space_sm">
-                  <span class="icon icon_settings"></span>
+                  <a href="app_settings.html" class="icon icon_settings js-stop-propagation"></a>
                 </span>
               </span>
             </div>
@@ -121,10 +121,10 @@
                   <img class="pick pick_app" src="img/evernote.png">
                 </span>
                 <span class="inline__item inline__item_space_sm">
-                  <a href="#">Evernote</a>
+                  <a href="app_settings.html" class="js-stop-propagation">Evernote</a>
                 </span>
                 <span class="inline__item inline__item_space_sm">
-                  <span class="icon icon_settings"></span>
+                  <a href="app_settings.html" class="icon icon_settings"></a>
                 </span>
               </span>
             </div>

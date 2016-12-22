@@ -24,6 +24,10 @@
       this.selectViews = this.$('.js-select').map(function (i, el) {
         return new window.app.SelectView({ el: el });
       });
+
+      $('.js-stop-propagation').on('click', function (e) {
+        e.stopPropagation();
+      });
     }
   });
 })();
