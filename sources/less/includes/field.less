@@ -1,6 +1,12 @@
 .field {
   margin: 0 0 20px;
 
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -48,4 +54,14 @@
   margin: 5px 0 0;
   font-size: 12px;
   color: @gray;
+}
+
+.field__section {
+  float: left;
+  box-sizing: border-box;
+  padding: 0 20px 0 0;
+
+  &:last-child {
+    padding-right: 0;
+  }
 }

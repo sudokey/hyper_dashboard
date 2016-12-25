@@ -18,6 +18,25 @@
     display: table;
     clear: both;
   }
+
+  &.active {
+    .sub-menu,
+    .icon_cursor_down {
+      display: block;
+    }
+
+    .icon_cursor_right {
+      display: none;
+    }
+  }
+
+  .sub-menu {
+    display: none;
+  }
+
+  .icon_cursor_down {
+    display: none;
+  }
 }
 
 .menu-item_active,
@@ -58,6 +77,13 @@
       display: none;
     }
   }
+
+  .icon_cursor {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin: -4.5px 0 0;
+  }
 }
 
 .menu-item__info {
@@ -68,4 +94,20 @@
     font-weight: normal;
     color: @black;
   }
+}
+
+.sub-menu {
+  margin-left: -70px;
+  padding: 10px 0;
+  background: @menu-hover-color;
+}
+
+.sub-menu__item {
+  display: block;
+  padding: 10px 0 10px 70px;
+  color: @black;
+}
+
+.sub-menu__item_active {
+  font-weight: 500;
 }

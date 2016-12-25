@@ -1,0 +1,120 @@
+{% set activePage = 'payment_info' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content_left %}
+  {% include "sidebar_monetize.nunjucks" %}
+{% endblock %}
+
+{% block content_right %}
+  <div class="content__title">
+    <div class="pan">
+      <div class="pan__section pan__section_left">
+        <h1 class="title">Payment Info</h1>
+      </div>
+
+      <div class="pan__section pan__section_right">
+        <a href="create_app.html" class="button button_green">
+          <span class="icon icon_plus"></span>
+          <span class="button__text">Create New App</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="content__main">
+    <div class="content__section">
+      <div class="panel">
+        <div class="form">
+          <div class="panel__title">Company Details</div>
+
+          <div class="field">
+            <input type="text" class="field__data" placeholder="Business Name">
+          </div>
+
+          <div class="field">
+            <input type="text" class="field__data" placeholder="Business Address">
+          </div>
+
+          <div class="field">
+            <div class="field__section" style="width: 70%">
+              <select class="js-select" placeholder="Country"></select>
+            </div>
+            <div class="field__section" style="width: 30%">
+              <input type="text" class="field__data" placeholder="ZIP Code">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content__section">
+      <div class="panel">
+        <div class="form js-payment-details">
+          <div class="panel__title">Payment Details</div>
+
+          <div class="field">
+            <select class="js-select js-payment-method" placeholder="Choose Payment Method">
+              <option value="" disabled selected hidden>Choose Payment Method</option>
+              <option value="paypal">PayPal</option>
+              <option value="webmoney">WebMoney</option>
+              <option value="wire">Wire</option>
+            </select>
+          </div>
+
+          {#Wire Form#}
+          <div class="js-fields" data-fields-name="wire" style="display: none">
+            <div class="field">
+              <input type="text" class="field__data" placeholder="Bank Name">
+            </div>
+            <div class="field">
+              <input type="text" class="field__data" placeholder="Bank Address">
+            </div>
+            <div class="field">
+              <input type="text" class="field__data" placeholder="Bank Account Number">
+            </div>
+            <div class="field">
+              <div class="field__section" style="width: 50%">
+                <input type="text" class="field__data" placeholder="IBAN">
+              </div>
+              <div class="field__section" style="width: 50%">
+                <input type="text" class="field__data" placeholder="SWIFT">
+              </div>
+            </div>
+            <div class="field">
+              <input type="text" class="field__data" placeholder="Financial Contact">
+            </div>
+          </div>
+
+          {#PayPal Form#}
+          <div class="js-fields" data-fields-name="paypal" style="display: none">
+            <div class="field">
+              <input type="text" class="field__data">
+            </div>
+          </div>
+
+          {#WebMoney Form#}
+          <div class="js-fields" data-fields-name="webmoney" style="display: none">
+            <div class="field">
+              <input type="text" class="field__data">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content__section">
+      <button class="button button_submit button_blue button_md">Save</button>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    (function () {
+      'use strict';
+
+      var page = new window.app.PaymentDetailsPageView();
+    })();
+  </script>
+{% endblock %}

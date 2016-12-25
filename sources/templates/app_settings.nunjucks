@@ -134,11 +134,31 @@
             <button class="button button_submit button_blue button_md">Create app</button>
           </div>
           <div class="pan__section pan__section_right">
-            <a class="gray" href="#">Remove App</a>
+            <a class="gray js-remove-app" href="javascript:void(0)">Remove App</a>
           </div>
         </div>
       </div>
     </form>
+  </div>
+{% endblock %}
+
+{% block popups %}
+  <div class="popup js-remove-app-popup">
+    <div class="popup__inner">
+      <div class="popup__container">
+        <div class="dialog">
+          <div class="dialog__title">Are you sure you want to remove your app?</div>
+          <div class="dialog__content">
+            <div class="dialog__action">
+              <button class="button button_red">Remove</button>
+            </div>
+            <div class="dialog__action">
+              <a href="javascript:void(0)" class="js-hide">Cancel</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 {% endblock %}
 
@@ -147,7 +167,7 @@
     (function () {
       'use strict';
 
-      var page = new window.app.PageView();
+      var page = new window.app.AppSettingsPageView();
     })();
   </script>
 {% endblock %}

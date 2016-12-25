@@ -5,6 +5,8 @@
     el: '.js-page',
 
     initialize: function () {
+      this.pageYOffset = window.pageYOffset;
+      this.blocked = false;
       this.render();
     },
 
@@ -28,6 +30,29 @@
       $('.js-stop-propagation').on('click', function (e) {
         e.stopPropagation();
       });
+    },
+
+    block: function () {
+      if (!this.blocked) {
+        this.pageYOffset = window.pageYOffset;
+
+        this.$el
+          .css('top', -this.pageYOffset + 'px')
+          .addClass('page_blocked');
+
+        this.blocked = true;
+      }
+    },
+
+    unblock: function () {
+      if (this.blocked) {
+        this.$el
+          .css('top', 'auto')
+          .removeClass('page_blocked');
+
+        window.scrollTo(0, this.pageYOffset);
+        this.blocked = false;
+      }
     }
   });
 })();

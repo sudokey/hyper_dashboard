@@ -6,7 +6,8 @@
       'click .js-toggle': 'toggle'
     },
 
-    toggle: function () {
+    toggle: function (e) {
+      e.stopPropagation();
       this.$el.toggleClass('active');
     }
   });

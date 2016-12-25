@@ -28,11 +28,18 @@
             Referrals
           </a>
         </div>
-        <div class="menu-item">
-          <a class="menu-item__title" href="#">
+        <div class="menu-item js-collapsed {% if activePage == 'payment_info' or activePage == 'payment_history' %} menu-item_active active {% endif %}">
+          <a href="javascript:void(0)" class="menu-item__title js-toggle">
             <span class="menu-icon menu-icon_payments"></span>
             Payments
+            <span class="icon icon_cursor icon_cursor_right"></span>
+            <span class="icon icon_cursor icon_cursor_down"></span>
           </a>
+
+          <div class="sub-menu">
+            <a class="sub-menu__item {% if activePage == 'payment_info' %} sub-menu__item_active {% endif %}" href="payment_info.html">Payment Info</a>
+            <a class="sub-menu__item {% if activePage == 'payment_history' %} sub-menu__item_active {% endif %}" href="#">History</a>
+          </div>
         </div>
       </nav>
     </div>
