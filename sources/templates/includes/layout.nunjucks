@@ -14,15 +14,7 @@
       {% include "header.nunjucks" %}
     {% endblock %}
 
-    <div class="content">
-      <div class="content__col content__col_left">
-        {% block content_left %}{% endblock %}
-      </div>
-
-      <div class="content__col content__col_right">
-        {% block content_right %}{% endblock %}
-      </div>
-    </div>
+    {% block content %}{% endblock %}
   </div>
 
   {% block popups %}{% endblock %}

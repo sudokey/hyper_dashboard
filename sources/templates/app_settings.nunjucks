@@ -2,143 +2,137 @@
 
 {% extends "layout.nunjucks" %}
 
-{% block content_left %}
-  {% include "sidebar_monetize.nunjucks" %}
-{% endblock %}
-
-{% block content_right %}
-  <div class="content__title">
-    <div class="pan">
-      <div class="pan__section pan__section_left">
-        <div class="inline">
-          <div class="inline__item inline__item_space_md">
-            <h1 class="title">Edit App</h1>
-          </div>
-        </div>
-      </div>
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_monetize.nunjucks" %}
     </div>
-  </div>
 
-  <div class="content__main">
-    <form class="form">
-      <div class="content__section">
-        {% include "app_form.nunjucks" %}
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <h1 class="title">Edit App</h1>
       </div>
 
-      <div class="content__section">
-        <h2 class="title title_size_md">App parameters</h2>
-      </div>
+      <form class="form">
+        <div class="content__section">
+          {% include "app_form.nunjucks" %}
+        </div>
 
-      <div class="content__section">
-        <div class="collapsed-panel js-collapsed">
-          <div class="collapsed-panel__header js-toggle">
-            Blacklist for Categories: <a href="#">Disabled</a>
-            <span class="icon icon_cursor icon_cursor_right"></span>
-            <span class="icon icon_cursor icon_cursor_down"></span>
-          </div>
-          <div class="collapsed-panel__content">
-            <div class="collapsed active js-collapsed">
-              <div class="collapsed__header">
-                <span class="collapsed__toggler js-toggle">
-                  <span class="icon icon_cursor icon_cursor_right"></span>
-                  <span class="icon icon_cursor icon_cursor_down"></span>
-                </span>
-                <label class="checkbox">
-                  <input type="checkbox" checked>
-                  <span class="checkbox__content">
-                    <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
-                    <span class="checkbox__label">myTarget categories</span>
+        <div class="content__section">
+          <h2 class="title title_size_md">App parameters</h2>
+        </div>
+
+        <div class="content__section">
+          <div class="collapsed-panel js-collapsed">
+            <div class="collapsed-panel__header js-toggle">
+              Blacklist for Categories: <a href="#">Disabled</a>
+              <span class="icon icon_cursor icon_cursor_right"></span>
+              <span class="icon icon_cursor icon_cursor_down"></span>
+            </div>
+            <div class="collapsed-panel__content">
+              <div class="collapsed active js-collapsed">
+                <div class="collapsed__header">
+                  <span class="collapsed__toggler js-toggle">
+                    <span class="icon icon_cursor icon_cursor_right"></span>
+                    <span class="icon icon_cursor icon_cursor_down"></span>
                   </span>
-                </label>
+                  <label class="checkbox">
+                    <input type="checkbox" checked>
+                    <span class="checkbox__content">
+                      <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                      <span class="checkbox__label">myTarget categories</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="collapsed__content">
+                  <ul class="list">
+                    <li class="list__item">
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkbox__content">
+                          <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                          <span class="checkbox__label">Pazzles</span>
+                        </span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="collapsed__content">
-                <ul class="list">
-                  <li class="list__item">
-                    <label class="checkbox">
-                      <input type="checkbox">
-                      <span class="checkbox__content">
-                        <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
-                        <span class="checkbox__label">Pazzles</span>
-                      </span>
-                    </label>
-                  </li>
-                </ul>
+
+              <div class="collapsed js-collapsed">
+                <div class="collapsed__header">
+                  <span class="collapsed__toggler js-toggle">
+                    <span class="icon icon_cursor icon_cursor_right"></span>
+                    <span class="icon icon_cursor icon_cursor_down"></span>
+                  </span>
+                  <label class="checkbox">
+                    <input type="checkbox" checked>
+                    <span class="checkbox__content">
+                      <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                      <span class="checkbox__label">Mobile Apps</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="collapsed__content">
+                  <ul class="list">
+                    <li class="list__item">
+                      <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkbox__content">
+                          <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                          <span class="checkbox__label">Pazzles</span>
+                        </span>
+                      </label>
+                    </li>
+                    <li class="list__item">
+                      <label class="checkbox">
+                        <input type="checkbox" checked>
+                        <span class="checkbox__content">
+                          <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                          <span class="checkbox__label">Adventures</span>
+                        </span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div class="collapsed js-collapsed">
-              <div class="collapsed__header">
-                <span class="collapsed__toggler js-toggle">
-                  <span class="icon icon_cursor icon_cursor_right"></span>
-                  <span class="icon icon_cursor icon_cursor_down"></span>
-                </span>
-                <label class="checkbox">
-                  <input type="checkbox" checked>
-                  <span class="checkbox__content">
-                    <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
-                    <span class="checkbox__label">Mobile Apps</span>
-                  </span>
-                </label>
-              </div>
-              <div class="collapsed__content">
-                <ul class="list">
-                  <li class="list__item">
-                    <label class="checkbox">
-                      <input type="checkbox">
-                      <span class="checkbox__content">
-                        <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
-                        <span class="checkbox__label">Pazzles</span>
-                      </span>
-                    </label>
-                  </li>
-                  <li class="list__item">
-                    <label class="checkbox">
-                      <input type="checkbox" checked>
-                      <span class="checkbox__content">
-                        <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
-                        <span class="checkbox__label">Adventures</span>
-                      </span>
-                    </label>
-                  </li>
-                </ul>
-              </div>
+        <div class="content__section">
+          <div class="collapsed-panel js-collapsed">
+            <div class="collapsed-panel__header js-toggle">
+              Blacklist for Apps and Domains: <a href="#">Disabled</a>
+              <span class="icon icon_cursor icon_cursor_right"></span>
+              <span class="icon icon_cursor icon_cursor_down"></span>
+            </div>
+            <div class="collapsed-panel__content">
+              <form class="form">
+                <div class="field">
+                  <select class="js-select" multiple="multiple" placeholder="Enter URLs (separated by comma)" style="width: 100%">
+                    <option value="test_1">yandex.ru</option>
+                    <option value="test_2">google.ru</option>
+                    <option value="test_3">mail.ru</option>
+                  </select>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="content__section">
-        <div class="collapsed-panel js-collapsed">
-          <div class="collapsed-panel__header js-toggle">
-            Blacklist for Apps and Domains: <a href="#">Disabled</a>
-            <span class="icon icon_cursor icon_cursor_right"></span>
-            <span class="icon icon_cursor icon_cursor_down"></span>
-          </div>
-          <div class="collapsed-panel__content">
-            <form class="form">
-              <div class="field">
-                <select class="js-select" multiple="multiple" placeholder="Enter URLs (separated by comma)" style="width: 100%">
-                  <option value="test_1">yandex.ru</option>
-                  <option value="test_2">google.ru</option>
-                  <option value="test_3">mail.ru</option>
-                </select>
-              </div>
-            </form>
+        <div class="content__section">
+          <div class="pan">
+            <div class="pan__section pan__section_left">
+              <button class="button button_submit button_blue button_md">Create app</button>
+            </div>
+            <div class="pan__section pan__section_right">
+              <a class="gray js-remove-app" href="javascript:void(0)">Remove App</a>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="content__section">
-        <div class="pan">
-          <div class="pan__section pan__section_left">
-            <button class="button button_submit button_blue button_md">Create app</button>
-          </div>
-          <div class="pan__section pan__section_right">
-            <a class="gray js-remove-app" href="javascript:void(0)">Remove App</a>
-          </div>
-        </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 {% endblock %}
 

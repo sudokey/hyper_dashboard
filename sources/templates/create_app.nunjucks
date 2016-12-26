@@ -2,32 +2,26 @@
 
 {% extends "layout.nunjucks" %}
 
-{% block content_left %}
-  {% include "sidebar_monetize.nunjucks" %}
-{% endblock %}
-
-{% block content_right %}
-  <div class="content__title">
-    <div class="pan">
-      <div class="pan__section pan__section_left">
-        <div class="inline">
-          <div class="inline__item inline__item_space_md">
-            <h1 class="title">Create New App</h1>
-          </div>
-        </div>
-      </div>
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_monetize.nunjucks" %}
     </div>
-  </div>
 
-  <div class="content__main">
-    <form class="form">
-      <div class="content__section">
-        {% include "app_form.nunjucks" %}
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <h1 class="title">Create New App</h1>
       </div>
-      <div class="content__section">
-        <button class="button button_submit button_blue button_md">Create app</button>
-      </div>
-    </form>
+
+      <form class="form">
+        <div class="content__section">
+          {% include "app_form.nunjucks" %}
+        </div>
+        <div class="content__section">
+          <button class="button button_submit button_blue button_md">Create app</button>
+        </div>
+      </form>
+    </div>
   </div>
 {% endblock %}
 

@@ -23,6 +23,25 @@
   }
 }
 
+.field_separated {
+  display: table;
+  width: 100%;
+
+  .field__section {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 10px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
 .field__data {
   box-sizing: border-box;
   width: 100%;
@@ -56,12 +75,7 @@
   color: @gray;
 }
 
-.field__section {
-  float: left;
-  box-sizing: border-box;
-  padding: 0 20px 0 0;
-
-  &:last-child {
-    padding-right: 0;
-  }
+.field__section_label {
+  font-size: 14px;
+  color: @gray;
 }
