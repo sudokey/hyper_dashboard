@@ -76,7 +76,7 @@
               <div class="apps-grid__row apps-grid__row_extra">
                 <div class="apps-grid__section apps-grid__section_name"></div>
                 <div class="apps-grid__section apps-grid__section_placement">
-                  <a href="#">newsfeed</a>
+                  <a href="edit_placement.html">newsfeed</a>
                 </div>
                 <div class="apps-grid__section apps-grid__section_id">Xy3dsdjZD</div>
                 <div class="apps-grid__section apps-grid__section_integration">
@@ -86,14 +86,14 @@
                   <span class="badge badge_green badge_sm">Active</span>
                 </div>
                 <div class="apps-grid__section apps-grid__section_count">
-                  <a href="#">Edit</a>
+                  <a href="edit_placement.html">Edit</a>
                 </div>
               </div>
 
               <div class="apps-grid__row apps-grid__row_extra">
                 <div class="apps-grid__section apps-grid__section_name"></div>
                 <div class="apps-grid__section apps-grid__section_placement">
-                  <a href="#">idaprikol native (ios app)</a>
+                  <a href="edit_placement.html">idaprikol native (ios app)</a>
                 </div>
                 <div class="apps-grid__section apps-grid__section_id">OJ8BVq8m</div>
                 <div class="apps-grid__section apps-grid__section_integration">
@@ -103,7 +103,7 @@
                   <span class="badge badge_green badge_sm">Active</span>
                 </div>
                 <div class="apps-grid__section apps-grid__section_count">
-                  <a href="#">Edit</a>
+                  <a href="edit_placement.html">Edit</a>
                 </div>
               </div>
             </div>
@@ -149,7 +149,7 @@
               <div class="apps-grid__row apps-grid__row_extra">
                 <div class="apps-grid__section apps-grid__section_name"></div>
                 <div class="apps-grid__section apps-grid__section_placement">
-                  <a href="#">newsfeed</a>
+                  <a href="edit_placement.html">newsfeed</a>
                 </div>
                 <div class="apps-grid__section apps-grid__section_id">Xy3dsdjZD</div>
                 <div class="apps-grid__section apps-grid__section_integration">
@@ -159,7 +159,7 @@
                   <span class="badge badge_green badge_sm">Active</span>
                 </div>
                 <div class="apps-grid__section apps-grid__section_count">
-                  <a href="#">Edit</a>
+                  <a href="edit_placement.html">Edit</a>
                 </div>
               </div>
             </div>

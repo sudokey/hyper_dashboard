@@ -1,0 +1,10 @@
+<div class="placement">
+  <div class="placement__logo">
+    <img src="img/slack.png" class="pick pick_app pick_app_lg">
+  </div>
+  <div class="placement__preview">
+    <img src="img/phone.png" class="placement__phone">
+    <span class="placement__type placement__type_banner"></span>
+  </div>
+  <div class="placement__name">Native</div>
+</div>

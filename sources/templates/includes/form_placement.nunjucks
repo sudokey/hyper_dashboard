@@ -1,0 +1,50 @@
+<form class="form">
+  <div class="panel">
+    <div class="panel__section">
+      <div class="field">
+        <input type="text" class="field__data" placeholder="Placement Name">
+      </div>
+      <div class="field">
+        <select class="js-select" placeholder="Category">
+          <option value="rewarded_video">Rewarded Video</option>
+          <option value="interstitial_video">Interstitial Video</option>
+          <option value="native_video">Native Video</option>
+          <option value="native">Native</option>
+          <option value="interstitial">Interstitial</option>
+          <option value="banner">Banner</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="panel__section">
+      <h2 class="panel__title">Frequency caps</h2>
+
+      <div class="field field_separated">
+        <div class="field__section" style="width: 80%">
+          <select class="js-select">
+            <option value="unlimited">Unlimited</option>
+          </select>
+        </div>
+        <div class="field__section field__section_label" style="width: 20%">Impressions</div>
+      </div>
+
+      <div class="field field_separated">
+        <div class="field__section" style="width: 80%">
+          <select class="js-select">
+            <option value="per_hour">Per hour</option>
+          </select>
+        </div>
+        <div class="field__section field__section_label" style="width: 20%">Limit per user</div>
+      </div>
+
+      <div class="field field_separated">
+        <div class="field__section" style="width: 80%">
+          <select class="js-select">
+            <option value="per_hour">Per hour</option>
+          </select>
+        </div>
+        <div class="field__section field__section_label" style="width: 20%">Interval between impressions</div>
+      </div>
+    </div>
+  </div>
+</form>

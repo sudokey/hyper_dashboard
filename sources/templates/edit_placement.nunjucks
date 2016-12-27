@@ -10,7 +10,7 @@
 
     <div class="content__col content__col_main">
       <div class="content__title">
-        <h1 class="title">Create New Placement</h1>
+        <h1 class="title">Edit Placement</h1>
       </div>
 
       <div class="content__section">
@@ -18,7 +18,14 @@
       </div>
 
       <div class="content__section">
-        <button class="button button_submit button_blue button_md">Create Placement</button>
+        <div class="pan">
+          <div class="pan__section">
+            <button class="button button_submit button_blue button_md">Save Placement</button>
+          </div>
+          <div class="pan__section pan__section_right">
+            <a class="gray" href="javascript:void(0)">Remove Placement</a>
+          </div>
+        </div>
       </div>
     </div>
 
