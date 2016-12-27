@@ -12,11 +12,7 @@
       <div class="content__title">
         <div class="pan">
           <div class="pan__section pan__section_left">
-            <div class="inline">
-              <div class="inline__item inline__item_space_md">
-                <h1 class="title">Apps & Placements</h1>
-              </div>
-            </div>
+            <h1 class="title">Apps & Placements</h1>
           </div>
           <div class="pan__section pan__section_right">
             <a href="create_app.html" class="button button_green">

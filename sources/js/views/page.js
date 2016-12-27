@@ -30,6 +30,8 @@
       $('.js-stop-propagation').on('click', function (e) {
         e.stopPropagation();
       });
+
+      new Clipboard('.js-copy');
     },
 
     block: function () {

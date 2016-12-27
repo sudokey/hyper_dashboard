@@ -1,0 +1,48 @@
+{% set activePage = 'referrals' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_monetize.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <div class="pan">
+          <div class="pan__section pan__section_left">
+            <h1 class="title">Referrals</h1>
+          </div>
+          <div class="pan__section pan__section_right">
+            <a href="create_app.html" class="button button_green">
+              <span class="icon icon_plus"></span>
+              <span class="button__text">Create New App</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__section">
+        <div class="panel">
+          <h2 class="panel__title">Share this link and receive 5% comission from your referrals</h2>
+          <form class="form">
+            <div class="field">
+              <input id="referrals" type="text" class="field__data field__data_copy" value="https://hyperadx.com/ru/app/communication/id618783545">
+              <span class="field__copy-btn js-copy" data-clipboard-target="#referrals">Copy link</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    (function () {
+      'use strict';
+
+      var page = new window.app.PageView();
+    })();
+  </script>
+{% endblock %}

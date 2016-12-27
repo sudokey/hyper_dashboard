@@ -1,4 +1,6 @@
 .field {
+  position: relative;
+  z-index: 0;
   margin: 0 0 20px;
 
   &:after {
@@ -69,6 +71,10 @@
   }
 }
 
+.field__data_copy {
+  padding-right: 100px;
+}
+
 .field__hint {
   margin: 5px 0 0;
   font-size: 12px;
@@ -78,4 +84,17 @@
 .field__section_label {
   font-size: 14px;
   color: @gray;
+}
+
+.field__copy-btn {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  font-size: 14px;
+  color: @gray;
+  cursor: pointer;
 }
