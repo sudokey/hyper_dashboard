@@ -16,8 +16,8 @@
             Apps & Placements
           </a>
         </div>
-        <div class="menu-item">
-          <a class="menu-item__title" href="#">
+        <div class="menu-item {% if activePage == 'analytics' %} menu-item_active {% endif %}">
+          <a class="menu-item__title" href="analytics.html">
             <span class="menu-icon menu-icon_analytics"></span>
             Analytics
           </a>

@@ -1,0 +1,370 @@
+{% set activePage = 'analytics' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_monetize.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <div class="pan">
+          <div class="pan__section pan__section_left">
+            <h1 class="title">Analytics</h1>
+          </div>
+          <div class="pan__section pan__section_right">
+            <a href="create_app.html" class="button button_green">
+              <span class="icon icon_plus"></span>
+              <span class="button__text">Create New App</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__section">
+        <div class="table-panel">
+          <div class="table-panel__header">
+            <div class="pan">
+              <div class="pan__section pan__section_left">
+                <div class="inline">
+                  <div class="inline__item">
+                    <div class="popover js-popover">
+                      <div class="popover__toggler">
+                        <button class="button button_bordered_blue button_small js-popover-toggle">
+                          <span class="icon icon_plus-blue"></span>
+                          <span class="button__text">Add Filters</span>
+                        </button>
+                      </div>
+                      <div class="popover__content popover__content_bottom-left">
+                        <div class="panel panel_md panel_popover">
+                          <div class="field field_md">
+                            <div class="select2-wrapper select2-wrapper_sm">
+                              <select class="js-filter-select" style="width: 300px" placeholder="Placement">
+                                <option value="" disabled selected>Placement</option>
+                                <option value="test">Test</option>
+                                <option value="lorem">Lorem ipsum dolor sit amet.</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="field field_md">
+                            <div class="select2-wrapper select2-wrapper_sm">
+                              <select class="js-filter-select" style="width: 300px" placeholder="App">
+                                <option value="" disabled selected>App</option>
+                                <option value="test">Test</option>
+                                <option value="lorem">Lorem ipsum dolor sit amet.</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="field field_md">
+                            <div class="select2-wrapper select2-wrapper_sm">
+                              <select class="js-filter-select" style="width: 300px" placeholder="Country">
+                                <option value="" disabled selected>Country</option>
+                                <option value="test">Test</option>
+                                <option value="lorem">Lorem ipsum dolor sit amet.</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="inline__item" style="width: 160px">
+                    <div class="popover js-popover js-select-tags">
+                      <div class="popover__toggler">
+                        <div class="field">
+                          <div class="field__data field__data_md field__data_select-group js-popover-toggle">
+                            <span class="js-selected-tags">App, Placement</span>
+                            <div class="icon icon_cursor icon_cursor_down"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="popover__content popover__content_full-width popover__content_bottom-right">
+                        <div class="panel panel_popover panel_md">
+                          <div class="tags">
+                            <div class="tags__item tags__item_active js-tag">App</div>
+                            <div class="tags__item tags__item_active js-tag">Placement</div>
+                            <div class="tags__item js-tag">Countries</div>
+                          </div>
+
+                          <div class="panel__footer">
+                            <span class="inline cursor">
+                              <span class="inline__item inline__item_space_xs">
+                                <span class="icon icon_set-default"></span>
+                              </span>
+                              <span class="inline__item inline__item_space_xs">
+                                Set to Default
+                              </span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pan__section pan__section_right">
+                <div class="inline">
+                  <div class="inline__item">
+                    <div class="popover js-date-range">
+                      <a class="popover__toggler js-popover-toggle" href="javascript:void(0)">Choose Date</a>
+
+                      <div class="popover__content popover__content_bottom-right">
+                        <div class="panel panel_popover">
+                          <div class="daterange">
+                            <div class="daterange__ctrl daterange__ctrl_left">
+                              <div class="datepicker js-date-start"></div>
+                            </div
+                            ><div class="daterange__ctrl daterange__ctrl_right">
+                              <div class="datepicker js-date-end"></div>
+                            </div>
+                            <div class="daterange__actions">
+                              <a href="javascript:void(0)">Reset</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="tabs js-tabs-range">
+                      <div class="tabs__item tabs__item_active js-tab">Day</div>
+                      <div class="tabs__item js-tab">Week</div>
+                      <div class="tabs__item js-tab">Month</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-wrapper">
+            <div class="popover js-table-settings-popover">
+              <div class="popover__content popover__content_bottom-right">
+                <div class="panel panel_popover panel_settings">
+                  <div class="panel__title">Metrics</div>
+
+                  <div class="panel__section">
+                    <label class="checkbox">
+                      <input type="checkbox" checked>
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Requests</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox" checked>
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Served</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox" checked>
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Impr.</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Clicks</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Unt. Clicks</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Uniq. Clicks</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Conv</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Goals</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Revenue</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Payout</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Profit</span>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="panel__title">Calculations</div>
+
+                  <div class="panel__section">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">CTR</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">CR</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Uniq CR.</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">CPM</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">eCPM</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">eCPC</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">eCPA</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="table-wrapper__inner">
+              <table class="table table_data js-data-table">
+                <thead>
+                  <tr>
+                    <th>Impressions</th>
+                    <th>Clicks</th>
+                    <th>Earning</th>
+                    <th>CTR</th>
+                    <th>eCPM</th>
+                    <th>
+                      Date
+                      <span class="icon icon_settings js-toggle-table-settings"></span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>94.785</td>
+                    <td>12</td>
+                    <td>$22.24</td>
+                    <td>0.445%</td>
+                    <td>$0.71</td>
+                    <td>2015.10.15</td>
+                  </tr>
+                  <tr>
+                    <td>9425.785</td>
+                    <td>14</td>
+                    <td>$2.14</td>
+                    <td>$22.24</td>
+                    <td>$0.1</td>
+                    <td>2016.10.15</td>
+                  </tr>
+                  <tr>
+                    <td>9451.785</td>
+                    <td>15</td>
+                    <td>$2.24</td>
+                    <td>0.445%</td>
+                    <td>$0.71</td>
+                    <td>2017.10.15</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td>945.785</td>
+                    <td>14</td>
+                    <td>$2.24</td>
+                    <td>0.445%</td>
+                    <td>$0.71</td>
+                    <td></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    (function () {
+      'use strict';
+
+      var page = new window.app.PageAnalyticsView();
+    })();
+  </script>
+{% endblock %}

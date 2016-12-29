@@ -5,6 +5,18 @@
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: bottom right;
+  color: @black;
+  cursor: default;
+}
+
+.panel_md {
+  padding: 15px;
+
+  .panel__footer {
+    margin: 15px -15px -15px;
+    padding: 15px;
+    font-size: 13px;
+  }
 }
 
 .panel_apps {
@@ -27,6 +39,24 @@
   box-shadow: 0 0 30px rgba(0,0,0,0.1);
 }
 
+.panel_settings {
+  .panel__title {
+    margin-bottom: 15px;
+  }
+
+  .panel__section {
+    margin-bottom: 25px;
+  }
+
+  .checkbox {
+    margin-bottom: 15px;
+  }
+
+  .checkbox__ctrl {
+    margin-right: 10px;
+  }
+}
+
 .panel__title {
   margin: 0 0 25px;
   font-size: 15px;
@@ -39,4 +69,12 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.panel__footer {
+  margin: 25px -30px -25px;
+  padding: 25px 30px;
+  border-radius: 0 0 7px 7px;
+  background: #f8fafb;
+  color: @gray;
 }

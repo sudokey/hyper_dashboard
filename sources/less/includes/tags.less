@@ -1,0 +1,33 @@
+.tags__item {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 26px;
+  line-height: 26px;
+  margin: 0 0 10px;
+  padding: 0 15px;
+  border: 1px solid @blue;
+  border-radius: 26px;
+  font-size: 11px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.tags__item_active {
+  position: relative;
+  padding-right: 27px;
+  background: @blue;
+  color: #fff;
+
+  &:after {
+    content: '×';
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 14px;
+    opacity: 0.7;
+  }
+}
