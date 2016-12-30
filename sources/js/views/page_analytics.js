@@ -7,8 +7,6 @@
     render: function () {
       app.PageView.prototype.render.call(this, arguments);
 
-      var _this = this;
-
       this.dateRangeView = new app.DaterangeView({ el: '.js-date-range' });
       this.tabsRangeView = new app.TabsView({ el: '.js-tabs-range' });
       this.groupSelectTagsView = new app.SelectTagsView({ el: '.js-select-tags' });
@@ -20,12 +18,7 @@
         });
       });
 
-      this.dataTablesort = new Tablesort(this.$('.js-data-table')[0]);
-
-      $('.js-toggle-table-settings').click(function (e) {
-        e.stopPropagation();
-        _this.tableSettingsPopoverView.toggle();
-      });
+      this.$('.js-tablesorter').tablesorter();
     }
   });
 })();

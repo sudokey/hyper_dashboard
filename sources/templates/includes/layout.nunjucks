@@ -28,7 +28,7 @@
   <script src="vendor/chart_js/Chart.min.js"></script>
   <script src="vendor/select2/js/select2.min.js"></script>
   <script src="vendor/clipboard/clipboard.min.js"></script>
-  <script src="vendor/tablesort/tablesort.min.js"></script>
+  <script src="vendor/tablesorter/js/jquery.tablesorter.min.js"></script>
 
   <script src="js/app.js"></script>
   <script src="js/config/chart.js"></script>
@@ -45,6 +45,7 @@
   <script src="js/views/page_app_settings.js"></script>
   <script src="js/views/page_payment_details.js"></script>
   <script src="js/views/page_analytics.js"></script>
+  <script src="js/views/page_payment_history.js"></script>
 
   {% block scripts %}{% endblock %}
 </body>

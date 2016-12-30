@@ -1,0 +1,80 @@
+{% set activePage = 'payment_history' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_monetize.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <div class="pan">
+          <div class="pan__section pan__section_left">
+            <h1 class="title">History</h1>
+          </div>
+
+          <div class="pan__section pan__section_right">
+            <a href="create_app.html" class="button button_green">
+              <span class="icon icon_plus"></span>
+              <span class="button__text">Create New App</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__section">
+        <div class="table-panel">
+          <div class="table-panel__header">
+            <div class="pan">
+              <div class="pan__section pan__section_left">
+                <h3 class="title title_size_md">Perfomance</h3>
+              </div>
+              <div class="pan__section pan__section_right">
+                <div class="tabs js-tabs">
+                  <div class="tabs__item tabs__item_active js-tab">Pending</div>
+                  <div class="tabs__item js-tab">Pending Submission</div>
+                  <div class="tabs__item js-tab">Retry</div>
+                  <div class="tabs__item js-tab">Approved</div>
+                  <div class="tabs__item js-tab">Paid</div>
+                  <div class="tabs__item js-tab">All</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-wrapper">
+            <div class="table-wrapper__inner">
+              <table class="table table_data js-tablesorter">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Should Submit</th>
+                    <th>Gateway</th>
+                    <th>Status</th>
+                    <th data-sorter="false"></th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class="table-wrapper__empty">
+              No Payments Found.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    (function () {
+      'use strict';
+
+      var page = new window.app.PaymentHistoryPageView();
+    })();
+  </script>
+{% endblock %}

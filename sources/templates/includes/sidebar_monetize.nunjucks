@@ -38,7 +38,7 @@
 
           <div class="sub-menu">
             <a class="sub-menu__item {% if activePage == 'payment_info' %} sub-menu__item_active {% endif %}" href="payment_info.html">Payment Info</a>
-            <a class="sub-menu__item {% if activePage == 'payment_history' %} sub-menu__item_active {% endif %}" href="#">History</a>
+            <a class="sub-menu__item {% if activePage == 'payment_history' %} sub-menu__item_active {% endif %}" href="payment_history.html">History</a>
           </div>
         </div>
       </nav>
