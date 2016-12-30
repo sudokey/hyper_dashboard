@@ -5,10 +5,10 @@
         <input type="text" class="field__data" placeholder="Placement Name">
       </div>
       <div class="field">
-        <select class="js-select" placeholder="Category">
-          <option value="rewarded_video">Rewarded Video</option>
-          <option value="interstitial_video">Interstitial Video</option>
-          <option value="native_video">Native Video</option>
+        <select class="js-select js-placement-select" placeholder="Category">
+          <option value="rewarded-video">Rewarded Video</option>
+          <option value="interstitial-video">Interstitial Video</option>
+          <option value="native-video">Native Video</option>
           <option value="native">Native</option>
           <option value="interstitial">Interstitial</option>
           <option value="banner">Banner</option>

@@ -13,7 +13,7 @@
         <h1 class="title">Edit App</h1>
       </div>
 
-      <form class="form">
+      <form class="form form_indented">
         <div class="content__section">
           {% include "form_app.nunjucks" %}
         </div>
@@ -29,6 +29,7 @@
               <span class="icon icon_cursor icon_cursor_right"></span>
               <span class="icon icon_cursor icon_cursor_down"></span>
             </div>
+
             <div class="collapsed-panel__content">
               <div class="collapsed active js-collapsed">
                 <div class="collapsed__header">
@@ -73,6 +74,7 @@
                     </span>
                   </label>
                 </div>
+
                 <div class="collapsed__content">
                   <ul class="list">
                     <li class="list__item">
@@ -84,6 +86,7 @@
                         </span>
                       </label>
                     </li>
+
                     <li class="list__item">
                       <label class="checkbox">
                         <input type="checkbox" checked>
@@ -107,16 +110,11 @@
               <span class="icon icon_cursor icon_cursor_right"></span>
               <span class="icon icon_cursor icon_cursor_down"></span>
             </div>
+
             <div class="collapsed-panel__content">
-              <form class="form">
-                <div class="field">
-                  <select class="js-select" multiple="multiple" placeholder="Enter URLs (separated by comma)" style="width: 100%">
-                    <option value="test_1">yandex.ru</option>
-                    <option value="test_2">google.ru</option>
-                    <option value="test_3">mail.ru</option>
-                  </select>
-                </div>
-              </form>
+              <div class="field">
+                <select class="js-blacklist-select" multiple="multiple" placeholder="Enter URLs (separated by comma)" style="width: 100%"></select>
+              </div>
             </div>
           </div>
         </div>

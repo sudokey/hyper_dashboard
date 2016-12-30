@@ -43,9 +43,10 @@
   <script src="js/views/page.js"></script>
   <script src="js/views/page_dashboard.js"></script>
   <script src="js/views/page_app_settings.js"></script>
-  <script src="js/views/page_payment_details.js"></script>
+  <script src="js/views/page_payment_info.js"></script>
   <script src="js/views/page_analytics.js"></script>
   <script src="js/views/page_payment_history.js"></script>
+  <script src="js/views/page_placement.js"></script>
 
   {% block scripts %}{% endblock %}
 </body>

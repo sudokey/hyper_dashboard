@@ -24,9 +24,9 @@
         </div>
       </div>
 
-      <div class="content__section">
-        <div class="panel">
-          <div class="form">
+      <form class="form form_indented">
+        <div class="content__section">
+          <div class="panel">
             <div class="panel__title">Company Details</div>
 
             <div class="field">
@@ -39,7 +39,12 @@
 
             <div class="field field_separated">
               <div class="field__section" style="width: 70%">
-                <select class="js-select" placeholder="Country"></select>
+                <select class="js-country-select" placeholder="Country">
+                  <option value="" disabled selected>Country</option>
+                  <option value="russia">Russian</option>
+                  <option value="india">India</option>
+                  <option value="china">China</option>
+                </select>
               </div>
               <div class="field__section" style="width: 30%">
                 <input type="text" class="field__data" placeholder="ZIP Code">
@@ -47,66 +52,66 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="content__section">
-        <div class="panel">
-          <div class="form js-payment-details">
-            <div class="panel__title">Payment Details</div>
+        <div class="content__section">
+          <div class="panel">
+            <div class="form js-payment-details">
+              <div class="panel__title">Payment Details</div>
 
-            <div class="field">
-              <select class="js-select js-payment-method" placeholder="Choose Payment Method">
-                <option value="" disabled selected hidden>Choose Payment Method</option>
-                <option value="paypal">PayPal</option>
-                <option value="webmoney">WebMoney</option>
-                <option value="wire">Wire</option>
-              </select>
-            </div>
+              <div class="field">
+                <select class="js-select js-payment-method" placeholder="Choose Payment Method">
+                  <option value="" disabled selected hidden>Choose Payment Method</option>
+                  <option value="paypal">PayPal</option>
+                  <option value="webmoney">WebMoney</option>
+                  <option value="wire">Wire</option>
+                </select>
+              </div>
 
-            {#Wire Form#}
-            <div class="js-fields" data-fields-name="wire" style="display: none">
-              <div class="field">
-                <input type="text" class="field__data" placeholder="Bank Name">
-              </div>
-              <div class="field">
-                <input type="text" class="field__data" placeholder="Bank Address">
-              </div>
-              <div class="field">
-                <input type="text" class="field__data" placeholder="Bank Account Number">
-              </div>
-              <div class="field field_separated">
-                <div class="field__section" style="width: 50%">
-                  <input type="text" class="field__data" placeholder="IBAN">
+              {#Wire Form#}
+              <div class="js-fields" data-fields-name="wire" style="display: none">
+                <div class="field">
+                  <input type="text" class="field__data" placeholder="Bank Name">
                 </div>
-                <div class="field__section" style="width: 50%">
-                  <input type="text" class="field__data" placeholder="SWIFT">
+                <div class="field">
+                  <input type="text" class="field__data" placeholder="Bank Address">
+                </div>
+                <div class="field">
+                  <input type="text" class="field__data" placeholder="Bank Account Number">
+                </div>
+                <div class="field field_separated">
+                  <div class="field__section" style="width: 50%">
+                    <input type="text" class="field__data" placeholder="IBAN">
+                  </div>
+                  <div class="field__section" style="width: 50%">
+                    <input type="text" class="field__data" placeholder="SWIFT">
+                  </div>
+                </div>
+                <div class="field">
+                  <input type="text" class="field__data" placeholder="Financial Contact">
                 </div>
               </div>
-              <div class="field">
-                <input type="text" class="field__data" placeholder="Financial Contact">
-              </div>
-            </div>
 
-            {#PayPal Form#}
-            <div class="js-fields" data-fields-name="paypal" style="display: none">
-              <div class="field">
-                <input type="text" class="field__data">
+              {#PayPal Form#}
+              <div class="js-fields" data-fields-name="paypal" style="display: none">
+                <div class="field">
+                  <input type="text" class="field__data">
+                </div>
               </div>
-            </div>
 
-            {#WebMoney Form#}
-            <div class="js-fields" data-fields-name="webmoney" style="display: none">
-              <div class="field">
-                <input type="text" class="field__data">
+              {#WebMoney Form#}
+              <div class="js-fields" data-fields-name="webmoney" style="display: none">
+                <div class="field">
+                  <input type="text" class="field__data">
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="content__section">
-        <button class="button button_submit button_blue button_md">Save</button>
-      </div>
+        <div class="content__section">
+          <button class="button button_submit button_blue button_md">Save</button>
+        </div>
+      </form>
     </div>
   </div>
 {% endblock %}
