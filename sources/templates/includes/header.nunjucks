@@ -6,22 +6,22 @@
 
     <div class="header__section header__section_nav">
       <nav class="nav">
-        <a class="nav__item nav__item_active" href="#">Monetize</a>
-        <a class="nav__item" href="#">Promote</a>
-        <a class="nav__item" href="#">Segments</a>
+        <a class="nav__item {% if activeSection == 'monetize' %} nav__item_active {% endif %}" href="index.html">Monetize</a>
+        <a class="nav__item {% if activeSection == 'promote' %} nav__item_active {% endif %}" href="#">Promote</a>
+        <a class="nav__item {% if activeSection == 'segments' %} nav__item_active {% endif %}" href="#">Segments</a>
       </nav>
     </div>
 
     <div class="header__section header__section_user">
       <div class="inline">
         <div class="inline__item">
-          <a href="#">Docs</a>
+          <a href="#" class="{% if activeSection == 'docs' %} active {% endif %}">Docs</a>
         </div>
         <div class="inline__item">
-          <a href="#">Support</a>
+          <a href="#" class="{% if activeSection == 'support' %} active {% endif %}">Support</a>
         </div>
         <div class="inline__item">
-          <a href="#">Account</a>
+          <a href="account_general.html" class="{% if activeSection == 'account' %} active {% endif %}">Account</a>
         </div>
         <div class="inline__item">
           <div class="get-started-progress">

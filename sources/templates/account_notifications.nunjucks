@@ -1,0 +1,61 @@
+{% set activeSection = 'account' %}
+{% set activePage = 'notifications' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_account.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <h1 class="title">Email Notifications</h1>
+      </div>
+
+      <div class="form form_indented">
+        <div class="content__section">
+          <div class="panel">
+            <div class="panel__title">Subscribe me to:</div>
+
+            <div class="field field_separated field_checkboxs">
+              <div class="field__section">
+                <label class="checkbox">
+                  <input type="checkbox" checked>
+                  <span class="checkbox__content">
+                    <span class="checkbox__ctrl"></span>
+                    <span class="checkbox__label">General Updates</span>
+                  </span>
+                </label>
+              </div>
+              <div class="field__section">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox__content">
+                    <span class="checkbox__ctrl"></span>
+                    <span class="checkbox__label">Billing Updates</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__section">
+          <button class="button button_blue button_md button_submit">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    (function () {
+      'use strict';
+
+      var page = new window.app.PageView();
+    })();
+  </script>
+{% endblock %}

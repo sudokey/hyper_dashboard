@@ -1,0 +1,29 @@
+<div class="sidebar">
+  <div class="sidebar__menu">
+    <div class="sidebar__section">
+      <div class="sidebar__title">Account</div>
+
+      <nav class="menu">
+        <div class="menu-item js-collapsed {% if activePage == 'general' or activePage == 'password' or activePage == 'notifications' or activePage == 'users' %} menu-item_active_no-link active {% endif %}">
+          <a href="javascript:void(0)" class="menu-item__title js-toggle">
+            <span class="menu-icon menu-icon_user"></span>
+            My Profile
+            <span class="icon icon_cursor icon_cursor_right"></span>
+            <span class="icon icon_cursor icon_cursor_down"></span>
+          </a>
+
+          <div class="sub-menu">
+            <a class="sub-menu__item {% if activePage == 'general' %} sub-menu__item_active {% endif %}" href="account_general.html">General</a>
+            <a class="sub-menu__item {% if activePage == 'password' %} sub-menu__item_active {% endif %}" href="account_password.html">Password</a>
+            <a class="sub-menu__item {% if activePage == 'notifications' %} sub-menu__item_active {% endif %}" href="account_notifications.html">Email Notifications</a>
+            <a class="sub-menu__item {% if activePage == 'users' %} sub-menu__item_active {% endif %}" href="account_users.html">Users</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="sidebar__copy">
+    {% include "copy.nunjucks" %}
+  </div>
+</div>

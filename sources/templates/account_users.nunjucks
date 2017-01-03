@@ -1,0 +1,29 @@
+{% set activeSection = 'account' %}
+{% set activePage = 'users' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_account.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main content__col_vam">
+      <div class="add-users">
+        <h1 class="add-users__title">Add more users to your account and select specific privileges.</h1>
+        <a href="account_create_new_user.html" class="button button_green button_md">Add more users</a>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    (function () {
+      'use strict';
+
+      var page = new window.app.PageView();
+    })();
+  </script>
+{% endblock %}

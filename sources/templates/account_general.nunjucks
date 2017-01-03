@@ -1,0 +1,74 @@
+{% set activeSection = 'account' %}
+{% set activePage = 'general' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_account.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <h1 class="title">General</h1>
+      </div>
+
+      <div class="form form_indented">
+        <div class="content__section">
+          <div class="panel">
+            <div class="field">
+              <input type="text" class="field__data" placeholder="First Name">
+            </div>
+            <div class="field">
+              <input type="text" class="field__data" placeholder="Last Name">
+            </div>
+            <div class="field">
+              <input type="text" class="field__data" placeholder="Company">
+            </div>
+            <div class="field">
+              <input type="text" class="field__data" placeholder="Phone Number">
+            </div>
+          </div>
+        </div>
+
+        <div class="content__section">
+          <div class="panel">
+            <div class="panel__title">Email</div>
+            <a href="#">mediabuyer@hyperadx.com</a>
+          </div>
+        </div>
+
+        <div class="content__section">
+          <div class="panel">
+            <div class="panel__title">Instant Messenger</div>
+            <div class="field">
+              <select class="js-select">
+                <option value="scype">Scype</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <input type="text" class="field__data" placeholder="Enter Instant Messenger Username">
+            </div>
+          </div>
+        </div>
+
+        <div class="content__section">
+          <button class="button button_blue button_md button_submit">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    (function () {
+      'use strict';
+
+      var page = new window.app.PageView();
+    })();
+  </script>
+{% endblock %}

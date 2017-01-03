@@ -1,3 +1,4 @@
+{% set activeSection = 'monetize' %}
 {% set activePage = 'analytics' %}
 
 {% extends "layout.nunjucks" %}
