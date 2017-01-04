@@ -267,7 +267,7 @@
             <table class="table">
               <thead>
                 <tr>
-                  <th>Placement</th>
+                  <th style="width: 99%">Placement</th>
                   <th>Impressions</th>
                   <th>Clicks</th>
                   <th>eCPM</th>
@@ -275,19 +275,19 @@
               </thead>
               <tbody>
                 <tr>
-                  <td class="table__cell_full-width"><a href="#">Angry place adv</a></td>
+                  <td><a href="#">Angry place adv</a></td>
                   <td>945.785</td>
                   <td>45.622</td>
                   <td><strong>$1.6</strong></td>
                 </tr>
                 <tr>
-                  <td class="table__cell_full-width"><a href="#">PokemonGo</a></td>
+                  <td><a href="#">PokemonGo</a></td>
                   <td>85.211</td>
                   <td>0</td>
                   <td><strong>$0.2</strong></td>
                 </tr>
                 <tr>
-                  <td class="table__cell_full-width"><a href="#">MyFirstPlacement</a></td>
+                  <td><a href="#">MyFirstPlacement</a></td>
                   <td>397.614</td>
                   <td>644.997</td>
                   <td><strong>$8.2</strong></td>
@@ -318,7 +318,7 @@
             <table class="table">
               <thead>
                 <tr>
-                  <th>Country</th>
+                  <th style="width: 99%">Country</th>
                   <th>Impressions</th>
                   <th>Clicks</th>
                   <th>eCPM</th>
@@ -326,19 +326,19 @@
               </thead>
               <tbody>
                 <tr>
-                  <td class="table__cell_full-width"><a href="#">Unated States</a></td>
+                  <td><a href="#">Unated States</a></td>
                   <td>945.785</td>
                   <td>45.622</td>
                   <td><strong>$1.6</strong></td>
                 </tr>
                 <tr>
-                  <td class="table__cell_full-width"><a href="#">Canada</a></td>
+                  <td><a href="#">Canada</a></td>
                   <td>85.211</td>
                   <td>0</td>
                   <td><strong>$0.2</strong></td>
                 </tr>
                 <tr>
-                  <td class="table__cell_full-width"><a href="#">Germany</a></td>
+                  <td><a href="#">Germany</a></td>
                   <td>397.614</td>
                   <td>644.997</td>
                   <td><strong>$8.2</strong></td>

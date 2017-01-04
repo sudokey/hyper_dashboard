@@ -16,7 +16,7 @@
             <a class="sub-menu__item {% if activePage == 'general' %} sub-menu__item_active {% endif %}" href="account_general.html">General</a>
             <a class="sub-menu__item {% if activePage == 'password' %} sub-menu__item_active {% endif %}" href="account_password.html">Password</a>
             <a class="sub-menu__item {% if activePage == 'notifications' %} sub-menu__item_active {% endif %}" href="account_notifications.html">Email Notifications</a>
-            <a class="sub-menu__item {% if activePage == 'users' %} sub-menu__item_active {% endif %}" href="account_users.html">Users</a>
+            <a class="sub-menu__item {% if activePage == 'users' %} sub-menu__item_active {% endif %}" href="account_manage_users.html">Users</a>
           </div>
         </div>
 

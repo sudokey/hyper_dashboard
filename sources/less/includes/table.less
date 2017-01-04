@@ -33,6 +33,10 @@
   }
 }
 
+.table_one-line {
+  white-space: nowrap;
+}
+
 .table_data {
   [role='columnheader']:not(.sorter-false) {
     color: @blue;
@@ -81,13 +85,6 @@
     &:last-child {
       padding-right: 15px;
     }
-
-    .icon_settings {
-      position: absolute;
-      right: 0;
-      top: 50%;
-      margin-top: -16px;
-    }
   }
 
   tbody {
@@ -97,10 +94,6 @@
       }
     }
   }
-}
-
-.table__cell_full-width {
-  width: 99%;
 }
 
 .table-wrapper {
