@@ -19,6 +19,13 @@
             <a class="sub-menu__item {% if activePage == 'users' %} sub-menu__item_active {% endif %}" href="account_users.html">Users</a>
           </div>
         </div>
+
+        <div class="menu-item {% if activePage == 'attribution' %} menu-item_active_link {% endif %}">
+          <a class="menu-item__title" href="account_attribution.html">
+            <span class="menu-icon menu-icon_attribution"></span>
+            Attribution
+          </a>
+        </div>
       </nav>
     </div>
   </div>

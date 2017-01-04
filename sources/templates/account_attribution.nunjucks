@@ -1,0 +1,78 @@
+{% set activeSection = 'account' %}
+{% set activePage = 'attribution' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_account.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <h1 class="title">Attribution</h1>
+      </div>
+
+      <div class="form form_indented">
+        <p class="content__section">Please inplement the following postback_url on your side in order for conversion and goal tracking. Only for custom tracking solutions.</p>
+
+        <div class="content__section">
+          <div class="panel">
+            <h2 class="panel__title">Conversion Tracking</h2>
+            <div class="field">
+              <input type="text" class="field__data field__data_link" value="http://postback.hyperadx.com/tracker?transaction_id=TID">
+            </div>
+          </div>
+        </div>
+
+        <div class="content__section">
+          <div class="panel">
+            <h2 class="panel__title">Goal Tracking</h2>
+            <div class="field">
+              <input type="text" class="field__data field__data_link" value="http://postback.hyperadx.com/tracker?transaction_id=TID">
+            </div>
+          </div>
+        </div>
+
+        <div class="content__section">
+          <div class="panel">
+            <h2 class="panel__title">Integrated Tracking Partners</h2>
+            <p>
+              You don’t need to integrate our postback URL if you are using one of tracking partners for
+              attribution. For attribution with one of integrated partners just choose Hyper as a supply partner
+              for advertising campaign.
+            </p>
+            <div class="inline">
+              <div class="inline__item">
+                <img src="img/partners/adjust.png">
+              </div>
+              <div class="inline__item">
+                <img src="img/partners/appsflyer.png">
+              </div>
+              <div class="inline__item">
+                <img src="img/partners/apsalar.png">
+              </div>
+              <div class="inline__item">
+                <img src="img/partners/kochava.png">
+              </div>
+              <div class="inline__item">
+                <img src="img/partners/tune.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    (function () {
+      'use strict';
+
+      var page = new window.app.PageView();
+    })();
+  </script>
+{% endblock %}

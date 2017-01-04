@@ -39,17 +39,17 @@
 
               <div class="apps-grid__row apps-grid__row_main js-toggle">
                 <div class="apps-grid__section apps-grid__section_name">
-                  <span class="inline">
-                    <span class="inline__item inline__item_space_sm">
+                  <span class="inline inline_size_md">
+                    <span class="inline__item">
                       <span class="icon icon_apple"></span>
                     </span>
-                    <span class="inline__item inline__item_space_sm">
+                    <span class="inline__item">
                       <img class="pick pick_app" src="img/slack.png">
                     </span>
-                    <span class="inline__item inline__item_space_sm">
+                    <span class="inline__item">
                       <a href="app_settings.html" class="js-stop-propagation">Slack — Be less busy</a>
                     </span>
-                    <span class="inline__item inline__item_space_sm">
+                    <span class="inline__item">
                       <a href="app_settings.html" class="icon icon_settings js-stop-propagation"></a>
                     </span>
                   </span>
@@ -58,11 +58,11 @@
                   <a href="new_placement.html" class="button button_blue button_sm js-stop-propagation">Add Placement</a>
                 </div>
                 <div class="apps-grid__section apps-grid__section_count">
-                  <div class="inline inline_fixed">
-                    <div class="inline__item inline__item_space_md">
+                  <div class="inline inline_size_md inline_fixed">
+                    <div class="inline__item">
                       <span class="badge badge_md">2</span>
                     </div>
-                    <div class="inline__item inline__item_space_md">
+                    <div class="inline__item">
                       <span class="icon icon_cursor icon_cursor_right"></span>
                       <span class="icon icon_cursor icon_cursor_down"></span>
                     </div>
@@ -112,17 +112,17 @@
             <div class="apps-grid js-collapsed">
               <div class="apps-grid__row apps-grid__row_main js-toggle">
                 <div class="apps-grid__section apps-grid__section_name">
-                  <span class="inline">
-                    <span class="inline__item inline__item_space_sm">
+                  <span class="inline inline_size_sm">
+                    <span class="inline__item">
                       <span class="icon icon_android"></span>
                     </span>
-                    <span class="inline__item inline__item_space_sm">
+                    <span class="inline__item">
                       <img class="pick pick_app" src="img/evernote.png">
                     </span>
-                    <span class="inline__item inline__item_space_sm">
+                    <span class="inline__item">
                       <a href="app_settings.html" class="js-stop-propagation">Evernote</a>
                     </span>
-                    <span class="inline__item inline__item_space_sm">
+                    <span class="inline__item">
                       <a href="app_settings.html" class="icon icon_settings"></a>
                     </span>
                   </span>
@@ -131,11 +131,11 @@
                   <a href="new_placement.html" class="button button_blue button_sm js-stop-propagation">Add Placement</a>
                 </div>
                 <div class="apps-grid__section apps-grid__section_count">
-                  <div class="inline inline_fixed">
-                    <div class="inline__item inline__item_space_md">
+                  <div class="inline inline_size_md inline_fixed">
+                    <div class="inline__item">
                       <span class="badge badge_md">1</span>
                     </div>
-                    <div class="inline__item inline__item_space_md">
+                    <div class="inline__item">
                       <span class="icon icon_cursor icon_cursor_right"></span>
                       <span class="icon icon_cursor icon_cursor_down"></span>
                     </div>

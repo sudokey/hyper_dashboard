@@ -1,6 +1,44 @@
 .inline {
   display: inline-block;
   vertical-align: middle;
+  margin-top: -13px;
+  margin-bottom: -13px;
+}
+
+.inline_size_xs {
+  margin-top: -2px;
+  margin-bottom: -2px;
+
+  .inline__item {
+    margin: 2px;
+  }
+}
+
+.inline_size_sm {
+  margin-top: -4px;
+  margin-bottom: -4px;
+
+  .inline__item {
+    margin: 4px;
+  }
+}
+
+.inline_size_md {
+  margin-top: -8px;
+  margin-bottom: -8px;
+
+  .inline__item {
+    margin: 8px;
+  }
+}
+
+.inline_size_lg {
+  margin-top: -20px;
+  margin-bottom: -20px;
+
+  .inline__item {
+    margin: 20px;
+  }
 }
 
 .inline_fixed {
@@ -10,7 +48,7 @@
 .inline__item {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 13px;
+  margin: 13px;
 
   &:first-child {
     margin-left: 0!important;
@@ -19,24 +57,4 @@
   &:last-child {
     margin-right: 0!important;
   }
-}
-
-.inline__item_space_xs {
-  margin-left: 2px;
-  margin-right: 2px;
-}
-
-.inline__item_space_sm {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-.inline__item_space_md {
-  margin-left: 8px;
-  margin-right: 8px;
-}
-
-.inline__item_space_lg {
-  margin-left: 20px;
-  margin-right: 20px;
 }

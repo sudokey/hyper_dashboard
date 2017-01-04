@@ -92,11 +92,11 @@
                           </div>
 
                           <div class="panel__footer">
-                            <span class="inline cursor">
-                              <span class="inline__item inline__item_space_xs">
+                            <span class="inline inline_size_xs cursor">
+                              <span class="inline__item">
                                 <span class="icon icon_set-default"></span>
                               </span>
-                              <span class="inline__item inline__item_space_xs">
+                              <span class="inline__item">
                                 Set to Default
                               </span>
                             </span>

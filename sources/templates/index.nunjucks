@@ -13,12 +13,12 @@
       <div class="content__title">
         <div class="pan">
           <div class="pan__section pan__section_left">
-            <div class="inline">
-              <div class="inline__item inline__item_space_md">
+            <div class="inline inline_size_md">
+              <div class="inline__item">
                 <h1 class="title">Dashboard</h1>
               </div>
 
-              <div class="inline__item inline__item_space_md">
+              <div class="inline__item">
                 <div class="popover js-popover">
                   <div class="popover__toggler js-popover-toggle">
                     <span class="icon icon_settings"></span>
@@ -169,32 +169,32 @@
             <div class="chart-panel__data">
               <div class="pan">
                 <div class="pan__section pan__section_left">
-                  <div class="inline">
-                    <div class="inline__item inline__item_space_lg">
+                  <div class="inline inline_size_lg">
+                    <div class="inline__item">
                       <div class="indicator">
                         <div class="indicator__value indicator__value_small">1.246.787</div>
                         <div class="indicator__name indicator__name_light">Ad Requests</div>
                       </div>
                     </div>
-                    <div class="inline__item inline__item_space_lg">
+                    <div class="inline__item">
                       <div class="indicator">
                         <div class="indicator__value indicator__value_small">945.785</div>
                         <div class="indicator__name indicator__name_light">Impressions</div>
                       </div>
                     </div>
-                    <div class="inline__item inline__item_space_lg">
+                    <div class="inline__item">
                       <div class="indicator">
                         <div class="indicator__value indicator__value_small">100%</div>
                         <div class="indicator__name indicator__name_light">Fill Rate</div>
                       </div>
                     </div>
-                    <div class="inline__item inline__item_space_lg">
+                    <div class="inline__item">
                       <div class="indicator">
                         <div class="indicator__value indicator__value_small">45.678</div>
                         <div class="indicator__name indicator__name_light">Clicks</div>
                       </div>
                     </div>
-                    <div class="inline__item inline__item_space_lg">
+                    <div class="inline__item">
                       <div class="indicator">
                         <div class="indicator__value indicator__value_small">15.3%</div>
                         <div class="indicator__name indicator__name_light">CTR</div>
@@ -204,14 +204,14 @@
                 </div>
 
                 <div class="pan__section pan__section_right">
-                  <div class="inline">
-                    <div class="inline__item inline__item_space_lg">
+                  <div class="inline inline_size_lg">
+                    <div class="inline__item">
                       <div class="indicator">
                         <div class="indicator__value indicator__value_small">$1.367</div>
                         <div class="indicator__name indicator__name_light">Ad Earnings</div>
                       </div>
                     </div>
-                    <div class="inline__item inline__item_space_lg">
+                    <div class="inline__item">
                       <div class="indicator">
                         <div class="indicator__value indicator__value_small">$1.4</div>
                         <div class="indicator__name indicator__name_light">eCPM</div>
@@ -250,9 +250,9 @@
           <div class="table-panel">
             <div class="table-panel__header">
               <h3 class="title title_size_md">
-                <span class="inline">
-                  <span class="inline__item inline__item_space_xs">Top Perfoming Placements</span>
-                  <span class="inline__item inline__item_space_xs">
+                <span class="inline inline_size_xs">
+                  <span class="inline__item">Top Perfoming Placements</span>
+                  <span class="inline__item">
                     <span class="tooltip">
                       <span class="icon icon_tooltip"></span>
                       <span class="tooltip__content">
@@ -301,9 +301,9 @@
           <div class="table-panel">
             <div class="table-panel__header">
               <h3 class="title title_size_md">
-                <span class="inline">
-                  <span class="inline__item inline__item_space_xs">Top Perfoming Countries</span>
-                  <span class="inline__item inline__item_space_xs">
+                <span class="inline inline_size_xs">
+                  <span class="inline__item">Top Perfoming Countries</span>
+                  <span class="inline__item">
                     <span class="tooltip">
                       <span class="icon icon_tooltip"></span>
                       <span class="tooltip__content">
