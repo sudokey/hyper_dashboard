@@ -29,19 +29,19 @@
                   <tr>
                     <td>User Number 01</td>
                     <td>user01@hyperadx.com</td>
-                    <td><span class="badge badge_green badge_sm">Active</span></td>
+                    <td><span class="badge badge_green">Active</span></td>
                     <td><a href="account_create_new_user.html" class="icon icon_settings"></a></td>
                   </tr>
                   <tr>
                     <td>User Number 02</td>
                     <td>user02@hyperadx.com</td>
-                    <td><span class="badge badge_green badge_sm">Active</span></td>
+                    <td><span class="badge badge_green">Active</span></td>
                     <td><a href="account_create_new_user.html" class="icon icon_settings"></a></td>
                   </tr>
                   <tr>
                     <td>User Number 03</td>
                     <td>user03@hyperadx.com</td>
-                    <td><span class="badge badge_green badge_sm">Active</span></td>
+                    <td><span class="badge badge_green">Active</span></td>
                     <td><a href="account_create_new_user.html" class="icon icon_settings"></a></td>
                   </tr>
                 </tbody>

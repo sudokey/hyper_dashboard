@@ -80,7 +80,7 @@
                   <a href="#">Tag & SDK</a>
                 </div>
                 <div class="apps-grid__section apps-grid__section_status">
-                  <span class="badge badge_green badge_sm">Active</span>
+                  <span class="badge badge_green">Active</span>
                 </div>
                 <div class="apps-grid__section apps-grid__section_count">
                   <a href="edit_placement.html">Edit</a>
@@ -97,7 +97,7 @@
                   <a href="#">Tag & SDK</a>
                 </div>
                 <div class="apps-grid__section apps-grid__section_status">
-                  <span class="badge badge_green badge_sm">Active</span>
+                  <span class="badge badge_green">Active</span>
                 </div>
                 <div class="apps-grid__section apps-grid__section_count">
                   <a href="edit_placement.html">Edit</a>
@@ -153,7 +153,7 @@
                   <a href="#">Tag & SDK</a>
                 </div>
                 <div class="apps-grid__section apps-grid__section_status">
-                  <span class="badge badge_green badge_sm">Active</span>
+                  <span class="badge badge_green">Active</span>
                 </div>
                 <div class="apps-grid__section apps-grid__section_count">
                   <a href="edit_placement.html">Edit</a>

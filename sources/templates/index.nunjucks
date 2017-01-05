@@ -123,7 +123,10 @@
                     </div>
                     <div class="inline__item">
                       <button class="button button_bordered_blue button_small">
-                        <span class="icon icon_plus-blue"></span>
+                        <span class="button__icon">
+                          <span class="icon icon_plus-blue"></span>
+                          <span class="icon icon_plus"></span>
+                        </span>
                         <span class="button__text">Add Filters</span>
                         <span class="badge">6</span>
                       </button>

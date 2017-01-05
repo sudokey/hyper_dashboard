@@ -5,7 +5,7 @@
         <input type="text" class="field__data" placeholder="Placement Name">
       </div>
       <div class="field">
-        <select class="js-select js-placement-select" placeholder="Category">
+        <select class="js-select js-placement-select" placeholder="Category" style="width: 100%">
           <option value="rewarded-video">Rewarded Video</option>
           <option value="interstitial-video">Interstitial Video</option>
           <option value="native-video">Native Video</option>
@@ -21,7 +21,7 @@
 
       <div class="field field_separated">
         <div class="field__section" style="width: 80%">
-          <select class="js-select">
+          <select class="js-select" style="width: 100%">
             <option value="unlimited">Unlimited</option>
           </select>
         </div>
@@ -30,7 +30,7 @@
 
       <div class="field field_separated">
         <div class="field__section" style="width: 80%">
-          <select class="js-select">
+          <select class="js-select" style="width: 100%">
             <option value="per_hour">Per hour</option>
           </select>
         </div>
@@ -39,7 +39,7 @@
 
       <div class="field field_separated">
         <div class="field__section" style="width: 80%">
-          <select class="js-select">
+          <select class="js-select" style="width: 100%">
             <option value="per_hour">Per hour</option>
           </select>
         </div>

@@ -15,6 +15,7 @@
   background-color: transparent;
   cursor: pointer;
   outline: none;
+  transition: all 0.2s ease;
 
   .icon {
     margin-right: 5px;
@@ -28,22 +29,65 @@
 .button_blue {
   background: @blue;
   color: #fff;
+
+  &:hover {
+    background: #17a7ec;
+  }
 }
 
 .button_green {
   background: @green;
   color: #fff;
+
+  &:hover {
+    background: #10b659;
+  }
 }
 
 .button_red {
   background: #f13d5b;
   color: #fff;
+
+  &:hover {
+    background: #d6314c;
+  }
 }
 
 .button_bordered_blue {
   border-color: @blue;
   color: @blue;
   box-shadow: none;
+
+  &:hover {
+    background: @blue;
+    color: #fff;
+
+    .icon_plus {
+      opacity: 1;
+    }
+
+    .icon_plus-blue {
+      opacity: 0;
+    }
+  }
+
+  .icon {
+    transition: opacity 0.2s ease;
+  }
+
+  .icon_plus {
+    opacity: 0;
+  }
+
+  .icon_plus-blue {
+    opacity: 1;
+  }
+
+  .badge {
+    font-weight: bold;
+    font-size: inherit;
+    color: @blue!important;
+  }
 }
 
 .button_submit {
@@ -72,4 +116,19 @@
 
 .button__text {
   vertical-align: middle;
+}
+
+.button__icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 14px;
+  height: 14px;
+
+  .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }

@@ -44,7 +44,7 @@
   </div>
 
   <div class="field">
-    <select class="js-select" placeholder="Category">
+    <select class="js-select field__select" placeholder="Category" style="width: 100%">
       <option value="" disabled selected hidden>Category</option>
       <option value="test1">Test 1</option>
       <option value="test2">Test 2</option>
@@ -55,7 +55,7 @@
   </div>
 
   <div class="field">
-    <select class="js-select" placeholder="Subcategory">
+    <select class="js-select" placeholder="Subcategory" style="width: 100%">
       <option value="" disabled selected hidden>Subcategory</option>
       <option value="test">Test</option>
     </select>

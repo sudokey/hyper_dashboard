@@ -60,7 +60,7 @@
               <div class="panel__title">Payment Details</div>
 
               <div class="field">
-                <select class="js-select js-payment-method" placeholder="Choose Payment Method">
+                <select class="js-select js-payment-method" placeholder="Choose Payment Method" style="width: 100%">
                   <option value="" disabled selected hidden>Choose Payment Method</option>
                   <option value="paypal">PayPal</option>
                   <option value="webmoney">WebMoney</option>

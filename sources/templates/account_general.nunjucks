@@ -43,7 +43,7 @@
           <div class="panel">
             <div class="panel__title">Instant Messenger</div>
             <div class="field">
-              <select class="js-select">
+              <select class="js-select" style="width: 100%">
                 <option value="scype">Scype</option>
                 <option value="other">Other</option>
               </select>
