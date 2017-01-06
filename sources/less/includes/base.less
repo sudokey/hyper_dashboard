@@ -33,3 +33,17 @@ p {
   line-height: 1.5;
   margin: 0 0 20px;
 }
+
+.hide_sm {
+  @media (max-width: 1279px) {
+    display: none!important;
+  }
+}
+
+.show_sm {
+  display: none!important;
+
+  @media (max-width: 1279px) {
+    display: block!important;
+  }
+}
