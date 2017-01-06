@@ -10,7 +10,7 @@
   margin-bottom: -2px;
 
   .inline__item {
-    margin: 2px;
+    padding: 2px;
   }
 }
 
@@ -19,7 +19,7 @@
   margin-bottom: -4px;
 
   .inline__item {
-    margin: 4px;
+    padding: 4px;
   }
 }
 
@@ -28,7 +28,7 @@
   margin-bottom: -8px;
 
   .inline__item {
-    margin: 8px;
+    padding: 8px;
   }
 }
 
@@ -37,7 +37,7 @@
   margin-bottom: -20px;
 
   .inline__item {
-    margin: 20px;
+    padding: 20px;
   }
 }
 
@@ -45,10 +45,19 @@
   white-space: nowrap;
 }
 
+.inline_table {
+  display: table;
+  width: 100%;
+
+  .inline__item {
+    display: table-cell;
+  }
+}
+
 .inline__item {
   display: inline-block;
   vertical-align: middle;
-  margin: 13px;
+  padding: 13px;
 
   &:first-child {
     margin-left: 0!important;

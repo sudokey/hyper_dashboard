@@ -76,7 +76,7 @@
         </div>
       </div>
 
-      <div class="grid grid_size_4">
+      <div class="grid grid_size_4 grid_md-size_2">
         <div class="grid__section">
           <div class="panel panel_apps">
             <div class="indicator">
@@ -248,7 +248,7 @@
         </div>
       </div>
 
-      <div class="grid grid_size_2">
+      <div class="grid grid_size_2 grid_md-size_1">
         <div class="grid__section">
           <div class="table-panel">
             <div class="table-panel__header">

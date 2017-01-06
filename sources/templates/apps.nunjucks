@@ -39,14 +39,14 @@
 
               <div class="apps-grid__row apps-grid__row_main js-toggle">
                 <div class="apps-grid__section apps-grid__section_name">
-                  <span class="inline inline_size_md">
+                  <span class="inline inline_size_md inline_table">
                     <span class="inline__item">
                       <span class="icon icon_apple"></span>
                     </span>
                     <span class="inline__item">
                       <img class="pick pick_app" src="img/slack.png">
                     </span>
-                    <span class="inline__item">
+                    <span class="inline__item" style="width: 99%">
                       <a href="app_settings.html" class="js-stop-propagation">Slack — Be less busy</a>
                     </span>
                     <span class="inline__item">
@@ -112,14 +112,14 @@
             <div class="apps-grid js-collapsed">
               <div class="apps-grid__row apps-grid__row_main js-toggle">
                 <div class="apps-grid__section apps-grid__section_name">
-                  <span class="inline inline_size_sm">
+                  <span class="inline inline_size_md inline_table">
                     <span class="inline__item">
                       <span class="icon icon_android"></span>
                     </span>
                     <span class="inline__item">
                       <img class="pick pick_app" src="img/evernote.png">
                     </span>
-                    <span class="inline__item">
+                    <span class="inline__item" style="width: 99%">
                       <a href="app_settings.html" class="js-stop-propagation">Evernote</a>
                     </span>
                     <span class="inline__item">
