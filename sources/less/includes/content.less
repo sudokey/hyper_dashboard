@@ -27,7 +27,7 @@
     left: 0;
     overflow: hidden;
     width: 80px;
-    height: 100%;
+    min-height: 100%;
     box-shadow: 1px 0 1px rgba(0,0,0,0.1);
     transition: all 0.2s ease;
 
@@ -39,6 +39,12 @@
       .sidebar__copy {
         opacity: 1;
       }
+
+      .sub-menu {
+        height: auto;
+        padding: 10px 0;
+        opacity: 1;
+      }
     }
 
     .menu-item__label,
@@ -46,6 +52,13 @@
     .sidebar__copy {
       opacity: 0;
       transition: opacity 0.2s ease;
+    }
+
+    .sub-menu {
+      height: 0;
+      padding: 0;
+      opacity: 0;
+      transition: all 0.2s ease;
     }
   }
 }
