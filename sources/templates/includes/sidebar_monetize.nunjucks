@@ -13,7 +13,7 @@
           </a>
         </div>
         <div class="menu-item {% if activePage == 'apps' %} menu-item_active_link {% endif %}">
-          <a class="menu-item__title" href="apps.html">
+          <a class="menu-item__title" href="monetize_apps.html">
             <span class="menu-icon menu-icon_apps"></span>
             <span class="menu-item__label">
               Apps & Placements
@@ -21,7 +21,7 @@
           </a>
         </div>
         <div class="menu-item {% if activePage == 'analytics' %} menu-item_active_link {% endif %}">
-          <a class="menu-item__title" href="analytics.html">
+          <a class="menu-item__title" href="monetize_analytics.html">
             <span class="menu-icon menu-icon_analytics"></span>
             <span class="menu-item__label">
               Analytics
@@ -29,7 +29,7 @@
           </a>
         </div>
         <div class="menu-item {% if activePage == 'referrals' %} menu-item_active_link {% endif %}">
-          <a class="menu-item__title" href="referrals.html">
+          <a class="menu-item__title" href="monetize_referrals.html">
             <span class="menu-icon menu-icon_referrals"></span>
             <span class="menu-item__label">
               Referrals
@@ -47,12 +47,12 @@
           </a>
 
           <div class="sub-menu">
-            <a class="sub-menu__item {% if activePage == 'payment_info' %} sub-menu__item_active {% endif %}" href="payment_info.html">
+            <a class="sub-menu__item {% if activePage == 'payment_info' %} sub-menu__item_active {% endif %}" href="monetize_payment_info.html">
               <span class="menu-item__label">
                 Payment Info
               </span>
             </a>
-            <a class="sub-menu__item {% if activePage == 'payment_history' %} sub-menu__item_active {% endif %}" href="payment_history.html">
+            <a class="sub-menu__item {% if activePage == 'payment_history' %} sub-menu__item_active {% endif %}" href="monetize_payment_history.html">
               <span class="menu-item__label">
                 History
               </span>

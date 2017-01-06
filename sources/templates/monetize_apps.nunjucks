@@ -16,7 +16,7 @@
             <h1 class="title">Apps & Placements</h1>
           </div>
           <div class="pan__section pan__section_right">
-            <a href="create_app.html" class="button button_green">
+            <a href="monetize_create_app.html" class="button button_green">
               <span class="icon icon_plus"></span>
               <span class="button__text">Create New App</span>
             </a>
@@ -31,7 +31,7 @@
               <div class="apps-grid__row apps-grid__row_header">
                 <div class="apps-grid__section apps-grid__section_name">Your Apps</div>
                 <div class="apps-grid__section apps-grid__section_placement">Placement</div>
-                <div class="apps-grid__section apps-grid__section_id">Placement ID</div>
+                <div class="apps-grid__section apps-grid__section_id">Placement&nbsp;ID</div>
                 <div class="apps-grid__section apps-grid__section_integration">Integration</div>
                 <div class="apps-grid__section apps-grid__section_status">Status</div>
                 <div class="apps-grid__section apps-grid__section_count"></div>
@@ -47,15 +47,15 @@
                       <img class="pick pick_app" src="img/slack.png">
                     </span>
                     <span class="inline__item" style="width: 99%">
-                      <a href="app_settings.html" class="js-stop-propagation">Slack — Be less busy</a>
+                      <a href="monetize_app_settings.html" class="js-stop-propagation">Slack — Be less busy</a>
                     </span>
                     <span class="inline__item">
-                      <a href="app_settings.html" class="icon icon_settings js-stop-propagation"></a>
+                      <a href="monetize_app_settings.html" class="icon icon_settings js-stop-propagation"></a>
                     </span>
                   </span>
                 </div>
                 <div class="apps-grid__section apps-grid__section_placement apps-grid__section_placement_full">
-                  <a href="new_placement.html" class="button button_blue button_sm js-stop-propagation">Add Placement</a>
+                  <a href="monetize_new_placement.html" class="button button_blue button_sm js-stop-propagation">Add Placement</a>
                 </div>
                 <div class="apps-grid__section apps-grid__section_count">
                   <div class="inline inline_size_md inline_fixed">
@@ -73,7 +73,7 @@
               <div class="apps-grid__row apps-grid__row_extra">
                 <div class="apps-grid__section apps-grid__section_name"></div>
                 <div class="apps-grid__section apps-grid__section_placement">
-                  <a href="edit_placement.html">newsfeed</a>
+                  <a href="monetize_edit_placement.html">newsfeed</a>
                 </div>
                 <div class="apps-grid__section apps-grid__section_id">Xy3dsdjZD</div>
                 <div class="apps-grid__section apps-grid__section_integration">
@@ -83,14 +83,14 @@
                   <span class="badge badge_green">Active</span>
                 </div>
                 <div class="apps-grid__section apps-grid__section_count">
-                  <a href="edit_placement.html">Edit</a>
+                  <a href="monetize_edit_placement.html">Edit</a>
                 </div>
               </div>
 
               <div class="apps-grid__row apps-grid__row_extra">
                 <div class="apps-grid__section apps-grid__section_name"></div>
                 <div class="apps-grid__section apps-grid__section_placement">
-                  <a href="edit_placement.html">idaprikol native (ios app)</a>
+                  <a href="monetize_edit_placement.html">idaprikol native (ios app)</a>
                 </div>
                 <div class="apps-grid__section apps-grid__section_id">OJ8BVq8m</div>
                 <div class="apps-grid__section apps-grid__section_integration">
@@ -100,7 +100,7 @@
                   <span class="badge badge_green">Active</span>
                 </div>
                 <div class="apps-grid__section apps-grid__section_count">
-                  <a href="edit_placement.html">Edit</a>
+                  <a href="monetize_edit_placement.html">Edit</a>
                 </div>
               </div>
             </div>
@@ -120,15 +120,15 @@
                       <img class="pick pick_app" src="img/evernote.png">
                     </span>
                     <span class="inline__item" style="width: 99%">
-                      <a href="app_settings.html" class="js-stop-propagation">Evernote</a>
+                      <a href="monetize_app_settings.html" class="js-stop-propagation">Evernote</a>
                     </span>
                     <span class="inline__item">
-                      <a href="app_settings.html" class="icon icon_settings"></a>
+                      <a href="monetize_app_settings.html" class="icon icon_settings"></a>
                     </span>
                   </span>
                 </div>
                 <div class="apps-grid__section apps-grid__section_placement apps-grid__section_placement_full">
-                  <a href="new_placement.html" class="button button_blue button_sm js-stop-propagation">Add Placement</a>
+                  <a href="monetize_new_placement.html" class="button button_blue button_sm js-stop-propagation">Add Placement</a>
                 </div>
                 <div class="apps-grid__section apps-grid__section_count">
                   <div class="inline inline_size_md inline_fixed">
@@ -146,7 +146,7 @@
               <div class="apps-grid__row apps-grid__row_extra">
                 <div class="apps-grid__section apps-grid__section_name"></div>
                 <div class="apps-grid__section apps-grid__section_placement">
-                  <a href="edit_placement.html">newsfeed</a>
+                  <a href="monetize_edit_placement.html">newsfeed</a>
                 </div>
                 <div class="apps-grid__section apps-grid__section_id">Xy3dsdjZD</div>
                 <div class="apps-grid__section apps-grid__section_integration">
@@ -156,7 +156,7 @@
                   <span class="badge badge_green">Active</span>
                 </div>
                 <div class="apps-grid__section apps-grid__section_count">
-                  <a href="edit_placement.html">Edit</a>
+                  <a href="monetize_edit_placement.html">Edit</a>
                 </div>
               </div>
             </div>
