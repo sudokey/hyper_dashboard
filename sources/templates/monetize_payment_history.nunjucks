@@ -55,14 +55,40 @@
                     <th>Should Submit</th>
                     <th>Gateway</th>
                     <th>Status</th>
-                    <th data-sorter="false"></th>
+                    <th data-sorter="false">Edit</th>
                   </tr>
                 </thead>
+                <tbody>
+                  <tr>
+                    <td>12.12.2017</td>
+                    <td>$312</td>
+                    <td>$123</td>
+                    <td>$1212</td>
+                    <td><span class="badge badge_green">Active</span></td>
+                    <td><a href="#" class="icon icon_settings"></a></td>
+                  </tr>
+                  <tr>
+                    <td>12.12.2017</td>
+                    <td>$312</td>
+                    <td>$123</td>
+                    <td>$1212</td>
+                    <td><span class="badge">Disabled</span></td>
+                    <td><a href="#" class="icon icon_settings"></a></td>
+                  </tr>
+                  <tr>
+                    <td>12.12.2017</td>
+                    <td>$312</td>
+                    <td>$123</td>
+                    <td>$1212</td>
+                    <td><span class="badge badge_green">Active</span></td>
+                    <td><a href="#" class="icon icon_settings"></a></td>
+                  </tr>
+                </tbody>
               </table>
             </div>
-            <div class="table-wrapper__empty">
+            <!--<div class="table-wrapper__empty">
               No Payments Found.
-            </div>
+            </div>-->
           </div>
         </div>
       </div>

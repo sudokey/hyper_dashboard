@@ -45,9 +45,8 @@
                       <div class="popover__content popover__content_bottom-left">
                         <div class="panel panel_md panel_popover">
                           <div class="field field_md">
-                            <div class="select2-wrapper select2-wrapper_sm">
-                              <select class="js-filter-select" style="width: 300px" placeholder="Placement">
-                                <option value="" disabled selected>Placement</option>
+                            <div class="">
+                              <select class="js-filter-select" style="width: 300px" placeholder="Placement" multiple>
                                 <option value="test">Test</option>
                                 <option value="lorem">Lorem ipsum dolor sit amet.</option>
                               </select>
