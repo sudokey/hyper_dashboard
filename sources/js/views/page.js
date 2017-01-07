@@ -27,7 +27,17 @@
         return new window.app.SelectView({ el: el });
       });
 
+      this.filterSelects = this.$('.js-filter-select').map(function (i, el) {
+        return $(el).select2({
+          placeholder: $(el).attr('placeholder')
+        });
+      });
+
       $('.js-stop-propagation').on('click', function (e) {
+        e.stopPropagation();
+      });
+
+      $(document).on('click', '.select2-selection__choice__remove', function (e) {
         e.stopPropagation();
       });
 

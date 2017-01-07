@@ -45,28 +45,30 @@
                       <div class="popover__content popover__content_bottom-left">
                         <div class="panel panel_md panel_popover">
                           <div class="field field_md">
-                            <div class="">
-                              <select class="js-filter-select" style="width: 300px" placeholder="Placement" multiple>
-                                <option value="test">Test</option>
-                                <option value="lorem">Lorem ipsum dolor sit amet.</option>
-                              </select>
+                            <select class="js-filter-select" style="width: 300px" placeholder="Placement" multiple>
+                              <option value="test">Test</option>
+                              <option value="lorem">Lorem ipsum</option>
+                              <option value="lorem">Lorem ipsum dolor</option>
+                              <option value="lorem">Lorem ipsum dolor sit amet</option>
+                            </select>
+                          </div>
+                          <div class="field field_md">
+                            <div class="select2-wrapper select2-wrapper_sm">
+                              <select class="js-filter-select" style="width: 300px" placeholder="App" multiple>
+                              <option value="test">Test</option>
+                              <option value="lorem">Lorem ipsum</option>
+                              <option value="lorem">Lorem ipsum dolor</option>
+                              <option value="lorem">Lorem ipsum dolor sit amet</option>
+                            </select>
                             </div>
                           </div>
                           <div class="field field_md">
                             <div class="select2-wrapper select2-wrapper_sm">
-                              <select class="js-filter-select" style="width: 300px" placeholder="App">
-                                <option value="" disabled selected>App</option>
+                              <select class="js-filter-select" style="width: 300px" placeholder="Country" multiple>
                                 <option value="test">Test</option>
-                                <option value="lorem">Lorem ipsum dolor sit amet.</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="field field_md">
-                            <div class="select2-wrapper select2-wrapper_sm">
-                              <select class="js-filter-select" style="width: 300px" placeholder="Country">
-                                <option value="" disabled selected>Country</option>
-                                <option value="test">Test</option>
-                                <option value="lorem">Lorem ipsum dolor sit amet.</option>
+                                <option value="lorem">Lorem ipsum</option>
+                                <option value="lorem">Lorem ipsum dolor</option>
+                                <option value="lorem">Lorem ipsum dolor sit amet</option>
                               </select>
                             </div>
                           </div>

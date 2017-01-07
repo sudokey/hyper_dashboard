@@ -122,14 +122,51 @@
                       <h3 class="title title_size_md">Perfomance</h3>
                     </div>
                     <div class="inline__item">
-                      <button class="button button_bordered_blue button_small">
-                        <span class="button__icon">
-                          <span class="icon icon_plus-blue"></span>
-                          <span class="icon icon_plus"></span>
-                        </span>
-                        <span class="button__text">Add Filters</span>
-                        <span class="badge">6</span>
-                      </button>
+                      <div class="popover js-popover">
+                        <div class="popover__toggler">
+                          <button class="button button_bordered_blue button_small js-popover-toggle">
+                            <span class="button__icon">
+                              <span class="icon icon_plus-blue"></span>
+                              <span class="icon icon_plus"></span>
+                            </span>
+                            <span class="button__text">Add Filters</span>
+                            <span class="badge">6</span>
+                          </button>
+                        </div>
+
+                        <div class="popover__content popover__content_bottom-left">
+                          <div class="panel panel_md panel_popover">
+                            <div class="field field_md">
+                              <select class="js-filter-select" style="width: 300px" placeholder="Placement" multiple>
+                                <option value="test">Test</option>
+                                <option value="lorem">Lorem ipsum</option>
+                                <option value="lorem">Lorem ipsum dolor</option>
+                                <option value="lorem">Lorem ipsum dolor sit amet</option>
+                              </select>
+                            </div>
+                            <div class="field field_md">
+                              <div class="select2-wrapper select2-wrapper_sm">
+                                <select class="js-filter-select" style="width: 300px" placeholder="App" multiple>
+                                <option value="test">Test</option>
+                                <option value="lorem">Lorem ipsum</option>
+                                <option value="lorem">Lorem ipsum dolor</option>
+                                <option value="lorem">Lorem ipsum dolor sit amet</option>
+                              </select>
+                              </div>
+                            </div>
+                            <div class="field field_md">
+                              <div class="select2-wrapper select2-wrapper_sm">
+                                <select class="js-filter-select" style="width: 300px" placeholder="Country" multiple>
+                                  <option value="test">Test</option>
+                                  <option value="lorem">Lorem ipsum</option>
+                                  <option value="lorem">Lorem ipsum dolor</option>
+                                  <option value="lorem">Lorem ipsum dolor sit amet</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

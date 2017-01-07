@@ -11,13 +11,6 @@
       this.tabsRangeView = new app.TabsView({ el: '.js-tabs-range' });
       this.groupSelectTagsView = new app.SelectTagsView({ el: '.js-select-tags' });
       this.tableSettingsPopoverView = new app.PopoverView({ el: '.js-table-settings-popover' });
-
-      this.filters = this.$('.js-filter-select').map(function (i, el) {
-        return $(el).select2({
-          placeholder: $(el).attr('placeholder')
-        });
-      });
-
       this.$('.js-tablesorter').tablesorter();
     }
   });
