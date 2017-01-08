@@ -161,156 +161,162 @@
                 </div>
                 <div class="popover__content popover__content_bottom-right">
                   <div class="panel panel_popover panel_settings">
-                    <div class="panel__title">Metrics</div>
+                    <div class="inline inline_fixed inline_vat inline_size_lg">
+                      <div class="inline__item">
+                        <div class="panel__title">Calculations</div>
 
-                    <div class="panel__section">
-                      <label class="checkbox">
-                        <input type="checkbox" checked>
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">Requests</span>
-                        </span>
-                      </label>
+                        <div class="panel__section">
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">CTR</span>
+                            </span>
+                          </label>
 
-                      <label class="checkbox">
-                        <input type="checkbox" checked>
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">Served</span>
-                        </span>
-                      </label>
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">CR</span>
+                            </span>
+                          </label>
 
-                      <label class="checkbox">
-                        <input type="checkbox" checked>
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">Impr.</span>
-                        </span>
-                      </label>
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">Uniq CR.</span>
+                            </span>
+                          </label>
 
-                      <label class="checkbox">
-                        <input type="checkbox">
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">Clicks</span>
-                        </span>
-                      </label>
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">CPM</span>
+                            </span>
+                          </label>
 
-                      <label class="checkbox">
-                        <input type="checkbox">
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">Unt. Clicks</span>
-                        </span>
-                      </label>
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">eCPM</span>
+                            </span>
+                          </label>
 
-                      <label class="checkbox">
-                        <input type="checkbox">
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">Uniq. Clicks</span>
-                        </span>
-                      </label>
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">eCPC</span>
+                            </span>
+                          </label>
 
-                      <label class="checkbox">
-                        <input type="checkbox">
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">Conv</span>
-                        </span>
-                      </label>
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">eCPA</span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
 
-                      <label class="checkbox">
-                        <input type="checkbox">
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">Goals</span>
-                        </span>
-                      </label>
+                      <div class="inline__item">
+                        <div class="panel__title">Metrics</div>
 
-                      <label class="checkbox">
-                        <input type="checkbox">
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">Revenue</span>
-                        </span>
-                      </label>
+                        <div class="panel__section">
+                          <label class="checkbox">
+                            <input type="checkbox" checked>
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">Requests</span>
+                            </span>
+                          </label>
 
-                      <label class="checkbox">
-                        <input type="checkbox">
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">Payout</span>
-                        </span>
-                      </label>
+                          <label class="checkbox">
+                            <input type="checkbox" checked>
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">Served</span>
+                            </span>
+                          </label>
 
-                      <label class="checkbox">
-                        <input type="checkbox">
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">Profit</span>
-                        </span>
-                      </label>
-                    </div>
+                          <label class="checkbox">
+                            <input type="checkbox" checked>
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">Impr.</span>
+                            </span>
+                          </label>
 
-                    <div class="panel__title">Calculations</div>
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">Clicks</span>
+                            </span>
+                          </label>
 
-                    <div class="panel__section">
-                      <label class="checkbox">
-                        <input type="checkbox">
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">CTR</span>
-                        </span>
-                      </label>
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">Unt. Clicks</span>
+                            </span>
+                          </label>
 
-                      <label class="checkbox">
-                        <input type="checkbox">
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">CR</span>
-                        </span>
-                      </label>
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">Uniq. Clicks</span>
+                            </span>
+                          </label>
 
-                      <label class="checkbox">
-                        <input type="checkbox">
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">Uniq CR.</span>
-                        </span>
-                      </label>
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">Conv</span>
+                            </span>
+                          </label>
 
-                      <label class="checkbox">
-                        <input type="checkbox">
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">CPM</span>
-                        </span>
-                      </label>
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">Goals</span>
+                            </span>
+                          </label>
 
-                      <label class="checkbox">
-                        <input type="checkbox">
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">eCPM</span>
-                        </span>
-                      </label>
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">Revenue</span>
+                            </span>
+                          </label>
 
-                      <label class="checkbox">
-                        <input type="checkbox">
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">eCPC</span>
-                        </span>
-                      </label>
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">Payout</span>
+                            </span>
+                          </label>
 
-                      <label class="checkbox">
-                        <input type="checkbox">
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">eCPA</span>
-                        </span>
-                      </label>
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">Profit</span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
