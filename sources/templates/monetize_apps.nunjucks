@@ -31,7 +31,8 @@
               <div class="apps-grid__row apps-grid__row_header">
                 <div class="apps-grid__section apps-grid__section_name">Your Apps</div>
                 <div class="apps-grid__section apps-grid__section_placement">Placement</div>
-                <div class="apps-grid__section apps-grid__section_id">Placement&nbsp;ID</div>
+                <div class="apps-grid__section apps-grid__section_id">Placement ID</div>
+                <div class="apps-grid__section apps-grid__section_type">Placement type</div>
                 <div class="apps-grid__section apps-grid__section_integration">Integration</div>
                 <div class="apps-grid__section apps-grid__section_status">Status</div>
                 <div class="apps-grid__section apps-grid__section_count"></div>
@@ -75,7 +76,12 @@
                 <div class="apps-grid__section apps-grid__section_placement">
                   <a href="monetize_edit_placement.html">newsfeed</a>
                 </div>
-                <div class="apps-grid__section apps-grid__section_id">Xy3dsdjZD</div>
+                <div class="apps-grid__section apps-grid__section_id">
+                  Xy3dsdjZD
+                </div>
+                <div class="apps-grid__section apps-grid__section_type">
+                  Native
+                </div>
                 <div class="apps-grid__section apps-grid__section_integration">
                   <a href="#">Tag & SDK</a>
                 </div>
@@ -92,7 +98,12 @@
                 <div class="apps-grid__section apps-grid__section_placement">
                   <a href="monetize_edit_placement.html">idaprikol native (ios app)</a>
                 </div>
-                <div class="apps-grid__section apps-grid__section_id">OJ8BVq8m</div>
+                <div class="apps-grid__section apps-grid__section_id">
+                  OJ8BVq8m
+                </div>
+                <div class="apps-grid__section apps-grid__section_type">
+                  Video
+                </div>
                 <div class="apps-grid__section apps-grid__section_integration">
                   <a href="#">Tag & SDK</a>
                 </div>
@@ -148,7 +159,12 @@
                 <div class="apps-grid__section apps-grid__section_placement">
                   <a href="monetize_edit_placement.html">newsfeed</a>
                 </div>
-                <div class="apps-grid__section apps-grid__section_id">Xy3dsdjZD</div>
+                <div class="apps-grid__section apps-grid__section_id">
+                  Xy3dsdjZD
+                </div>
+                <div class="apps-grid__section apps-grid__section_type">
+                  Video
+                </div>
                 <div class="apps-grid__section apps-grid__section_integration">
                   <a href="#">Tag & SDK</a>
                 </div>
