@@ -3,19 +3,19 @@
   border-collapse: collapse;
 
   th {
-    padding: 0 0 10px;
+    padding: 0 0 1rem;
     font-weight: normal;
     text-align: left;
     color: @gray;
   }
 
   td {
-    padding: 3px 0;
+    padding: 0.3rem 0;
   }
 
   td, th {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 
     &:first-child {
       padding-left: 0;
@@ -47,9 +47,9 @@
       &:after {
         content: '';
         display: inline-block;
-        width: 5px;
-        height: 11px;
-        margin: 0 0 0 10px;
+        width: 0.5rem;
+        height: 1.1rem;
+        margin: 0 0 0 1rem;
         background: data-uri('../img/icon_sort.png') center center no-repeat;
       }
     }
@@ -73,17 +73,17 @@
 
   td, th {
     position: relative;
-    height: 60px;
+    height: 6rem;
     padding-top: 0;
     padding-bottom: 0;
     white-space: nowrap;
 
     &:first-child {
-      padding-left: 15px;
+      padding-left: 1.5rem;
     }
 
     &:last-child {
-      padding-right: 15px;
+      padding-right: 1.5rem;
     }
   }
 
@@ -106,14 +106,14 @@
 
 .table-wrapper__settings {
   position: absolute;
-  top: 14px;
+  top: 1.4rem;
   right: 0;
 }
 
 .table-wrapper__empty {
-  padding: 80px 0;
+  padding: 8rem 0;
   border-top: 1px solid #f1f6f8;
   text-align: center;
-  font-size: 20px;
+  font-size: 2rem;
   color: @gray;
 }
