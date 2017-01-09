@@ -1,26 +1,120 @@
 .daterange {
-  display: inline-block;
-  vertical-align: top;
-  white-space: nowrap;
+  .panel {
+    padding: 0;
+  }
 }
 
-.daterange__ctrl {
-  display: inline-block;
-  vertical-align: top;
+.daterange_extra {
+  .daterange__list {
+    padding-left: 30rem;
+    padding-right: 30rem;
+  }
+
+  .daterange__date-start,
+  .daterange__date-end,
+  .daterange__cancel,
+  .daterange__dates {
+    opacity: 1;
+    z-index: 0;
+    transition: opacity 0.5s ease, z-index 0s linear 0s;
+  }
+
+  .daterange__submit {
+    .button {
+      width: 8rem;
+    }
+  }
 }
 
-.daterange__ctrl_left {
-  padding-right: 2.5rem;
-  border-right: 1px solid @menu-hover-color;
-  margin-right: -1px;
+.daterange__list {
+  width: 14rem;
+  padding: 3rem 4rem 3rem;
+  transition: padding 0.5s ease;
+
+  .button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    height: 2.8rem;
+    margin: 0 0 1rem;
+    font-weight: normal;
+    font-size: 1.1rem;
+    border-radius: 100px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
-.daterange__ctrl_right {
-  padding-left: 2.5rem;
-  border-left: 1px solid @menu-hover-color;
+.daterange__date-start,
+.daterange__date-end {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.5s ease, z-index 0s linear 0.5s;
 }
 
-.daterange__actions {
-  margin: 2rem 0 0;
-  text-align: center;
+.daterange__date-start {
+  top: 3rem;
+  left: 3rem;
+}
+
+.daterange__date-end {
+  top: 3rem;
+  right: 3rem;
+}
+
+.daterange__footer {
+  position: relative;
+  height: 8rem;
+  border-radius: 0 0 0.8rem;
+  background: #f8fafb;
+}
+
+.daterange__cancel {
+  position: absolute;
+  left: 4rem;
+  top: 50%;
+  margin-top: -0.5em;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.5s ease, z-index 0s linear 0.5s;
+}
+
+.daterange__dates {
+  position: absolute;
+  left: 50%;
+  top: 2rem;
+  width: 31rem;
+  margin-left: -15.5rem;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.5s ease, z-index 0s linear 0.5s;
+
+  .field {
+    display: inline-block;
+    vertical-align: middle;
+    width: 14rem;
+    margin: 0;
+  }
+
+  .field__data {
+    height: 4rem;
+    line-height: 3.8rem;
+  }
+}
+
+.daterange__submit {
+  position: absolute;
+  right: 4rem;
+  top: 50%;
+  margin-top: -2rem;
+
+  .button {
+    height: 4rem;
+    width: 14rem;
+    padding: 0;
+    transition: width 0.5s ease;
+  }
 }
