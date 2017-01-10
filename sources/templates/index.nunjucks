@@ -178,48 +178,7 @@
                 </div>
 
                 <div class="pan__section pan__section_right">
-                  <div class="popover js-popover">
-                    <a class="popover__toggler js-popover-toggle" href="javascript:void(0)">15.10.2016 — 22.10.2016</a>
-
-                    <div class="popover__content popover__content_bottom-right">
-                      <div class="daterange js-datarange">
-                        <div class="panel panel_popover">
-                          <div class="daterange__date-start">
-                            <div class="datepicker js-date-start"></div>
-                          </div>
-                          <div class="daterange__list">
-                            <button class="button button_bordered_blue">Today</button>
-                            <button class="button button_bordered_blue">Yesterday</button>
-                            <button class="button button_bordered_blue">Last 7 Days</button>
-                            <button class="button button_bordered_blue">Last 30 Days</button>
-                            <button class="button button_bordered_blue">This Month</button>
-                            <button class="button button_bordered_blue">Last Month</button>
-                            <button class="button button_bordered_blue js-toggle-daterange">Custom Range</button>
-                          </div>
-                          <div class="daterange__date-end">
-                            <div class="datepicker js-date-end"></div>
-                          </div>
-                          <div class="daterange__footer">
-                            <div class="daterange__cancel">
-                              <a href="javascript:void(0)">Cancel</a>
-                            </div>
-                            <div class="daterange__dates">
-                              <div class="field">
-                                <input type="text" class="field__data">
-                              </div>
-                              —
-                              <div class="field">
-                                <input type="text" class="field__data">
-                              </div>
-                            </div>
-                            <div class="daterange__submit">
-                              <button class="button button_blue">Show</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <a class="js-daterange" href="javascript:void(0)"></a>
                 </div>
               </div>
             </div>

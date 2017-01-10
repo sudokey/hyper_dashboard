@@ -33,6 +33,10 @@
         });
       });
 
+      this.daterangeViews = this.$('.js-daterange').map(function (i, el) {
+        return new app.DaterangeView({ el: el });
+      });
+
       $('.js-stop-propagation').on('click', function (e) {
         e.stopPropagation();
       });

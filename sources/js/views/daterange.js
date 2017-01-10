@@ -2,32 +2,34 @@
   'use strict';
 
   window.app.DaterangeView = Backbone.View.extend({
-    events: {
-      'click .js-toggle-daterange': 'toggle'
-    },
-
     initialize: function () {
       this.render();
     },
 
     render: function () {
-      rome(this.$('.js-date-start')[0], {
-        time: false,
-        monthFormat: 'MMM YYYY',
-        dateValidator: rome.val.beforeEq(this.$('.js-date-end')[0])
-      });
+      var startDate = moment().subtract(29, 'days');
+      var endDate = moment();
+      var _this = this;
 
-      rome(this.$('.js-date-end')[0], {
-        time: false,
-        monthFormat: 'MMM YYYY',
-        dateValidator: rome.val.afterEq(this.$('.js-date-start')[0]),
-        max: new Date()
-      });
-    },
+      var cb = function (endDate, startDate) {
+        _this.$el.html(startDate.format('DD.MM.YYYY') + ' — ' + endDate.format('DD.MM.YYYY'));
+      };
 
-    toggle: function () {
-      this.$el.toggleClass('daterange_extra');
-      this.$('.js-toggle-daterange').toggleClass('active');
+      this.$el.daterangepicker({
+        opens: 'left',
+        startDate: startDate,
+        endDate: endDate,
+        ranges: {
+          'Today': [moment(), moment()],
+          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+      }, cb);
+
+      cb(startDate, endDate);
     }
   });
 })();

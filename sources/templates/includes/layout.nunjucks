@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Hyper Dashboard</title>
 
-  <link rel="stylesheet" href="vendor/rome/rome.min.css">
   <link rel="stylesheet" href="vendor/select2/css/select2.min.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
@@ -24,11 +23,11 @@
   <script src="vendor/underscore/underscore-min.js"></script>
   <script src="vendor/backbone/backbone-min.js"></script>
   <script src="vendor/moment/moment.min.js"></script>
-  <script src="vendor/rome/rome.standalone.min.js"></script>
   <script src="vendor/chart_js/Chart.min.js"></script>
   <script src="vendor/select2/js/select2.min.js"></script>
   <script src="vendor/clipboard/clipboard.min.js"></script>
   <script src="vendor/tablesorter/js/jquery.tablesorter.min.js"></script>
+  <script src="vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
 
   <script src="js/app.js"></script>
   <script src="js/config/chart.js"></script>
