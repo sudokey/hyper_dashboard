@@ -25,25 +25,81 @@
           <a href="account_general.html" class="{% if activeSection == 'account' %} active {% endif %}">Account</a>
         </div>
         <div class="inline__item hide_sm">
-          <div class="get-started-progress">
-            <div class="get-started-progress__title">
-              <div class="inline">
-                <div class="inline__item">Getting Started</div>
-                <div class="inline__item get-started-progress__steps">1/4</div>
+          <div class="popover js-popover">
+            <div class="popover__toggler js-popover-toggle">
+              <div class="get-started-progress">
+                <div class="get-started-progress__title">
+                  <div class="inline">
+                    <div class="inline__item">Getting Started</div>
+                    <div class="inline__item get-started-progress__steps">1/4</div>
+                  </div>
+                </div>
+                <div class="get-started-progress__status">
+                  <div class="progress-bar">
+                    <div class="progress-bar__indicator"></div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="get-started-progress__status">
-              <div class="progress-bar">
-                <div class="progress-bar__indicator"></div>
+            <div class="popover__content popover__content_bottom-right">
+              <div class="panel panel_popover">
+                <div class="get-started">
+                  <label class="checkbox">
+                    <input type="checkbox" checked>
+                    <span class="checkbox__content">
+                      <span class="checkbox__ctrl"></span>
+                      <span class="checkbox__label">Integrate the SDK</span>
+                    </span>
+                    <div class="checkbox__hint">Integrate the AppLovin SDK to monetize your app today. It can also be used to track installs for User Acquisition.</div>
+                  </label>
+
+                  <label class="checkbox">
+                    <input type="checkbox" checked>
+                    <span class="checkbox__content">
+                      <span class="checkbox__ctrl"></span>
+                      <span class="checkbox__label">Display your Advertisements</span>
+                    </span>
+                    <div class="checkbox__hint">Show your very first ads and start monetizing.</div>
+                  </label>
+
+                  <label class="checkbox">
+                    <input type="checkbox" checked>
+                    <span class="checkbox__content">
+                      <span class="checkbox__ctrl"></span>
+                      <span class="checkbox__label">Create your first Campaign</span>
+                    </span>
+                    <div class="checkbox__hint">Start promoting your apps in minutes with a few simple clicks.</div>
+                  </label>
+
+                  <label class="checkbox">
+                    <input type="checkbox" checked>
+                    <span class="checkbox__content">
+                      <span class="checkbox__ctrl"></span>
+                      <span class="checkbox__label">Fund your Account</span>
+                    </span>
+                    <div class="checkbox__hint">Add funds in order to launch your campaigns.</div>
+                  </label>
+                </div>
+
+                <div class="panel__footer">
+                  <span class="inline inline_size_md cursor">
+                    <span class="inline__item">
+                      <span class="icon icon_set-default"></span>
+                    </span>
+                    <span class="inline__item">
+                      Don’t show this again
+                    </span>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="inline__item hide_sm">
-          <a href="#" class="logout-button"></a>
-        </div>
         <div class="inline__item show_sm">
           <a href="#">Logout</a>
+        </div>
+        <div class="inline__item hide_sm">
+          <a href="#" class="logout-button"></a>
         </div>
       </div>
     </div>
