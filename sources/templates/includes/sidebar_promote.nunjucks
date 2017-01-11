@@ -12,6 +12,30 @@
             </span>
           </a>
         </div>
+
+        <div class="menu-item js-collapsed {% if activePage == 'campaign_reporting' or activePage == 'cohort_reporting' %} menu-item_active_no-link active {% endif %}">
+          <a href="javascript:void(0)" class="menu-item__title js-toggle">
+            <span class="menu-icon menu-icon_analytics"></span>
+            <span class="menu-item__label">
+              Performance
+              <span class="icon icon_cursor icon_cursor_right"></span>
+              <span class="icon icon_cursor icon_cursor_down"></span>
+            </span>
+          </a>
+
+          <div class="sub-menu">
+            <a class="sub-menu__item {% if activePage == 'campaign_reporting' %} sub-menu__item_active {% endif %}" href="promote_campaign_reporting.html">
+              <span class="menu-item__label">
+                Campaign Reporting
+              </span>
+            </a>
+            <a class="sub-menu__item {% if activePage == 'cohort_reporting' %} sub-menu__item_active {% endif %}" href="promote_cohort_reporting.html">
+              <span class="menu-item__label">
+                Cohort Reporting
+              </span>
+            </a>
+          </div>
+        </div>
       </nav>
     </div>
 

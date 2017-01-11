@@ -64,11 +64,11 @@
     background: @blue;
     color: #fff;
 
-    .icon_plus {
+    .icon_white {
       opacity: 1;
     }
 
-    .icon_plus-blue {
+    .icon_blue {
       opacity: 0;
     }
   }
@@ -77,11 +77,11 @@
     transition: opacity 0.2s ease;
   }
 
-  .icon_plus {
+  .icon_white {
     opacity: 0;
   }
 
-  .icon_plus-blue {
+  .icon_blue {
     opacity: 1;
   }
 
@@ -98,11 +98,17 @@
 }
 
 .button_small {
-  min-height: 3.4rem;
-  padding: 0.7rem 1rem;
+  height: 3.7rem;
+  line-height: 3.2rem;
+  padding: 0 1.5rem;
   font-size: 1.3rem;
   font-weight: normal;
   text-transform: capitalize;
+
+  strong {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
 }
 
 .button_sm {

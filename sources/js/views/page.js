@@ -23,8 +23,15 @@
         return new window.app.TabsView({ el: el });
       });
 
-      this.selectViews = this.$('.js-select').map(function (i, el) {
-        return new window.app.SelectView({ el: el });
+      this.tablesorters = this.$('.js-tablesorter').map(function (i, el) {
+        return $(el).tablesorter();
+      });
+
+      this.selects = this.$('.js-select').map(function (i, el) {
+        return $(el).select2({
+          minimumResultsForSearch: Infinity,
+          placeholder: $(el).attr('placeholder')
+        });
       });
 
       this.filterSelects = this.$('.js-filter-select').map(function (i, el) {

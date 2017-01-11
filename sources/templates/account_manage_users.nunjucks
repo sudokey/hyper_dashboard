@@ -17,7 +17,7 @@
           </div>
           <div class="pan__section pan__section_right">
             <a href="account_create_new_user.html" class="button button_green">
-              <span class="icon icon_plus"></span>
+              <span class="icon icon_plus icon_white"></span>
               <span class="button__text">Add more users</span>
             </a>
           </div>

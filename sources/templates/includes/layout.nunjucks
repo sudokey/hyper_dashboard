@@ -36,7 +36,6 @@
   <script src="js/views/tabs.js"></script>
   <script src="js/views/popup.js"></script>
   <script src="js/views/collapsed.js"></script>
-  <script src="js/views/select.js"></script>
   <script src="js/views/select_tags.js"></script>
   <script src="js/views/perfomance_chart.js"></script>
   <script src="js/views/page.js"></script>

@@ -1,0 +1,51 @@
+<div class="popover js-popover">
+  <div class="popover__toggler">
+    <button class="button button_bordered_blue button_small js-popover-toggle">
+      <span class="button__icon">
+        <span class="icon icon_plus icon_blue"></span>
+        <span class="icon icon_plus icon_white"></span>
+      </span>
+      <span class="button__text">Add Filters</span>
+      <span class="badge">6</span>
+    </button>
+  </div>
+
+  <div class="popover__content popover__content_bottom-left">
+    <div class="panel panel_md panel_popover">
+      <div class="field field_md">
+        <div class="filter-select-wrapper">
+          <select class="js-filter-select" style="width: 300px" placeholder="Placement" multiple>
+            <option value="test">Test</option>
+            <option value="lorem">Lorem ipsum</option>
+            <option value="lorem">Lorem ipsum dolor</option>
+            <option value="lorem">Lorem ipsum dolor sit amet</option>
+          </select>
+        </div>
+      </div>
+      <div class="field field_md">
+        <div class="select2-wrapper select2-wrapper_sm">
+          <div class="filter-select-wrapper">
+            <select class="js-filter-select" style="width: 300px" placeholder="App" multiple>
+              <option value="test">Test</option>
+              <option value="lorem">Lorem ipsum</option>
+              <option value="lorem">Lorem ipsum dolor</option>
+              <option value="lorem">Lorem ipsum dolor sit amet</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="field field_md">
+        <div class="select2-wrapper select2-wrapper_sm">
+          <div class="filter-select-wrapper">
+            <select class="js-filter-select" style="width: 300px" placeholder="Country" multiple>
+              <option value="test">Test</option>
+              <option value="lorem">Lorem ipsum</option>
+              <option value="lorem">Lorem ipsum dolor</option>
+              <option value="lorem">Lorem ipsum dolor sit amet</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
