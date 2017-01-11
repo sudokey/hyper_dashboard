@@ -11,7 +11,7 @@
       var endDate = moment();
       var _this = this;
 
-      var cb = function (endDate, startDate) {
+      var cb = function (startDate, endDate) {
         _this.$el.html(startDate.format('DD.MM.YYYY') + ' — ' + endDate.format('DD.MM.YYYY'));
       };
 

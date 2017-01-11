@@ -1,0 +1,243 @@
+{% set activeSection = 'promote' %}
+{% set activePage = 'cohort_reporting' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_promote.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <div class="pan">
+          <div class="pan__section pan__section_left">
+            <h1 class="title">Cohort Reporting</h1>
+          </div>
+
+          <div class="pan__section pan__section_right">
+            <a href="promote_create_campaing.html" class="button button_green">
+              <span class="icon icon_plus icon_white"></span>
+              <span class="button__text">Create Campaing</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__section">
+        <div class="table-panel">
+          <div class="table-panel__header">
+            {% include "perfomance_filters.nunjucks" %}
+          </div>
+
+          <div class="table-wrapper">
+            <div class="table-wrapper__settings">
+              <div class="popover js-popover">
+                <div class="popover__toggler js-popover-toggle">
+                  <span class="icon icon_settings"></span>
+                </div>
+
+                <div class="popover__content popover__content_bottom-right">
+                  <div class="panel panel_popover panel_settings">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Date</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Imp</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Clicks</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Spend</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Conv</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Goals</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Deposits</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Revenue</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="table-wrapper__inner">
+              <table class="table table_data js-tablesorter">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th data-sorter="false">Imp</th>
+                    <th data-sorter="false">Clicks</th>
+                    <th data-sorter="false">Spend</th>
+                    <th data-sorter="false">Conv</th>
+                    <th data-sorter="false">Goals</th>
+                    <th data-sorter="false">Deposit</th>
+                    <th data-sorter="false">Revenue</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>24.12.2016</td>
+                    <td>1.3M</td>
+                    <td>87k</td>
+                    <td>$2.534</td>
+                    <td>8.700</td>
+                    <td>15.403</td>
+                    <td>35</td>
+                    <td>35</td>
+                  </tr>
+                  <tr>
+                    <td>24.12.2016</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>8.700</td>
+                    <td>15.403</td>
+                    <td>35</td>
+                    <td>35</td>
+                  </tr>
+                  <tr>
+                    <td>24.12.2016</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>8.700</td>
+                    <td>15.403</td>
+                    <td>35</td>
+                    <td>35</td>
+                  </tr>
+                  <tr>
+                    <td>24.12.2016</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>8.700</td>
+                    <td>15.403</td>
+                    <td>35</td>
+                    <td>35</td>
+                  </tr>
+                  <tr>
+                    <td>24.12.2016</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>15.403</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>24.12.2016</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>35</td>
+                    <td>35</td>
+                  </tr>
+                  <tr>
+                    <td>24.12.2016</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>8.700</td>
+                    <td>15.403</td>
+                    <td>35</td>
+                    <td>35</td>
+                  </tr>
+                  <tr>
+                    <td>24.12.2016</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>8.700</td>
+                    <td>15.403</td>
+                    <td>35</td>
+                    <td>35</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td></td>
+                    <td><strong>1.3M</strong></td>
+                    <td><strong>87k</strong></td>
+                    <td><strong>$2.534</strong></td>
+                    <td><strong>8.700</strong></td>
+                    <td><strong>15.403</strong></td>
+                    <td><strong>35</strong></td>
+                    <td><strong>35</strong></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="paggination">
+          <span class="paggination__item paggination__item_active">1</span>
+          <a href="#" class="paggination__item">2</a>
+          <a href="#" class="paggination__item">3</a>
+          <a href="#" class="paggination__item">4</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    (function () {
+      'use strict';
+
+      var page = new window.app.PageView();
+    })();
+  </script>
+{% endblock %}
