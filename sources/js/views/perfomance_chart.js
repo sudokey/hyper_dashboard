@@ -2,7 +2,9 @@
   'use strict';
 
   window.app.PerfomanceChartView = Backbone.View.extend({
-    initialize: function () {
+    initialize: function (options) {
+      this.impressionsColors = options.impressionsColors || ['rgba(38,183,254,1)', 'rgba(19,202,102,0)'];
+      this.adRevenueColors = options.adRevenueColors || ['rgba(255,120,73,1)', 'rgba(255,200,44,0)'];
       this.render();
     },
 
@@ -10,12 +12,12 @@
       var ctx = this.el.getContext('2d');
 
       var impressionsGradient = ctx.createLinearGradient(0, 0, 0, 300);
-      impressionsGradient.addColorStop(0, 'rgba(38,183,254,1)');
-      impressionsGradient.addColorStop(1, 'rgba(19,202,102,0)');
+      impressionsGradient.addColorStop(0, this.impressionsColors[0]);
+      impressionsGradient.addColorStop(1, this.impressionsColors[1]);
 
       var adRevenueGradient = ctx.createLinearGradient(0, 0, 0, 300);
-      adRevenueGradient.addColorStop(0, 'rgba(255,120,73,1)');
-      adRevenueGradient.addColorStop(1, 'rgba(255,200,44,0)');
+      adRevenueGradient.addColorStop(0, this.adRevenueColors[0]);
+      adRevenueGradient.addColorStop(1, this.adRevenueColors[1]);
 
       var data = {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],

@@ -43,3 +43,17 @@
     border-color: @black transparent transparent transparent;
   }
 }
+
+.tooltip__content_bottom {
+  bottom: auto;
+  top: 100%;
+  margin-bottom: 0;
+  margin-top: 1rem;
+
+  &:after {
+    top: auto;
+    bottom: 100%;
+    border-width: 0 0.5rem 0.5rem 0.5rem;
+    border-color: transparent transparent @black transparent;
+  }
+}

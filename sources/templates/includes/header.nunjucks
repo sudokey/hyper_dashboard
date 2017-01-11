@@ -7,7 +7,7 @@
     <div class="header__section header__section_nav">
       <nav class="nav">
         <a class="nav__item {% if activeSection == 'monetize' %} nav__item_active {% endif %}" href="index.html">Monetize</a>
-        <a class="nav__item {% if activeSection == 'promote' %} nav__item_active {% endif %}" href="#">Promote</a>
+        <a class="nav__item {% if activeSection == 'promote' %} nav__item_active {% endif %}" href="promote_dashboard.html">Promote</a>
         <a class="nav__item {% if activeSection == 'segments' %} nav__item_active {% endif %}" href="#">Segments</a>
         <a class="nav__item nav__item_menu-toggle js-toggle" href="javascript:void(0)">☰</a>
       </nav>

@@ -1,0 +1,362 @@
+{% set activeSection = 'promote' %}
+{% set activePage = 'dashboard' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_promote.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <div class="pan">
+          <div class="pan__section pan__section_left">
+            <div class="inline inline_size_md">
+              <div class="inline__item">
+                <h1 class="title">Dashboard</h1>
+              </div>
+              <div class="inline__item">
+                <div class="popover js-popover">
+                  <div class="popover__toggler js-popover-toggle">
+                    <span class="icon icon_settings"></span>
+                  </div>
+                  <div class="popover__content popover__content_bottom-center">
+                    <div class="panel panel_popover">
+                      <label class="checkbox">
+                        <input type="checkbox" checked>
+                        <span class="checkbox__content">
+                          <span class="checkbox__ctrl"></span>
+                          <span class="checkbox__label">Performance Stats</span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pan__section pan__section_right">
+            <div class="inline inline_size_md">
+              <div class="inline__item">
+                <span class="tooltip">
+                  <span class="icon icon_tooltip"></span>
+                  <span class="tooltip__content tooltip__content_bottom">
+                    This is the Top<br>Perfoming Placements
+                  </span>
+                </span>
+              </div>
+              <div class="inline__item">
+                <a href="promote_create_campaing.html" class="button button_green">
+                  <span class="icon icon_plus"></span>
+                  <span class="button__text">Create Campaing</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid_size_4 grid_md-size_2">
+        <div class="grid__section">
+          <div class="panel panel_campaings">
+            <div class="indicator">
+              <div class="indicator__value indicator__value_blue">3</div>
+              <div class="indicator__name">Active Campaings</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__section">
+          <div class="panel panel_sources">
+            <div class="indicator">
+              <div class="indicator__value indicator__value_green">14</div>
+              <div class="indicator__name">Active Sources</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__section">
+          <div class="panel panel_reached">
+            <div class="indicator">
+              <div class="indicator__value indicator__value_yellow">946.782</div>
+              <div class="indicator__name">Audience Reached</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid__section">
+          <div class="panel panel_goals">
+            <div class="indicator">
+              <div class="indicator__value indicator__value_yellow">5.782</div>
+              <div class="indicator__name">Goals</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__section">
+        <div class="chart-panel">
+          <div class="chart-panel__header">
+            <div class="pan">
+              <div class="pan__section pan__section_left">
+                <div class="inline">
+                  <div class="inline__item">
+                    <h3 class="title title_size_md">Perfomance</h3>
+                  </div>
+                  <div class="inline__item">
+                    <div class="popover js-popover">
+                      <div class="popover__toggler">
+                        <button class="button button_bordered_blue button_small js-popover-toggle">
+                          <span class="button__icon">
+                            <span class="icon icon_plus-blue"></span>
+                            <span class="icon icon_plus"></span>
+                          </span>
+                          <span class="button__text">Add Filters</span>
+                          <span class="badge">6</span>
+                        </button>
+                      </div>
+
+                      <div class="popover__content popover__content_bottom-left">
+                        <div class="panel panel_md panel_popover">
+                          <div class="field field_md">
+                            <div class="filter-select-wrapper">
+                              <select class="js-filter-select" style="width: 300px" placeholder="Placement" multiple>
+                                <option value="test">Test</option>
+                                <option value="lorem">Lorem ipsum</option>
+                                <option value="lorem">Lorem ipsum dolor</option>
+                                <option value="lorem">Lorem ipsum dolor sit amet</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="field field_md">
+                            <div class="select2-wrapper select2-wrapper_sm">
+                              <div class="filter-select-wrapper">
+                                <select class="js-filter-select" style="width: 300px" placeholder="App" multiple>
+                                  <option value="test">Test</option>
+                                  <option value="lorem">Lorem ipsum</option>
+                                  <option value="lorem">Lorem ipsum dolor</option>
+                                  <option value="lorem">Lorem ipsum dolor sit amet</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="field field_md">
+                            <div class="select2-wrapper select2-wrapper_sm">
+                              <div class="filter-select-wrapper">
+                                <select class="js-filter-select" style="width: 300px" placeholder="Country" multiple>
+                                  <option value="test">Test</option>
+                                  <option value="lorem">Lorem ipsum</option>
+                                  <option value="lorem">Lorem ipsum dolor</option>
+                                  <option value="lorem">Lorem ipsum dolor sit amet</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pan__section pan__section_right">
+                <a class="js-daterange" href="javascript:void(0)"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="chart-panel__data">
+            <div class="pan">
+              <div class="pan__section pan__section_left">
+                <div class="inline inline_size_lg">
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">945.785</div>
+                      <div class="indicator__name indicator__name_light">Impressions</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">100%</div>
+                      <div class="indicator__name indicator__name_light">Clicks</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">15.3%</div>
+                      <div class="indicator__name indicator__name_light">CTR</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">15.3%</div>
+                      <div class="indicator__name indicator__name_light">Conversations</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">15.3%</div>
+                      <div class="indicator__name indicator__name_light">CR</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pan__section pan__section_right">
+                <div class="inline inline_size_lg">
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">$1.367</div>
+                      <div class="indicator__name indicator__name_light">Ad Spendings</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">$1.4</div>
+                      <div class="indicator__name indicator__name_light">eCPM</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chart-panel__plot">
+            <div class="chart">
+              <div class="chart__plot">
+                <canvas class="js-perfomance-chart" height="280"></canvas>
+              </div>
+              <div class="chart__description">
+                <div class="inline">
+                  <div class="inline__item">
+                    <span class="chart__legend chart__legend_green"></span>
+                    Impressions
+                  </div>
+                  <div class="inline__item">
+                    <span class="chart__legend chart__legend_red"></span>
+                    Ad Revenue
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid_size_2 grid_md-size_1">
+        <div class="grid__section">
+          <div class="table-panel">
+            <div class="table-panel__header">
+              <h3 class="title title_size_md">
+                <span class="inline inline_size_xs">
+                  <span class="inline__item">Top Perfoming Sources</span>
+                  <span class="inline__item">
+                    <span class="tooltip">
+                      <span class="icon icon_tooltip"></span>
+                      <span class="tooltip__content">This is the Top<br>Perfoming Sources</span>
+                    </span>
+                  </span>
+                </span>
+              </h3>
+            </div>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th style="width: 99%">Source ID</th>
+                  <th>Impressions</th>
+                  <th>Clicks</th>
+                  <th>Conversations</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="#">Source 154</a></td>
+                  <td>945.785</td>
+                  <td>45.622</td>
+                  <td>123</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Source 155</a></td>
+                  <td>85.211</td>
+                  <td>0</td>
+                  <td>123</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Source 156</a></td>
+                  <td>397.614</td>
+                  <td>644.997</td>
+                  <td>123</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="grid__section">
+          <div class="table-panel">
+            <div class="table-panel__header">
+              <h3 class="title title_size_md">
+                <span class="inline inline_size_xs">
+                  <span class="inline__item">Top Converting Countries</span>
+                  <span class="inline__item">
+                    <span class="tooltip">
+                      <span class="icon icon_tooltip"></span>
+                      <span class="tooltip__content">
+                        This is the Top<br>Converting Countries
+                      </span>
+                    </span>
+                  </span>
+                </span>
+              </h3>
+            </div>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th style="width: 99%">Country</th>
+                  <th>Impressions</th>
+                  <th>Clicks</th>
+                  <th>Conversations</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="#">Unated States</a></td>
+                  <td>945.785</td>
+                  <td>45.622</td>
+                  <td>123</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Canada</a></td>
+                  <td>85.211</td>
+                  <td>0</td>
+                  <td>132</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Germany</a></td>
+                  <td>397.614</td>
+                  <td>644.997</td>
+                  <td>123</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    (function () {
+      'use strict';
+
+      var page = new window.app.PromoteDashboardPageView();
+    })();
+  </script>
+{% endblock %}
