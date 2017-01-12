@@ -5,24 +5,34 @@
 
   app.PlacementPageView = app.PageView.extend({
     events: {
-      'change .js-placement-select': 'changePlacement'
+      'change .js-placement-select': 'renderPlacement'
     },
 
     render: function () {
       app.PageView.prototype.render.call(this, arguments);
-      this.selectedPlacement = this.$('.js-placement-select').val();
+      this.selectedPlacementId = this.$('.js-placement-select').val();
+      this.renderPlacement();
     },
 
-    changePlacement: function (e) {
-      var placementId = e.target.value;
-      var placementCssClass = 'placement__type_' + placementId;
-      var placementName = e.target[e.target.selectedIndex].innerHTML;
+    renderPlacement: function () {
+      var $placementSelect = this.$('.js-placement-select');
+      var selectedPlacementId = $placementSelect.val();
 
-      this.$('.js-placement-type')
-        .removeClass(this.selectedPlacement)
-        .addClass(placementCssClass);
-      this.$('.js-placement-name').text(placementName);
-      this.selectedPlacement = placementCssClass;
+      if (selectedPlacementId) {
+        var currentPlacementCssClass = 'placement__type_' + selectedPlacementId;
+        var lastPlacementCssClass = 'placement__type_' + this.selectedPlacementId;
+        var placementName = $placementSelect[0][$placementSelect[0].selectedIndex].innerHTML;
+
+        this.$('.js-placement-type').removeClass(lastPlacementCssClass)
+          .addClass(currentPlacementCssClass);
+        this.$('.js-placement-name').text(placementName);
+
+        if (selectedPlacementId == 'rewarded-video') {
+          this.$('.js-rewarded-video-fields').show();
+        } else {
+          this.$('.js-rewarded-video-fields').hide();
+        }
+      }
     }
   });
 })();

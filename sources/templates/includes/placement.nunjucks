@@ -4,7 +4,7 @@
   </div>
   <div class="placement__preview">
     <img src="img/phone.png" class="placement__phone">
-    <span class="placement__type placement__type_rewarded-video js-placement-type"></span>
+    <span class="placement__type js-placement-type"></span>
   </div>
-  <div class="placement__name js-placement-name">Rewarded Video</div>
+  <div class="placement__name js-placement-name"></div>
 </div>

@@ -6,6 +6,7 @@
       </div>
       <div class="field">
         <select class="js-select js-placement-select" placeholder="Category" style="width: 100%">
+          <option value="" selected disabled>Category</option>
           <option value="rewarded-video">Rewarded Video</option>
           <option value="interstitial-video">Interstitial Video</option>
           <option value="native-video">Native Video</option>
@@ -13,6 +14,26 @@
           <option value="interstitial">Interstitial</option>
           <option value="banner">Banner</option>
         </select>
+      </div>
+
+      <div class="js-rewarded-video-fields" style="display: none">
+        <div class="field">
+          <select class="js-select" placeholder="Device" style="width: 100%">
+            <option value="" disabled selected>Device</option>
+            <option value="rewarded-video">Test</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <select class="js-select" placeholder="Format" style="width: 100%">
+            <option value="" disabled selected>Format</option>
+            <option value="rewarded-video">Test</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <input type="text" class="field__data" placeholder="Name">
+        </div>
       </div>
     </div>
 

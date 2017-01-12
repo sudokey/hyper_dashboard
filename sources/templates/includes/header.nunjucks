@@ -24,28 +24,30 @@
         <div class="inline__item">
           <a href="account_general.html" class="{% if activeSection == 'account' %} active {% endif %}">Account</a>
         </div>
-        <div class="inline__item hide_sm">
+        <div class="inline__item hide_sm get-started js-getstarted">
           <div class="popover js-popover">
             <div class="popover__toggler js-popover-toggle">
               <div class="get-started-progress">
                 <div class="get-started-progress__title">
                   <div class="inline">
                     <div class="inline__item">Getting Started</div>
-                    <div class="inline__item get-started-progress__steps">1/4</div>
+                    <div class="inline__item get-started-progress__steps">
+                      <span class="js-getstarted-progress">0</span>/4
+                    </div>
                   </div>
                 </div>
                 <div class="get-started-progress__status">
                   <div class="progress-bar">
-                    <div class="progress-bar__indicator"></div>
+                    <div class="progress-bar__indicator js-getstarted-indicator"></div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="popover__content popover__content_bottom-right">
               <div class="panel panel_popover">
-                <div class="get-started">
+                <div class="get-started-container">
                   <label class="checkbox">
-                    <input type="checkbox" checked>
+                    <input type="checkbox" class="js-getstarted-checkbox">
                     <span class="checkbox__content">
                       <span class="checkbox__ctrl"></span>
                       <span class="checkbox__label">Integrate the SDK</span>
@@ -54,7 +56,7 @@
                   </label>
 
                   <label class="checkbox">
-                    <input type="checkbox" checked>
+                    <input type="checkbox" class="js-getstarted-checkbox">
                     <span class="checkbox__content">
                       <span class="checkbox__ctrl"></span>
                       <span class="checkbox__label">Display your Advertisements</span>
@@ -63,7 +65,7 @@
                   </label>
 
                   <label class="checkbox">
-                    <input type="checkbox" checked>
+                    <input type="checkbox" class="js-getstarted-checkbox">
                     <span class="checkbox__content">
                       <span class="checkbox__ctrl"></span>
                       <span class="checkbox__label">Create your first Campaign</span>
@@ -72,7 +74,7 @@
                   </label>
 
                   <label class="checkbox">
-                    <input type="checkbox" checked>
+                    <input type="checkbox" class="js-getstarted-checkbox">
                     <span class="checkbox__content">
                       <span class="checkbox__ctrl"></span>
                       <span class="checkbox__label">Fund your Account</span>
