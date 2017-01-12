@@ -123,7 +123,7 @@
         <div class="content__section">
           <div class="pan">
             <div class="pan__section pan__section_left">
-              <button class="button button_submit button_blue button_md">Create app</button>
+              <button class="button button_submit button_blue">Create app</button>
             </div>
             <div class="pan__section pan__section_right">
               <a class="gray js-remove-app" href="javascript:void(0)">Remove App</a>

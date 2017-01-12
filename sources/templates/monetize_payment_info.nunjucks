@@ -40,7 +40,7 @@
 
             <div class="field field_separated">
               <div class="field__section" style="width: 70%">
-                <select class="js-country-select" placeholder="Country">
+                <select class="js-filter-select" placeholder="Country">
                   <option value="" disabled selected>Country</option>
                   <option value="russia">Russian</option>
                   <option value="india">India</option>
@@ -110,7 +110,7 @@
         </div>
 
         <div class="content__section">
-          <button class="button button_submit button_blue button_md">Save</button>
+          <button class="button button_submit button_blue">Save</button>
         </div>
       </form>
     </div>

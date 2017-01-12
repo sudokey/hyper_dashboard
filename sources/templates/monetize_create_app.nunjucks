@@ -19,7 +19,7 @@
           {% include "form_app.nunjucks" %}
         </div>
         <div class="content__section">
-          <button class="button button_submit button_blue button_md">Create app</button>
+          <button class="button button_submit button_blue">Create app</button>
         </div>
       </form>
     </div>

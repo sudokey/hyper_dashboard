@@ -36,6 +36,30 @@
             </a>
           </div>
         </div>
+
+        <div class="menu-item js-collapsed {% if activePage == 'payment_history' or activePage == 'add_funds' %} menu-item_active_no-link active {% endif %}">
+          <a href="javascript:void(0)" class="menu-item__title js-toggle">
+            <span class="menu-icon menu-icon_billing"></span>
+            <span class="menu-item__label">
+              Billing
+              <span class="icon icon_cursor icon_cursor_right"></span>
+              <span class="icon icon_cursor icon_cursor_down"></span>
+            </span>
+          </a>
+
+          <div class="sub-menu">
+            <a class="sub-menu__item {% if activePage == 'payment_history' %} sub-menu__item_active {% endif %}" href="promote_payment_history.html">
+              <span class="menu-item__label">
+                Payment History
+              </span>
+            </a>
+            <a class="sub-menu__item {% if activePage == 'add_funds' %} sub-menu__item_active {% endif %}" href="promote_add_funds_1.html">
+              <span class="menu-item__label">
+                Add Funds
+              </span>
+            </a>
+          </div>
+        </div>
       </nav>
     </div>
 

@@ -1,0 +1,72 @@
+{% set activeSection = 'promote' %}
+{% set activePage = 'payment_history' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_promote.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <div class="pan">
+          <div class="pan__section pan__section_left">
+            <h1 class="title">Payment History</h1>
+          </div>
+          <div class="pan__section pan__section_right">
+            <a href="promote_create_campaing.html" class="button button_green">
+              <span class="icon icon_plus icon_white"></span>
+              <span class="button__text">Create Campaing</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__section">
+        <div class="table-panel">
+          <div class="table-panel__header">
+            <div class="pan">
+              <div class="pan__section pan__section_left">
+                <h2 class="title title_size_md">History</h2>
+              </div>
+              <div class="pan__section pan__section_right">
+                <a class="js-daterange" href="javascript:void(0)"></a>
+              </div>
+            </div>
+          </div>
+
+          <table class="table table_data js-tablesorter">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Invoice</th>
+                <th>Payment</th>
+                <th data-sorter="false">Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2016.12.01</td>
+                <td>#43526</td>
+                <td>$1.345.00</td>
+                <td>Payment for advertising</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    (function () {
+      'use strict';
+
+      var page = new window.app.PageView();
+    })();
+  </script>
+{% endblock %}

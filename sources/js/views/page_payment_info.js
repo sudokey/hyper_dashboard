@@ -10,10 +10,6 @@
 
     render: function () {
       app.PageView.prototype.render.call(this, arguments);
-
-      this.$('.js-country-select').select2({
-        placeholder: 'Country'
-      });
     },
 
     changePaymentMethod: function (e) {

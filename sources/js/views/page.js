@@ -2,7 +2,7 @@
   'use strict';
 
   window.app.PageView = Backbone.View.extend({
-    el: '.js-page',
+    el: 'body',
 
     initialize: function () {
       this.pageYOffset = window.pageYOffset;
@@ -59,7 +59,7 @@
       if (!this.blocked) {
         this.pageYOffset = window.pageYOffset;
 
-        this.$el
+        this.$('.js-page')
           .css('top', -this.pageYOffset + 'px')
           .addClass('page_blocked');
 
@@ -69,7 +69,7 @@
 
     unblock: function () {
       if (this.blocked) {
-        this.$el
+        this.$('.js-page')
           .css('top', 'auto')
           .removeClass('page_blocked');
 

@@ -87,7 +87,7 @@
         </div>
 
         <div class="content__section">
-          <button class="button button_green button_md button_submit">Create User</button>
+          <button class="button button_green button_submit">Create User</button>
         </div>
       </div>
     </div>

@@ -1,0 +1,100 @@
+{% set activeSection = 'promote' %}
+{% set activePage = 'add_funds' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_promote.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <div class="pan">
+          <div class="pan__section pan__section_left">
+            <h1 class="title">Add Funds</h1>
+          </div>
+          <div class="pan__section pan__section_right">
+            <a href="promote_create_campaing.html" class="button button_green">
+              <span class="icon icon_plus icon_white"></span>
+              <span class="button__text">Create Campaing</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p class="content__section">Price in the interface without VAT. Minimum payment amount – 60 USD.</p>
+
+      <form class="form form_indented">
+        <div class="content__section">
+          <div class="panel">
+            <div class="field">
+              <div class="field__label">Amount to be paid</div>
+              <input type="text" class="field__data" value="60">
+            </div>
+
+            <div class="field">
+              <div class="field__label">Your account will be replenished by (*VAT – 0%)</div>
+              <input type="text" class="field__data" value="60">
+              <div class="field__hint">* The final value of VAT and amounts receive for the account will be determined by the payment system after the transaction.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__section"></div>
+          <a class="button button_blue button_submit js-show-payment-method" href="javascript:void(0)">Continue</a>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}
+
+{% block popups %}
+  <div class="popup js-payment-method-popup">
+    <div class="popup__inner">
+      <div class="popup__container">
+        <div class="payment-method">
+          <div class="popup__close js-hide">
+            <span class="icon icon_close cursor"></span>
+          </div>
+
+          <h2 class="payment-method__title">Choose Your Payment Method</h2>
+          <p class="payment-method__description">For purchasing <strong>$60.00</strong> please select your country and payment method.</p>
+
+          <form class="payment-method__form">
+            <div class="field">
+              <select class="js-filter-select" placeholder="Country">
+                <option value="" disabled selected>Country</option>
+                <option value="russia">Russian</option>
+                <option value="india">India</option>
+                <option value="china">China</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <select class="js-select" style="width: 100%" placeholder="Choose Payment Method">
+                <option value="" disabled selected>Choose Payment Method</option>
+                <option value="1">Test</option>
+              </select>
+            </div>
+
+            <img class="payment-method__logo" src="img/payment_methods.png">
+
+            <button class="button button_submit button_blue">Make Payment</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    (function () {
+      'use strict';
+
+      var page = new window.app.PromoteAddFundsPageView();
+    })();
+  </script>
+{% endblock %}

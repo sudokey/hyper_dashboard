@@ -46,6 +46,7 @@
   <script src="js/views/page_payment_history.js"></script>
   <script src="js/views/page_placement.js"></script>
   <script src="js/views/page_promote_dashboard.js"></script>
+  <script src="js/views/page_promote_add_funds.js"></script>
 
   {% block scripts %}{% endblock %}
 </body>

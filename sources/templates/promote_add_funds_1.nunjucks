@@ -1,0 +1,66 @@
+{% set activeSection = 'promote' %}
+{% set activePage = 'add_funds' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_promote.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <div class="pan">
+          <div class="pan__section pan__section_left">
+            <h1 class="title">Add Funds</h1>
+          </div>
+          <div class="pan__section pan__section_right">
+            <a href="promote_create_campaing.html" class="button button_green">
+              <span class="icon icon_plus icon_white"></span>
+              <span class="button__text">Create Campaing</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <form class="form form_indented">
+        <div class="content__section">
+          <div class="panel">
+            <div class="panel__title">Please select payment method</div>
+
+            <label class="checkbox">
+              <input type="radio" name="type" checked>
+              <span class="checkbox__content">
+                <span class="checkbox__ctrl"></span>
+                <span class="checkbox__label">Add Funds to your account using <strong>Bank Transfer</strong></span>
+              </span>
+            </label>
+
+            <label class="checkbox">
+              <input type="radio" name="type">
+              <span class="checkbox__content">
+                <span class="checkbox__ctrl"></span>
+                <span class="checkbox__label">Add Funds to your account using <strong>Credit Card, PayPal</strong> or <strong>WebMoney</strong></span>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="content__section"></div>
+          <a class="button button_blue button_submit" href="promote_add_funds_2.html">Continue</a>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    (function () {
+      'use strict';
+
+      var page = new window.app.PageView();
+    })();
+  </script>
+{% endblock %}
