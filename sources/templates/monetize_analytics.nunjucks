@@ -33,37 +33,14 @@
                   <div class="inline__item">
                     {% include "popover_filters.nunjucks" %}
                   </div>
-                  <div class="inline__item" style="width: 160px">
-                    <div class="popover js-popover js-select-tags">
-                      <div class="popover__toggler">
-                        <div class="field">
-                          <div class="field__data field__data_md field__data_select-group js-popover-toggle">
-                            <span class="js-selected-tags">App, Placement</span>
-                            <div class="icon icon_cursor icon_cursor_down"></div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="popover__content popover__content_full-width popover__content_bottom-right">
-                        <div class="panel panel_popover panel_md">
-                          <div class="tags">
-                            <div class="tags__item tags__item_active js-tag">App</div>
-                            <div class="tags__item tags__item_active js-tag">Placement</div>
-                            <div class="tags__item js-tag">Countries</div>
-                          </div>
-
-                          <div class="panel__footer">
-                            <span class="inline inline_size_xs cursor">
-                              <span class="inline__item">
-                                <span class="icon icon_set-default"></span>
-                              </span>
-                              <span class="inline__item">
-                                Set to Default
-                              </span>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
+                  <div class="inline__item">
+                    <div class="select-tags-wrapper">
+                      <select class="js-tag-select" style="width: 160px" placeholder="Group By" multiple>
+                        <option value="test">Test</option>
+                        <option value="impressions">Impressions</option>
+                        <option value="clicks">Clicks</option>
+                        <option value="earning">Earning</option>
+                      </select>
                     </div>
                   </div>
                 </div>
@@ -299,14 +276,4 @@
         </div>
       </div>
     </div>
-{% endblock %}
-
-{% block scripts %}
-  <script>
-    (function () {
-      'use strict';
-
-      var page = new window.app.PageAnalyticsView();
-    })();
-  </script>
 {% endblock %}

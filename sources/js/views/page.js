@@ -1,4 +1,4 @@
-(function () {
+$(function () {
   'use strict';
 
   window.app.PageView = Backbone.View.extend({
@@ -42,6 +42,13 @@
         });
       });
 
+      this.tagSelect = this.$('.js-tag-select').map(function (e, el) {
+        return $(el).select2({
+          placeholder: $(el).attr('placeholder'),
+          dropdownAdapter: window.app.dropdownTagsAdapter
+        });
+      });
+
       this.daterangeViews = this.$('.js-daterange').map(function (i, el) {
         return new app.DaterangeView({ el: el });
       });
@@ -80,4 +87,4 @@
       }
     }
   });
-})();
+});

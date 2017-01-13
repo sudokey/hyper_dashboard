@@ -1,4 +1,4 @@
-(function () {
+$(function () {
   'use strict';
 
   window.app.CollapsedView = Backbone.View.extend({
@@ -11,4 +11,4 @@
       this.$el.toggleClass('active');
     }
   });
-})();
+});

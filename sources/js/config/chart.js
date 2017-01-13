@@ -1,4 +1,4 @@
-(function () {
+$(function () {
   'use strict';
 
   Chart.defaults.global.defaultFontColor = '#3c4857';
@@ -15,4 +15,4 @@
   Chart.defaults.global.elements.line.tension = 0;
 
   Chart.defaults.global.tooltips.intersect = false;
-})();
+});

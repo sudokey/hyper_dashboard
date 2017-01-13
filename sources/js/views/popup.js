@@ -1,4 +1,4 @@
-(function () {
+$(function () {
   'use strict';
 
   window.app.Popup = Backbone.View.extend({
@@ -21,4 +21,4 @@
       this.$el.removeClass('popup_active');
     }
   });
-})();
+});

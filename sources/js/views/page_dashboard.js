@@ -1,4 +1,4 @@
-(function () {
+$(function () {
   'use strict';
 
   var app = window.app;
@@ -9,4 +9,4 @@
       this.perfomanceChartView = new app.PerfomanceChartView({ el: '.js-perfomance-chart' });
     }
   });
-})();
+});

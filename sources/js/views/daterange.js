@@ -1,4 +1,4 @@
-(function () {
+$(function () {
   'use strict';
 
   window.app.DaterangeView = Backbone.View.extend({
@@ -32,4 +32,4 @@
       cb(startDate, endDate);
     }
   });
-})();
+});

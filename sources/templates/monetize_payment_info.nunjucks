@@ -119,10 +119,10 @@
 
 {% block scripts %}
   <script>
-    (function () {
+    $(function () {
       'use strict';
 
       var page = new window.app.PaymentDetailsPageView();
-    })();
+    });
   </script>
 {% endblock %}

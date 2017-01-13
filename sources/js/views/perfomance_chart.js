@@ -1,4 +1,4 @@
-(function () {
+$(function () {
   'use strict';
 
   window.app.PerfomanceChartView = Backbone.View.extend({
@@ -54,4 +54,4 @@
       });
     }
   });
-})();
+});

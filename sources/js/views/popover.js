@@ -1,4 +1,4 @@
-(function () {
+$(function () {
   'use strict';
 
   window.app.PopoverView = Backbone.View.extend({
@@ -29,4 +29,4 @@
       }
     }
   });
-})();
+});

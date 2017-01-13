@@ -37,13 +37,3 @@
       </form>
     </div>
 {% endblock %}
-
-{% block scripts %}
-  <script>
-    (function () {
-      'use strict';
-
-      var page = new window.app.PageView();
-    })();
-  </script>
-{% endblock %}

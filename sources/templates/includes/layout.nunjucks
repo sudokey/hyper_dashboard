@@ -31,12 +31,12 @@
 
   <script src="js/app.js"></script>
   <script src="js/config/chart.js"></script>
+  <script src="js/config/select2.js"></script>
   <script src="js/views/popover.js"></script>
   <script src="js/views/daterange.js"></script>
   <script src="js/views/tabs.js"></script>
   <script src="js/views/popup.js"></script>
   <script src="js/views/collapsed.js"></script>
-  <script src="js/views/select_tags.js"></script>
   <script src="js/views/perfomance_chart.js"></script>
   <script src="js/views/page.js"></script>
   <script src="js/views/page_dashboard.js"></script>
@@ -49,6 +49,14 @@
   <script src="js/views/page_promote_add_funds.js"></script>
   <script src="js/views/get_started.js"></script>
 
-  {% block scripts %}{% endblock %}
+  {% block scripts %}
+    <script>
+      $(function () {
+        'use strict';
+
+        var page = new window.app.PageView();
+      });
+    </script>
+  {% endblock %}
 </body>
 </html>

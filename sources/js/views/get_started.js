@@ -1,4 +1,4 @@
-(function () {
+$(function () {
   'use strict';
 
   window.app.GetStartedView = Backbone.View.extend({
@@ -17,4 +17,4 @@
       this.$('.js-getstarted-indicator').width((progress * 100 / 4) + '%');
     }
   });
-})();
+});

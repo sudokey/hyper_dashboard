@@ -1,4 +1,4 @@
-(function () {
+$(function () {
   'use strict';
 
   window.app.TabsView = Backbone.View.extend({
@@ -11,4 +11,4 @@
       $(e.currentTarget).addClass('tabs__item_active');
     }
   });
-})();
+});

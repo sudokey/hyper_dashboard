@@ -1,4 +1,4 @@
-(function () {
+$(function () {
   'use strict';
 
   var app = window.app;
@@ -17,4 +17,4 @@
       this.$('[data-fields-name=' + e.currentTarget.value + ']').show();
     }
   });
-})();
+});

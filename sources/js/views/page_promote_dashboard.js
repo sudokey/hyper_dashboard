@@ -1,4 +1,4 @@
-(function () {
+$(function () {
   'use strict';
 
   var app = window.app;
@@ -13,4 +13,4 @@
       });
     }
   });
-})();
+});

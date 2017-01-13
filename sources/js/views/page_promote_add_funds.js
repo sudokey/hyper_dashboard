@@ -1,4 +1,4 @@
-(function () {
+$(function () {
   'use strict';
 
   var app = window.app;
@@ -21,4 +21,4 @@
       this.paymentMethodPopup.show();
     }
   });
-})();
+});

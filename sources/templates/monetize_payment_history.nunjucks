@@ -98,10 +98,10 @@
 
 {% block scripts %}
   <script>
-    (function () {
+    $(function () {
       'use strict';
 
       var page = new window.app.PaymentHistoryPageView();
-    })();
+    });
   </script>
 {% endblock %}

@@ -303,10 +303,10 @@
 
 {% block scripts %}
   <script>
-    (function () {
+    $(function () {
       'use strict';
 
       var page = new window.app.PromoteDashboardPageView();
-    })();
+    });
   </script>
 {% endblock %}

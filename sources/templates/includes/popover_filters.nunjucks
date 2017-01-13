@@ -16,9 +16,9 @@
         <div class="filter-select-wrapper">
           <select class="js-filter-select" style="width: 300px" placeholder="Placement" multiple>
             <option value="test">Test</option>
-            <option value="lorem">Lorem ipsum</option>
-            <option value="lorem">Lorem ipsum dolor</option>
-            <option value="lorem">Lorem ipsum dolor sit amet</option>
+            <option value="lorem1" selected>Lorem ipsum</option>
+            <option value="lorem2">Lorem ipsum dolor</option>
+            <option value="lorem3">Lorem ipsum dolor sit amet</option>
           </select>
         </div>
       </div>
