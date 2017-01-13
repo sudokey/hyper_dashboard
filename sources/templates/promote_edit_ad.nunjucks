@@ -1,0 +1,65 @@
+{% set activeSection = 'promote' %}
+{% set activePage = 'campaigns' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_promote.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <h1 class="title">Edit Ad</h1>
+      </div>
+
+      <form class="form">
+        <div class="content__section">
+          {% include "ad_form.nunjucks" %}
+        </div>
+
+        <div class="content__section">
+          <div class="pan">
+            <div class="pan__section pan__section_left">
+              <div class="inline">
+                <div class="inline__item">
+                  <button class="button button_blue button_submit">Save</button>
+                </div>
+                <div class="inline__item">
+                  <a href="javascript:void(0)" class="icon icon_remove"></a>
+                </div>
+              </div>
+            </div>
+            <div class="pan__section pan__section_right">
+              <a href="#">Back to Campaigns</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="content__col content__col_right">
+      <div class="placement">
+        <div class="placement__preview">
+          <img src="img/phone.png" class="placement__phone">
+          <span class="placement__type js-ad-placement"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block popups %}
+  {% include "creative_popup.nunjucks" %}
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    $(function () {
+      'use strict';
+
+      var page = new window.app.PagePromoteAdView();
+    });
+  </script>
+{% endblock %}

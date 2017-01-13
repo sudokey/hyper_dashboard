@@ -1,0 +1,99 @@
+<div class="popup js-creative-popup">
+  <div class="popup__inner">
+    <div class="popup__container">
+      <div class="panel panel_creative">
+        <div class="popup__close">
+          <div class="icon icon_close js-hide"></div>
+        </div>
+
+        <h2 class="title">Select Creative</h2>
+
+        <div class="creative-list">
+          <div class="creative-list__item">
+            <div class="inline inline_table">
+              <div class="inline__item">
+                <img src="img/creative_item.png">
+              </div>
+              <div class="inline__item" style="width: 99%">
+                Creative ID 432813582<br><strong>320x50</strong> <small>(47kb)</small>
+              </div>
+              <div class="inline__item">
+                <button class="button button_bordered_blue button_small js-select-creative" data-creative-id="12313">Select</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="creative-list__item">
+            <div class="inline inline_table">
+              <div class="inline__item">
+                <img src="img/creative_item.png">
+              </div>
+              <div class="inline__item" style="width: 99%">
+                Creative ID 432813582<br><strong>320x50</strong> <small>(47kb)</small>
+              </div>
+              <div class="inline__item">
+                <button class="button button_bordered_blue button_small js-select-creative" data-creative-id="12313">Select</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="creative-list__item">
+            <div class="inline inline_table">
+              <div class="inline__item">
+                <img src="img/creative_item.png">
+              </div>
+              <div class="inline__item" style="width: 99%">
+                Creative ID 432813582<br><strong>320x50</strong> <small>(47kb)</small>
+              </div>
+              <div class="inline__item">
+                <button class="button button_bordered_blue button_small js-select-creative" data-creative-id="12313">Select</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="creative-list__item">
+            <div class="inline inline_table">
+              <div class="inline__item">
+                <img src="img/creative_item.png">
+              </div>
+              <div class="inline__item" style="width: 99%">
+                Creative ID 432813582<br><strong>320x50</strong> <small>(47kb)</small>
+              </div>
+              <div class="inline__item">
+                <button class="button button_bordered_blue button_small js-select-creative" data-creative-id="12313">Select</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="creative-list__item">
+            <div class="inline inline_table">
+              <div class="inline__item">
+                <img src="img/creative_item.png">
+              </div>
+              <div class="inline__item" style="width: 99%">
+                Creative ID 432813582<br><strong>320x50</strong> <small>(47kb)</small>
+              </div>
+              <div class="inline__item">
+                <button class="button button_bordered_blue button_small js-select-creative" data-creative-id="12313">Select</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="creative-list__item">
+            <div class="inline inline_table">
+              <div class="inline__item">
+                <img src="img/creative_item.png">
+              </div>
+              <div class="inline__item" style="width: 99%">
+                Creative ID 432813582<br><strong>320x50</strong> <small>(47kb)</small>
+              </div>
+              <div class="inline__item">
+                <button class="button button_bordered_blue button_small js-select-creative" data-creative-id="12313">Select</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

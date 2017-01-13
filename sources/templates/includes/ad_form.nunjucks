@@ -1,0 +1,85 @@
+<div class="panel">
+  <div class="field field_separated">
+    <div class="field__section" style="width: 80%">
+      <input type="text" class="field__data" value="Campaign 1_ads#12172518" placeholder="Name">
+    </div>
+    <div class="field__section field__section_label">
+      ID 2538313826
+    </div>
+  </div>
+
+  <div class="field field_separated">
+    <div class="field__section" style="width: 80%">
+      <select class="js-ad-type js-select" placeholder="Select Ads Type">
+        <option value="" disabled selected>Select Ads Type</option>
+        <option value="rewarded-video">Rewarded Video</option>
+        <option value="interstitial-video">Interstitial Video</option>
+        <option value="native-video">Native Video</option>
+        <option value="native">Native</option>
+        <option value="interstitial">Interstitial</option>
+        <option value="large-banner">Large Banner</option>
+        <option value="banner">Banner</option>
+        <option value="offer-wall">Offer Wall</option>
+      </select>
+    </div>
+    <div class="field__section field__section_label">
+      <span class="tooltip">
+        <span class="icon icon_tooltip"></span>
+        <span class="tooltip__content">Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</span>
+      </span>
+    </div>
+  </div>
+
+  <div class="field field_separated">
+    <div class="field__section" style="width: 80%">
+      <select class="js-creative-type js-select" placeholder="Select Creative Type">
+        <option value="" disabled selected>Select Creative Type</option>
+        <option value="banner-image">Banner Image 320x50</option>
+        <option value="leader-image">Leader Image 728x90</option>
+        <option value="mrec-image">Mrec Image 300x250</option>
+        <option value="portrait-interstitial">Portrait Interstitial 320x480, 768x1024</option>
+        <option value="landscape-interstitial">Landscape Interstitial 480x320, 1024x768</option>
+      </select>
+    </div>
+    <div class="field__section field__section_label">
+      <span class="tooltip">
+        <span class="icon icon_tooltip"></span>
+        <span class="tooltip__content">Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</span>
+      </span>
+    </div>
+  </div>
+
+  <div class="fields js-extra-fields">
+    <div class="field">
+      <input type="text" class="field__data" placeholder="Enter Title">
+      <div class="field__hint">Must be no more than 50 chars</div>
+    </div>
+
+    <div class="field">
+      <input type="text" class="field__data" placeholder="Enter Subline">
+      <div class="field__hint">Must be no more than 100 chars</div>
+    </div>
+
+    <div class="field">
+      <input type="text" class="field__data" placeholder="Enter Button Text">
+      <div class="field__hint">Must be no more than 12 chars</div>
+    </div>
+
+    <div class="field">
+      <input type="text" class="field__data" placeholder="Enter Star Rating">
+      <div class="field__hint">Must be a multiple of 0.5 between 0 – 5</div>
+    </div>
+  </div>
+
+  <div class="field">
+    <div class="inline inline_size_md">
+      <span class="inline__item">
+        <button class="button button_bordered_blue button_small">Upload New Creative</button>
+      </span>
+      <span class="inline__item">or</span>
+      <span class="inline__item">
+        <a href="javascript:void(0)" class="js-show-creative-popup">Select from the List</a>
+      </span>
+    </div>
+  </div>
+</div>

@@ -2,18 +2,15 @@
   text-align: center;
 }
 
-.placement__phone {
-  vertical-align: top;
-  width: 80%;
-}
-
 .placement__preview {
   position: relative;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.placement__name {
-  font-size: 1.8rem;
-  color: @blue;
+.placement__phone {
+  vertical-align: top;
+  width: 100%;
 }
 
 .placement__type {
@@ -22,9 +19,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-position: center center;
+  background-position: 50% 46%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 66%;
 }
 
 .placement__type_rewarded-video {
@@ -47,6 +44,19 @@
   background-image: url('../img/placement_interstitial.png');
 }
 
+.placement__type_banner-large {
+  background-image: url('../img/placement_banner_large.png');
+}
+
 .placement__type_banner {
   background-image: url('../img/placement_banner.png');
+}
+
+.placement__type_offer-wall {
+  background-image: url('../img/placement_offer_wall.jpg');
+}
+
+.placement__name {
+  font-size: 1.8rem;
+  color: @blue;
 }
