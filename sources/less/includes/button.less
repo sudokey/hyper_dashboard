@@ -60,7 +60,8 @@
   box-shadow: none;
 
   &:hover,
-  &.active {
+  &.active,
+  .button-checkbox input:checked + & {
     background: @blue;
     color: #fff;
 
@@ -116,6 +117,20 @@
   font-size: 1.2rem;
 }
 
+.button_input {
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: none;
+  font-size: inherit;
+  text-transform: inherit;
+  font-weight: inherit;
+  background: #f8fafb;
+  cursor: inherit;
+}
+
 .button__text {
   vertical-align: middle;
 }
@@ -132,5 +147,11 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
+}
+
+.button-checkbox {
+  input {
+    display: none;
   }
 }

@@ -31,6 +31,42 @@
     }
   }
 
+  &.single {
+    width: 27rem;
+    height: 30rem;
+
+    .calendar {
+      &.left {
+        .calendar-table {
+          left: 0;
+          top: 2rem;
+          width: 100%;
+
+          .table-condensed {
+            margin: 0 auto;
+
+            .monthselect,
+            .yearselect {
+              width: 7rem;
+              border: 1px solid #e6e9ed;
+              border-radius: 0.8rem;
+              box-shadow: inset 0 0 0.5rem rgba(0,0,0,0.05);
+              background: #fff;
+            }
+
+            .monthselect {
+              margin: 0 0.5rem 0 0;
+            }
+
+            .yearselect {
+              margin: 0 0 0 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .ranges {
     ul {
       width: 14rem;

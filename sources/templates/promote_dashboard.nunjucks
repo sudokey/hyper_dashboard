@@ -49,7 +49,7 @@
                 </span>
               </div>
               <div class="inline__item">
-                <a href="promote_create_campaing.html" class="button button_green">
+                <a href="promote_create_campaing_general.html" class="button button_green">
                   <span class="icon icon_plus icon_white"></span>
                   <span class="button__text">Create Campaing</span>
                 </a>

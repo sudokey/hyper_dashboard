@@ -17,6 +17,24 @@
   }
 }
 
+.checkbox__field-data {
+  &:extend(.field__data);
+  position: relative;
+
+  .checkbox__label {
+    width: 100%;
+    text-align: center;
+    color: @blue;
+  }
+
+  .checkbox__ctrl {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    margin-top: -1.225rem;
+  }
+}
+
 .checkbox__ctrl {
   display: inline-block;
   vertical-align: middle;

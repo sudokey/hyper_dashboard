@@ -1,0 +1,345 @@
+{% set activeSection = 'promote' %}
+{% set activePage = 'campaigns_list' %}
+{% set activeTab = 'general' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_promote.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      {% include "create_ad_tabs.nunjucks" %}
+
+      <div class="content__title">
+        <h1 class="title">General Info</h1>
+      </div>
+
+      <form class="form form_indented">
+        <div class="content__section">
+          <div class="panel">
+            <div class="field field_separated js-field-group-1">
+              <div class="field__label">What are you promoting?</div>
+
+              <div class="field__inner">
+                <div class="field__section">
+                  <div class="tabs tabs_full-width tabs_size_2 js-tabs">
+                    <label class="tabs__item js-tab">
+                      <input type="radio" value="ios" name="app_type" class="js-app-type">
+                      <span class="inline inline_size_xs">
+                        <span class="inline__item">
+                          <span class="icon icon_mobile-app icon_white"></span>
+                          <span class="icon icon_mobile-app icon_blue"></span>
+                        </span>
+                        <span class="inline__item">Mobile App</span>
+                      </span>
+                    </label>
+
+                    <label class="tabs__item js-tab">
+                      <input type="radio" value="android" name="app_type" class="js-app-type">
+                      <span class="inline inline_size_xs">
+                        <span class="inline__item">
+                          <span class="icon icon_mobile-content icon_white"></span>
+                          <span class="icon icon_mobile-content icon_blue"></span>
+                        </span>
+                        <span class="inline__item">Mobile Content</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="field__section" style="width: 7rem"></div>
+              </div>
+            </div>
+
+            <div class="field field_separated js-field-group-1">
+              <div class="field__label">Provide preview link to your product</div>
+
+              <div class="field__inner">
+                <div class="field__section">
+                  <input type="text" class="field__data js-app-link" placeholder="Add app url or bundle id orchoose from defaults">
+                </div>
+
+                <div class="field__section" style="width: 7rem">
+                  <div class="inline inline_size_sm">
+                    <div class="inline__item">
+                      <span class="icon icon_toggle js-toggle-edit-app"></span>
+                    </div>
+                    <div class="inline__item">
+                      <span class="tooltip">
+                        <span class="icon icon_tooltip"></span>
+                        <span class="tooltip__content">Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel__title js-field-group-3" style="display: none">You are promoting mobile app</div>
+            <div class="field js-field-group-2" style="display: none">
+              <div class="app-name">
+                <div class="inline inline_size_md">
+                  <div class="inline__item">
+                    <div class="icon icon_apple"></div>
+                  </div>
+                  <div class="inline__item">
+                    <img src="img/slack_lg.png">
+                  </div>
+                  <div class="inline__item">
+                    <p>Slack - Business Communication for Teams</p>
+                    <p><small>ID 37844222454</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="field field_separated js-field-group-3" style="display: none">
+              <div class="field__inner">
+                <div class="field__section">
+                  <input type="text" class="field__data field__data_link" value="https://itunes.apple.com/us/app/slack-business-communication/id618783545?mt=8" disabled>
+                </div>
+
+                <div class="field__section" style="width: 7rem">
+                  <a href="javascript:void(0)" class="js-toggle-edit-app">Edit</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="field field_separated js-field-group-3" style="display: none">
+              <div class="field__inner">
+                <div class="field__section">
+                  <select class="js-select" placeholder="Campaign Type" style="width: 100%">
+                    <option value="" disabled selected>Campaign Type</option>
+                    <option value="rewarded-video">Rewarded Video</option>
+                    <option value="interstitial-video">Interstitial Video</option>
+                    <option value="native-video">Native Video</option>
+                    <option value="native">Native</option>
+                    <option value="interstitial">Interstitial</option>
+                    <option value="large-banner">Large Banner</option>
+                    <option value="banner">Banner</option>
+                    <option value="offer-wall">Offer Wall</option>
+                  </select>
+                </div>
+
+                <div class="field__section" style="width: 7rem">
+                  <span class="tooltip">
+                    <span class="icon icon_tooltip"></span>
+                    <span class="tooltip__content">Lorem ipsum dolor sit amet.</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="field field_separated js-field-group-3" style="display: none">
+              <div class="field__inner">
+                <div class="field__section">
+                  <input type="text" class="field__data" placeholder="New Campaign Name">
+                </div>
+                <div class="field__section" style="width: 27rem">
+                  <span class="button button_input">or upload <a href="javascript:void(0)" class="js-show-draft-campaigns-popup">Draft Campaign</a></span>
+                </div>
+                <div class="field__section" style="width: 7rem"></div>
+              </div>
+            </div>
+
+            <div class="field field_separated js-field-group-3" style="display: none">
+              <div class="field__inner">
+                <div class="field__section field__section_label field__section_right">
+                  Start Date (GMT)
+                </div>
+
+                <div class="field__section" style="width: 27rem">
+                  <input type="text" class="field__data field__data_link js-date-start">
+                </div>
+
+                <div class="field__section" style="width: 27rem">
+                  <label class="checkbox checkbox__field-data">
+                    <input type="checkbox">
+                    <span class="checkbox__content">
+                      <span class="checkbox__ctrl"></span>
+                      <span class="checkbox__label">Start of Day</span>
+                    </span>
+                  </label>
+                </div>
+
+                <div class="field__section" style="width: 7rem"></div>
+              </div>
+            </div>
+
+            <div class="field field_separated js-field-group-3" style="display: none">
+              <div class="field__inner">
+                <div class="field__section field__section_label field__section_right">
+                  End Date (GMT)
+                </div>
+
+                <div class="field__section" style="width: 27rem">
+                  <input type="text" class="field__data field__data_link js-date-end" placeholder="Unlimited">
+                </div>
+
+                <div class="field__section" style="width: 27rem">
+                  <label class="checkbox checkbox__field-data">
+                    <input type="checkbox" class="js-end-date-checkbox">
+                    <span class="checkbox__content">
+                      <span class="checkbox__ctrl"></span>
+                      <span class="checkbox__label">End of Day</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="field__section" style="width: 7rem">
+                  <span class="icon icon_remove js-clear-end-date"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="field field_separated js-field-group-3" style="display: none">
+              <div class="field__inner">
+                <div class="field__section field__section_label field__section_right">Dya Parting (GMT)</div>
+
+                <div class="field__section" style="width: 54rem">
+                  <div class="field__checkboxs">
+                    <label class="checkbox">
+                      <input type="checkbox" checked>
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">No day parting (24x7)</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Run campaign on specific days or times</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="field__section" style="width: 7rem"></div>
+              </div>
+            </div>
+
+            <div class="fields js-specific-days js-field-group-3" style="display: none"></div>
+
+            <script type="text/template" id="specific-days-template">
+              <div class="field field_separated js-specific-day">
+                <div class="field__inner">
+                  <div class="field__section"></div>
+
+                  <div class="field__section" style="width: 18rem">
+                    <select class="js-select">
+                      <option value="all-week" selected>All week</option>
+                      <option value="test">Test</option>
+                    </select>
+                  </div>
+
+                  <div class="field__section" style="width: 18rem">
+                    <select class="js-select">
+                      <option value="4:00pm" selected>From 4:00 pm</option>
+                      <option value="5:00pm">From 5:00 pm</option>
+                    </select>
+                  </div>
+
+                  <div class="field__section" style="width: 18rem">
+                    <select class="js-select">
+                      <option value="4:00pm" selected>To 4:00 pm</option>
+                      <option value="5:00pm">To 5:00 pm</option>
+                    </select>
+                  </div>
+
+                  <div class="field__section" style="width: 7rem">
+                    <span class="icon icon_remove js-remove-specific-days"></span>
+                  </div>
+                </div>
+              </div>
+            </script>
+
+            <div class="field field_separated js-field-group-3" style="display: none">
+              <div class="field__inner">
+                <div class="field__section"></div>
+                <div class="field__section" style="width: 61rem">
+                  <a href="javascript:void(0)" class="js-add-specific-days">
+                    <span class="inline inline_size_sm">
+                      <span class="inline__item">
+                        <span class="icon icon_plus icon_blue"></span>
+                      </span>
+                      <span class="inline__item">
+                        Add Day and Time
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__section">
+          <button class="button button_blue button_submit">Continue</button>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}
+
+{% block popups %}
+  <div class="popup js-draft-campaigns-popup">
+    <div class="popup__inner">
+      <div class="popup__container">
+        <form>
+          <div class="panel panel_drafts">
+            <div class="popup__close">
+              <div class="icon icon_close js-hide"></div>
+            </div>
+
+            <h2 class="title">Select Creative</h2>
+
+            <div class="list list_apps">
+              {% for i in range(0, 3) -%}
+                <div class="list__item">
+                  <div class="pan">
+                    <div class="pan__section pan__section_left" style="width: 70%">
+                      <div class="app-name">
+                        <div class="inline inline_size_md inline_table">
+                          <div class="inline__item">
+                            <div class="icon icon_apple"></div>
+                          </div>
+                          <div class="inline__item">
+                            <img src="img/slack.png" class="pick pick_app">
+                          </div>
+                          <div class="inline__item" style="width: 99%">
+                            <a href="javascript:void(0)">Slack Be less busy</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pan__section pan__section_right">
+                      <label class="button-checkbox">
+                        <input type="radio" {% if i == '1' %} checked {% endif %} value="{{ i }}" name="app-draft">
+                        <div class="button button_bordered_blue button_small">Chosen</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              {%- endfor %}
+            </div>
+
+            <button class="button button_blue button_submit">Continue</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    $(function () {
+      'use strict';
+
+      var page = new window.app.PromoteCampaingGeneralPageView();
+    });
+  </script>
+{% endblock %}

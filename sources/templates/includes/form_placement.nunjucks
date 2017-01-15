@@ -41,30 +41,36 @@
       <h2 class="panel__title">Frequency caps</h2>
 
       <div class="field field_separated">
-        <div class="field__section" style="width: 80%">
-          <select class="js-select" style="width: 100%">
-            <option value="unlimited">Unlimited</option>
-          </select>
+        <div class="field__inner">
+          <div class="field__section" style="width: 80%">
+            <select class="js-select" style="width: 100%">
+              <option value="unlimited">Unlimited</option>
+            </select>
+          </div>
+          <div class="field__section field__section_label" style="width: 20%">Impressions</div>
         </div>
-        <div class="field__section field__section_label" style="width: 20%">Impressions</div>
       </div>
 
       <div class="field field_separated">
-        <div class="field__section" style="width: 80%">
-          <select class="js-select" style="width: 100%">
-            <option value="per_hour">Per hour</option>
-          </select>
+        <div class="field__inner">
+          <div class="field__section" style="width: 80%">
+            <select class="js-select" style="width: 100%">
+              <option value="per_hour">Per hour</option>
+            </select>
+          </div>
+          <div class="field__section field__section_label" style="width: 20%">Limit per user</div>
         </div>
-        <div class="field__section field__section_label" style="width: 20%">Limit per user</div>
       </div>
 
       <div class="field field_separated">
-        <div class="field__section" style="width: 80%">
-          <select class="js-select" style="width: 100%">
-            <option value="per_hour">Per hour</option>
-          </select>
+        <div class="field__inner">
+          <div class="field__section" style="width: 80%">
+            <select class="js-select" style="width: 100%">
+              <option value="per_hour">Per hour</option>
+            </select>
+          </div>
+          <div class="field__section field__section_label" style="width: 20%">Interval between impressions</div>
         </div>
-        <div class="field__section field__section_label" style="width: 20%">Interval between impressions</div>
       </div>
     </div>
   </div>

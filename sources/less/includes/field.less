@@ -34,21 +34,9 @@
 }
 
 .field_separated {
-  display: table;
-  width: 100%;
-
-  .field__section {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 0 1rem;
-
-    &:first-child {
-      padding-left: 0!important;
-    }
-
-    &:last-child {
-      padding-right: 0!important;
-    }
+  .field__inner {
+    display: table;
+    width: 100%;
   }
 
   .field__row {
@@ -63,6 +51,32 @@
     .field__section {
       padding-bottom: 1rem;
     }
+  }
+
+  .field__section {
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 1rem;
+
+    &:first-child {
+      padding-left: 0!important;
+    }
+
+    &:last-child {
+      padding-right: 0!important;
+    }
+  }
+
+  .field__section_label {
+    padding-top: 1.6rem;
+    vertical-align: top;
+    font-size: 1.4rem;
+    color: @gray;
+  }
+
+  .field__section_right {
+    text-align: right;
   }
 }
 
@@ -123,16 +137,12 @@
 
 .field__data_link {
   color: @blue;
+  cursor: pointer;
 }
 
 .field__hint {
   margin: 0.5rem 0 0;
   font-size: 1.2rem;
-  color: @gray;
-}
-
-.field__section_label {
-  font-size: 1.4rem;
   color: @gray;
 }
 
@@ -153,4 +163,12 @@
   margin: 0 0 1rem;
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+.field__checkboxs {
+  margin: 1rem 0;
+
+  .checkbox__ctrl {
+    margin-right: 0.5rem;
+  }
 }

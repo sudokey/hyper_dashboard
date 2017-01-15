@@ -38,7 +38,16 @@ select {
 
 p {
   line-height: 1.5;
-  margin: 0 0 2.rem;
+  margin: 0 0 2rem;
+
+  &:last-child {
+    margin-bottom: 0!important;
+  }
+}
+
+small {
+  font-size: inherit;
+  color: @gray;
 }
 
 .hide_sm {

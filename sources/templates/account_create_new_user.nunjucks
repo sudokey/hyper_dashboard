@@ -24,11 +24,13 @@
               <input type="text" class="field__data" placeholder="Email Address">
             </div>
             <div class="field field_separated">
-              <div class="field__section">
-                <input type="text" class="field__data" placeholder="Set a Password">
-              </div>
-              <div class="field__section">
-                <input type="text" class="field__data" placeholder="Repeat Password">
+              <div class="field__inner">
+                <div class="field__section">
+                  <input type="text" class="field__data" placeholder="Set a Password">
+                </div>
+                <div class="field__section">
+                  <input type="text" class="field__data" placeholder="Repeat Password">
+                </div>
               </div>
             </div>
           </div>
@@ -39,47 +41,49 @@
             <div class="panel__title">Permissions</div>
 
             <div class="field field_separated field_checkboxs">
-              <div class="field__row">
-                <div class="field__section">
-                  <label class="checkbox">
-                    <input type="checkbox" checked>
-                    <span class="checkbox__content">
-                      <span class="checkbox__ctrl"></span>
-                      <span class="checkbox__label">Create/Edit Campaigns</span>
-                    </span>
-                  </label>
+              <div class="field__inner">
+                <div class="field__row">
+                  <div class="field__section">
+                    <label class="checkbox">
+                      <input type="checkbox" checked>
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Create/Edit Campaigns</span>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="field__section">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Vew Revenue/Spend Reports</span>
+                      </span>
+                    </label>
+                  </div>
                 </div>
 
-                <div class="field__section">
-                  <label class="checkbox">
-                    <input type="checkbox">
-                    <span class="checkbox__content">
-                      <span class="checkbox__ctrl"></span>
-                      <span class="checkbox__label">Vew Revenue/Spend Reports</span>
-                    </span>
-                  </label>
-                </div>
-              </div>
+                <div class="field__row">
+                  <div class="field__section">
+                    <label class="checkbox">
+                      <input type="checkbox" checked>
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Manage Apps</span>
+                      </span>
+                    </label>
+                  </div>
 
-              <div class="field__row">
-                <div class="field__section">
-                  <label class="checkbox">
-                    <input type="checkbox" checked>
-                    <span class="checkbox__content">
-                      <span class="checkbox__ctrl"></span>
-                      <span class="checkbox__label">Manage Apps</span>
-                    </span>
-                  </label>
-                </div>
-
-                <div class="field__section">
-                  <label class="checkbox">
-                    <input type="checkbox">
-                    <span class="checkbox__content">
-                      <span class="checkbox__ctrl"></span>
-                      <span class="checkbox__label">Payment/Billing Info</span>
-                    </span>
-                  </label>
+                  <div class="field__section">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Payment/Billing Info</span>
+                      </span>
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>

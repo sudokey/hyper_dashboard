@@ -8,6 +8,32 @@
   margin: 0 0 1rem;
 
   &:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0!important;
+  }
+}
+
+.list_apps,
+.list_creatives {
+  max-height: 40rem;
+  overflow-y: auto;
+
+  .button {
+    width: 10rem;
+  }
+
+  .inline {
+    margin: 0;
+  }
+}
+
+.list_apps {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  .list__item {
+    margin-bottom: 3rem;
   }
 }

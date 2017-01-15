@@ -22,6 +22,12 @@
   }
 }
 
+.tabs_size_2 {
+  .tabs__item {
+    width: 50%;
+  }
+}
+
 .tabs__item {
   float: left;
   box-sizing: border-box;
@@ -55,5 +61,28 @@
 
   .icon_blue {
     display: none;
+  }
+}
+
+.tabs_flat {
+  display: table;
+  width: 100%;
+  font-size: 1.5rem;
+  border: none;
+  background: #f8fafb;
+  border-radius: 0;
+
+  .tabs__item {
+    display: table-cell;
+    float: none;
+    border: none;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .tabs__item_active,
+  .tabs__item:hover {
+    background: #fff!important;
+    color: @black;
   }
 }

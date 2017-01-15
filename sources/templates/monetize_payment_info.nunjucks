@@ -39,16 +39,18 @@
             </div>
 
             <div class="field field_separated">
-              <div class="field__section" style="width: 70%">
-                <select class="js-filter-select" placeholder="Country">
-                  <option value="" disabled selected>Country</option>
-                  <option value="russia">Russian</option>
-                  <option value="india">India</option>
-                  <option value="china">China</option>
-                </select>
-              </div>
-              <div class="field__section" style="width: 30%">
-                <input type="text" class="field__data" placeholder="ZIP Code">
+              <div class="field__inner">
+                <div class="field__section" style="width: 70%">
+                  <select class="js-filter-select" placeholder="Country">
+                    <option value="" disabled selected>Country</option>
+                    <option value="russia">Russian</option>
+                    <option value="india">India</option>
+                    <option value="china">China</option>
+                  </select>
+                </div>
+                <div class="field__section" style="width: 30%">
+                  <input type="text" class="field__data" placeholder="ZIP Code">
+                </div>
               </div>
             </div>
           </div>
@@ -80,11 +82,13 @@
                   <input type="text" class="field__data" placeholder="Bank Account Number">
                 </div>
                 <div class="field field_separated">
-                  <div class="field__section" style="width: 50%">
-                    <input type="text" class="field__data" placeholder="IBAN">
-                  </div>
-                  <div class="field__section" style="width: 50%">
-                    <input type="text" class="field__data" placeholder="SWIFT">
+                  <div class="field__inner">
+                    <div class="field__section" style="width: 50%">
+                      <input type="text" class="field__data" placeholder="IBAN">
+                    </div>
+                    <div class="field__section" style="width: 50%">
+                      <input type="text" class="field__data" placeholder="SWIFT">
+                    </div>
                   </div>
                 </div>
                 <div class="field">
