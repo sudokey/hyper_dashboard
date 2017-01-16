@@ -2,15 +2,15 @@
   padding: 0 0 0 2rem;
 
   &.active {
-    .collapsed__content {
+    >.collapsed__content {
       display: block;
     }
 
-    .icon_cursor_right {
+    > .collapsed__header .icon_cursor_right {
       display: none;
     }
 
-    .icon_cursor_down {
+    > .collapsed__header .icon_cursor_down {
       display: inline-block;
       opacity: 0.5;
     }
@@ -20,7 +20,7 @@
     margin-top: 1rem;
   }
 
-  .icon_cursor_down {
+  > .collapsed__header .icon_cursor_down {
     display: none;
   }
 }

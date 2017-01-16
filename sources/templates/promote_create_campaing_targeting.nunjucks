@@ -1,0 +1,557 @@
+{% set activeSection = 'promote' %}
+{% set activePage = 'campaigns_list' %}
+{% set activeTab = 'targeting' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_promote.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      {% include "create_ad_tabs.nunjucks" %}
+
+      <div class="content__title">
+        <h1 class="title">Targeting</h1>
+      </div>
+
+      <form class="form form_indented">
+        <div class="content__section">
+          <div class="panel">
+            <div class="panel__title">Select countries where you would like to promote your application</div>
+
+            {% for country in ['Africa', 'Asia', 'Eastern Europe', 'Latin America and he Caribbean', 'North America', 'Oceania (AU, NZ, Pacific Islands)', 'Western Europe'] -%}
+              <div class="collapsed js-collapsed">
+                <div class="collapsed__header">
+                  <span class="collapsed__toggler js-toggle">
+                    <span class="icon icon_cursor icon_cursor_right"></span>
+                    <span class="icon icon_cursor icon_cursor_down"></span>
+                  </span>
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <span class="checkbox__content">
+                      <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                      <span class="checkbox__label">{{country}}</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="collapsed__content">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <span class="checkbox__content">
+                      <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                      <span class="checkbox__label">Test</span>
+                    </span>
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <span class="checkbox__content">
+                      <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                      <span class="checkbox__label">Test</span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            {%- endfor %}
+          </div>
+        </div>
+
+        <div class="content__section">
+          <div class="panel">
+            <div class="panel__title">Yours campaigns will run only an inventory than matches the selected categories</div>
+
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="checkbox__content">
+                <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                <span class="checkbox__label">All Categories</span>
+              </span>
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox">
+              <span class="checkbox__content">
+                <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                <span class="checkbox__label">Specific Categories</span>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="content__section">
+          <div class="panel">
+            <div class="panel__title">Select Device Types</div>
+
+            <div class="collapsed js-collapsed">
+              <div class="collapsed__header">
+                <span class="collapsed__toggler js-toggle">
+                  <span class="icon icon_cursor icon_cursor_right"></span>
+                  <span class="icon icon_cursor icon_cursor_down"></span>
+                </span>
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox__content">
+                    <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                    <span class="checkbox__label">All Device Types</span>
+                  </span>
+                </label>
+              </div>
+              <div class="collapsed__content">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox__content">
+                    <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                    <span class="checkbox__label">Test</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="collapsed active js-collapsed">
+              <div class="collapsed__header">
+                <span class="collapsed__toggler js-toggle">
+                  <span class="icon icon_cursor icon_cursor_right"></span>
+                  <span class="icon icon_cursor icon_cursor_down"></span>
+                </span>
+                <label class="checkbox">
+                  <input type="checkbox" checked>
+                  <span class="checkbox__content">
+                    <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                    <span class="checkbox__label">Specific Device Types</span>
+                  </span>
+                </label>
+              </div>
+              <div class="collapsed__content">
+                <label class="checkbox">
+                  <input type="checkbox" checked>
+                  <span class="checkbox__content">
+                    <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                    <span class="checkbox__label">Oceania (AU, NZ, Pacific Islands)</span>
+                  </span>
+                </label>
+
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox__content">
+                    <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                    <span class="checkbox__label">Western Europe</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__section">
+          <div class="panel">
+            <div class="panel__title">Select OS versions</div>
+
+            <div class="collapsed js-collapsed">
+              <div class="collapsed__header">
+                <span class="collapsed__toggler js-toggle">
+                  <span class="icon icon_cursor icon_cursor_right"></span>
+                  <span class="icon icon_cursor icon_cursor_down"></span>
+                </span>
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox__content">
+                    <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                    <span class="checkbox__label">All Versions</span>
+                  </span>
+                </label>
+              </div>
+
+              <div class="collapsed__content">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox__content">
+                    <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                    <span class="checkbox__label">Test</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="collapsed js-collapsed">
+              <div class="collapsed__header">
+                <span class="collapsed__toggler js-toggle">
+                  <span class="icon icon_cursor icon_cursor_right"></span>
+                  <span class="icon icon_cursor icon_cursor_down"></span>
+                </span>
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox__content">
+                    <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                    <span class="checkbox__label">Specific Versions</span>
+                  </span>
+                </label>
+              </div>
+
+              <div class="collapsed__content">
+                <div class="collapsed js-collapsed">
+                  <div class="collapsed__header">
+                    <span class="collapsed__toggler js-toggle">
+                      <span class="icon icon_cursor icon_cursor_right"></span>
+                      <span class="icon icon_cursor icon_cursor_down"></span>
+                    </span>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                        <span class="checkbox__label">Android Versions</span>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="collapsed__content">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                        <span class="checkbox__label">Test</span>
+                      </span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                        <span class="checkbox__label">Test</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="collapsed js-collapsed">
+                  <div class="collapsed__header">
+                    <span class="collapsed__toggler js-toggle">
+                      <span class="icon icon_cursor icon_cursor_right"></span>
+                      <span class="icon icon_cursor icon_cursor_down"></span>
+                    </span>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                        <span class="checkbox__label">Android Versions</span>
+                      </span>
+                    </label>
+                  </div>
+
+                  <div class="collapsed__content">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                        <span class="checkbox__label">Test</span>
+                      </span>
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                        <span class="checkbox__label">Test</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__section">
+          <div class="panel">
+            <div class="panel__title">Costum Devices</div>
+
+            <div class="collapsed js-collapsed">
+              <div class="collapsed__header">
+                <span class="collapsed__toggler js-toggle">
+                  <span class="icon icon_cursor icon_cursor_right"></span>
+                  <span class="icon icon_cursor icon_cursor_down"></span>
+                </span>
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox__content">
+                    <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                    <span class="checkbox__label">Do Not Enable</span>
+                  </span>
+                </label>
+              </div>
+
+              <div class="collapsed__content">
+                <div class="custome-devise-form js-custome-device-form">
+                  <p>Costum devices can be created using the AopLeving API. Documentation can be found here.</p>
+
+                  <div class="fields js-fields"></div>
+
+                  <script type="text/html" id="custome-device-template">
+                    <div class="field field_separated js-field">
+                      <div class="field__inner">
+                        <div class="field__section" style="width: 14rem">
+                          <select class="js-select" placeholder="Include" style="width: 100%">
+                            <option value="include" selected>Include</option>
+                            <option value="exclude">Exclude</option>
+                          </select>
+                        </div>
+                        <div class="field__section">
+                          <select class="js-select" placeholder="Select one" style="width: 100%">
+                            <option value="include" selected>Select one</option>
+                            <option value="exclude">Exclude</option>
+                          </select>
+                        </div>
+                        <div class="field__section" style="width: 10rem">
+                          <span class="icon icon_remove js-remove-field"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </script>
+
+                  <div class="field field_separated">
+                    <div class="field__inner">
+                      <div class="field__section" style="width: 14rem"></div>
+                      <div class="field__section">
+                        <a href="javascript:void(0)" class="js-add-field">
+                          <span class="inline inline_size_sm">
+                            <span class="inline__item">
+                              <span class="icon icon_plus icon_blue"></span>
+                            </span>
+                            <span class="inline__item">Add New Device List</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="collapsed active js-collapsed">
+              <div class="collapsed__header">
+                <span class="collapsed__toggler js-toggle">
+                  <span class="icon icon_cursor icon_cursor_right"></span>
+                  <span class="icon icon_cursor icon_cursor_down"></span>
+                </span>
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox__content">
+                    <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                    <span class="checkbox__label">Enable</span>
+                  </span>
+                </label>
+              </div>
+
+              <div class="collapsed__content">
+                <div class="custome-devise-form js-custome-device-form">
+                  <p>Costum devices can be created using the AopLeving API. Documentation can be found here.</p>
+
+                  <div class="fields js-fields"></div>
+
+                  <script type="text/html" id="custome-device-template">
+                    <div class="field field_separated js-field">
+                      <div class="field__inner">
+                        <div class="field__section" style="width: 14rem">
+                          <select class="js-select" placeholder="Include" style="width: 100%">
+                            <option value="include" selected>Include</option>
+                            <option value="exclude">Exclude</option>
+                          </select>
+                        </div>
+                        <div class="field__section">
+                          <select class="js-select" placeholder="Select one" style="width: 100%">
+                            <option value="include" selected>Select one</option>
+                            <option value="exclude">Exclude</option>
+                          </select>
+                        </div>
+                        <div class="field__section" style="width: 10rem">
+                          <span class="icon icon_remove js-remove-field"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </script>
+
+                  <div class="field field_separated">
+                    <div class="field__inner">
+                      <div class="field__section" style="width: 14rem"></div>
+                      <div class="field__section">
+                        <a href="javascript:void(0)" class="js-add-field">
+                          <span class="inline inline_size_sm">
+                            <span class="inline__item">
+                              <span class="icon icon_plus icon_blue"></span>
+                            </span>
+                            <span class="inline__item">Add New Device List</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__section">
+          <div class="panel">
+            <div class="panel__title">Connection Speeds</div>
+
+            <label class="checkbox">
+              <input type="radio" name="connection-speed" value="all">
+              <span class="checkbox__content">
+                <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                <span class="checkbox__label">All Connection Speeds</span>
+              </span>
+            </label>
+
+            <label class="checkbox">
+              <input type="radio" name="connection-speed" value="wifi">
+              <span class="checkbox__content">
+                <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                <span class="checkbox__label">WiFi Only</span>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="content__section">
+          <div class="panel">
+            <div class="panel__title">Costum Devices</div>
+
+            <div class="collapsed js-collapsed">
+              <div class="collapsed__header">
+                <span class="collapsed__toggler js-toggle">
+                  <span class="icon icon_cursor icon_cursor_right"></span>
+                  <span class="icon icon_cursor icon_cursor_down"></span>
+                </span>
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox__content">
+                    <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                    <span class="checkbox__label">Do Not Enable</span>
+                  </span>
+                </label>
+              </div>
+
+              <div class="collapsed__content">
+                <div class="custome-devise-form js-custome-device-form">
+                  <p>Costum audience can be created using Hyper Audience Segments</p>
+
+                  <div class="fields js-fields"></div>
+
+                  <script type="text/html" id="custome-device-template">
+                    <div class="field field_separated js-field">
+                      <div class="field__inner">
+                        <div class="field__section" style="width: 14rem">
+                          <select class="js-select" placeholder="Include" style="width: 100%">
+                            <option value="include" selected>Include</option>
+                            <option value="exclude">Exclude</option>
+                          </select>
+                        </div>
+                        <div class="field__section">
+                          <select class="js-select" placeholder="Select one" style="width: 100%">
+                            <option value="include" selected>Select one</option>
+                            <option value="exclude">Exclude</option>
+                          </select>
+                        </div>
+                        <div class="field__section" style="width: 10rem">
+                          <span class="icon icon_remove js-remove-field"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </script>
+
+                  <div class="field field_separated">
+                    <div class="field__inner">
+                      <div class="field__section" style="width: 14rem"></div>
+                      <div class="field__section">
+                        <a href="javascript:void(0)" class="js-add-field">
+                          <span class="inline inline_size_sm">
+                            <span class="inline__item">
+                              <span class="icon icon_plus icon_blue"></span>
+                            </span>
+                            <span class="inline__item">Add New Device List</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="collapsed active js-collapsed">
+              <div class="collapsed__header">
+                <span class="collapsed__toggler js-toggle">
+                  <span class="icon icon_cursor icon_cursor_right"></span>
+                  <span class="icon icon_cursor icon_cursor_down"></span>
+                </span>
+                <label class="checkbox">
+                  <input type="checkbox" checked>
+                  <span class="checkbox__content">
+                    <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                    <span class="checkbox__label">Enable</span>
+                  </span>
+                </label>
+              </div>
+
+              <div class="collapsed__content">
+                <div class="custome-devise-form js-custome-device-form">
+                  <p>Costum audience can be created using Hyper Audience Segments</p>
+
+                  <div class="fields js-fields"></div>
+
+                  <script type="text/html" id="custome-device-template">
+                    <div class="field field_separated js-field">
+                      <div class="field__inner">
+                        <div class="field__section" style="width: 14rem">
+                          <select class="js-select" placeholder="Include" style="width: 100%">
+                            <option value="include" selected>Include</option>
+                            <option value="exclude">Exclude</option>
+                          </select>
+                        </div>
+                        <div class="field__section">
+                          <select class="js-select" placeholder="Select one" style="width: 100%">
+                            <option value="include" selected>Select one</option>
+                            <option value="exclude">Exclude</option>
+                          </select>
+                        </div>
+                        <div class="field__section" style="width: 10rem">
+                          <span class="icon icon_remove js-remove-field"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </script>
+
+                  <div class="field field_separated">
+                    <div class="field__inner">
+                      <div class="field__section" style="width: 14rem"></div>
+                      <div class="field__section">
+                        <a href="javascript:void(0)" class="js-add-field">
+                          <span class="inline inline_size_sm">
+                            <span class="inline__item">
+                              <span class="icon icon_plus icon_blue"></span>
+                            </span>
+                            <span class="inline__item">Add New Device List</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    $(function () {
+      'use strict';
+
+      var page = new window.app.PromoteCampaingTargetingPageView();
+    });
+  </script>
+{% endblock %}
