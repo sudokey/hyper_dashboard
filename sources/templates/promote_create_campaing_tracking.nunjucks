@@ -1,0 +1,107 @@
+{% set activeSection = 'promote' %}
+{% set activePage = 'campaigns_list' %}
+{% set activeTab = 'tracking' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_promote.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      {% include "create_ad_tabs.nunjucks" %}
+
+      <div class="content__title">
+        <h1 class="title">Tracking</h1>
+      </div>
+
+      <form class="form form_indented">
+        <div class="content__section">
+          <div class="panel">
+            <h2 class="panel__title">Enter your Hyper tracking URL for impression and click.</h2>
+            <p>You can also add aditional macros if desired. <a href="#">Click here for a full list of supported macros.</a></p>
+
+            <div class="panel__section panel__section_sm">
+              <div class="collapsed js-collapsed">
+                <div class="collapsed__header">
+                  <span class="collapsed__toggler js-toggle">
+                    <span class="icon icon_cursor icon_cursor_right"></span>
+                    <span class="icon icon_cursor icon_cursor_down"></span>
+                  </span>
+                  <label class="checkbox">
+                    <input type="checkbox" checked>
+                    <span class="checkbox__content">
+                      <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                      <span class="checkbox__label">Single Impression/ Click URL</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="collapsed__content collapsed__content_form">
+                  <div class="field">
+                    <input type="text" class="field__data" placeholder="Impression URL">
+                  </div>
+                  <div class="field">
+                    <input type="text" class="field__data" placeholder="Click URL">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel__section panel__section_md">
+              <div class="collapsed active js-collapsed">
+                <div class="collapsed__header">
+                  <span class="collapsed__toggler js-toggle">
+                    <span class="icon icon_cursor icon_cursor_right"></span>
+                    <span class="icon icon_cursor icon_cursor_down"></span>
+                  </span>
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <span class="checkbox__content">
+                      <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                      <span class="checkbox__label">Impression / Click URL by Country</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="collapsed__content collapsed__content_form">
+                  <div class="field">
+                    <input type="text" class="field__data" placeholder="Impression URL">
+                  </div>
+                  <div class="field">
+                    <input type="text" class="field__data" placeholder="Click URL">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel__section">
+              <div class="hint">For more help please see our integration <a href="#">tutorial</a>.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__section">
+          <div class="pan">
+            <div class="pan__section pan__section_left">
+              <button class="button button_submit button_blue">Continue</button>
+            </div>
+            <div class="pan__section pan__section_right">
+              <a href="javascript:void(0)">Save as Draft</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    $(function () {
+      'use strict';
+
+      var page = new window.app.PageView();
+    });
+  </script>
+{% endblock %}

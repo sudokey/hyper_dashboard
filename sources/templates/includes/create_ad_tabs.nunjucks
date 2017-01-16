@@ -3,7 +3,7 @@
     <a class="tabs__item {% if activeTab == 'general' %} tabs__item_active {% endif %}" href="promote_create_campaing_general.html">General</a>
     <a class="tabs__item {% if activeTab == 'targeting' %} tabs__item_active {% endif %}" href="promote_create_campaing_targeting.html">Targeting</a>
     <a class="tabs__item {% if activeTab == 'bidding' %} tabs__item_active {% endif %}" href="promote_create_campaing_bidding.html">Bidding</a>
-    <div class="tabs__item {% if activeTab == 'tracking' %} tabs__item_active {% endif %}">Tracking</div>
+    <a class="tabs__item {% if activeTab == 'tracking' %} tabs__item_active {% endif %}" href="promote_create_campaing_tracking.html">Tracking</a>
     <div class="tabs__item {% if activeTab == 'creatives' %} tabs__item_active {% endif %}">Creatives</div>
   </div>
 </div>
