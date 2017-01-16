@@ -53,6 +53,10 @@ $(function () {
         return new app.DaterangeView({ el: el });
       });
 
+      $('.js-range').rangeslider({
+        polyfill: false
+      });
+
       $('.js-stop-propagation').on('click', function (e) {
         e.stopPropagation();
       });

@@ -1,0 +1,38 @@
+.rangeslider {
+  height: 0.8rem;
+  box-shadow: none;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff7940+0,ff8434+6,ffb201+21,ffc100+27,ffca00+33,f3ca0b+36,e4ca19+38,cdca31+41,9ec764+47,53bdb5+55,30b9d9+59,1bb7ec+61,11b6f5+63,00b5ff+67,00b6fe+71,00b9ee+76,00bed1+82,00ca85+93,00cc72+97,00ce65+100 */
+  background: #ff7940; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(left, #ff7940 0%, #ff8434 6%, #ffb201 21%, #ffc100 27%, #ffca00 33%, #f3ca0b 36%, #e4ca19 38%, #cdca31 41%, #9ec764 47%, #53bdb5 55%, #30b9d9 59%, #1bb7ec 61%, #11b6f5 63%, #00b5ff 67%, #00b6fe 71%, #00b9ee 76%, #00bed1 82%, #00ca85 93%, #00cc72 97%, #00ce65 100%);
+  background: -o-linear-gradient(left, #ff7940 0%, #ff8434 6%, #ffb201 21%, #ffc100 27%, #ffca00 33%, #f3ca0b 36%, #e4ca19 38%, #cdca31 41%, #9ec764 47%, #53bdb5 55%, #30b9d9 59%, #1bb7ec 61%, #11b6f5 63%, #00b5ff 67%, #00b6fe 71%, #00b9ee 76%, #00bed1 82%, #00ca85 93%, #00cc72 97%, #00ce65 100%);
+  background: linear-gradient(to right, #ff7940 0%, #ff8434 6%, #ffb201 21%, #ffc100 27%, #ffca00 33%, #f3ca0b 36%, #e4ca19 38%, #cdca31 41%, #9ec764 47%, #53bdb5 55%, #30b9d9 59%, #1bb7ec 61%, #11b6f5 63%, #00b5ff 67%, #00b6fe 71%, #00b9ee 76%, #00bed1 82%, #00ca85 93%, #00cc72 97%, #00ce65 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.rangeslider__fill {
+  background: none;
+  box-shadow: none;
+}
+
+.rangeslider__handle {
+  width: 2.2rem;
+  height: 2.2rem;
+  border: none;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.2);
+  background: #fff;
+
+  &:after {
+    display: none;
+  }
+}
+
+.rangeslider--horizontal {
+  .rangeslider__handle {
+    top: -0.9rem;
+  }
+}
+
+.rangeslider--active {
+  .rangeslider__handle {
+    background: #f7f7f7;
+  }
+}

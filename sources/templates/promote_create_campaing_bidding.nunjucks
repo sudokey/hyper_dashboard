@@ -1,0 +1,126 @@
+{% set activeSection = 'promote' %}
+{% set activePage = 'campaigns_list' %}
+{% set activeTab = 'bidding' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_promote.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      {% include "create_ad_tabs.nunjucks" %}
+
+      <div class="content__title">
+        <h1 class="title">Bidding & Budget</h1>
+      </div>
+
+      <form class="form form_indented">
+        <div class="content__section">
+          <div class="panel">
+            <div class="panel__title">
+              <div class="inline inline_size_sm">
+                <span class="inline__item">Suggested Bid: $0.079</span>
+                <span class="inline__item">
+                  <span class="tooltip">
+                    <span class="icon icon_tooltip"></span>
+                    <span class="tooltip__content">Lorem ipsum dolor sit amet.</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+
+            <div class="field field_separated">
+              <div class="field__inner">
+                <div class="field__section">
+                  <input type="range" min="10" max="100" step="10" value="50" class="js-range">
+                </div>
+                <div class="field__section" style="width: 19rem">
+                  <small>Audience:</small> <strong class="md">45M Users</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="field field_separated">
+              <div class="field__inner">
+                <div class="field__section field__section_label field__section_right">Total Budget ($)</div>
+                <div class="field__section" style="width: 44rem">
+                  <input type="text" class="field__data" placeholder="Unlimited">
+                  <div class="field__hint">Minimum $ 25</div>
+                </div>
+                <div class="field__section" style="width: 19rem"></div>
+              </div>
+            </div>
+
+            <div class="field field_separated">
+              <div class="field__inner">
+                <div class="field__section field__section_label field__section_right">Daily Budget ($)</div>
+                <div class="field__section" style="width: 44rem">
+                  <input type="text" class="field__data" placeholder="Unlimited">
+                  <div class="field__hint">Minimum $ 25</div>
+                </div>
+                <div class="field__section field__section_label" style="width: 19rem">
+                  <span class="tooltip">
+                    <span class="icon icon_tooltip"></span>
+                    <span class="tooltip__content">Lorem ipsum dolor sit amet.</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="field field_separated">
+              <div class="field__inner">
+                <div class="field__section field__section_label field__section_right">Pricing Model</div>
+                <div class="field__section" style="width: 44rem">
+                  <select class="js-select">
+                    <option value="cpc" selected>CPC</option>
+                  </select>
+                </div>
+                <div class="field__section" style="width: 19rem"></div>
+              </div>
+            </div>
+
+            <div class="field field_separated">
+              <div class="field__inner">
+                <div class="field__section field__section_label field__section_right">Bid Price ($)</div>
+                <div class="field__section" style="width: 44rem">
+                  <input type="text" class="field__data" placeholder="Unlimited">
+                  <div class="field__hint">Minimum $ 25</div>
+                </div>
+                <div class="field__section field__section_label" style="width: 19rem">
+                  <span class="tooltip">
+                    <span class="icon icon_tooltip"></span>
+                    <span class="tooltip__content">Lorem ipsum dolor sit amet.</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__section">
+          <div class="pan">
+            <div class="pan__section pan__section_left">
+              <button class="button button_submit button_blue">Continue</button>
+            </div>
+            <div class="pan__section pan__section_right">
+              <a href="javascript:void(0)">Save as Draft</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    $(function () {
+      'use strict';
+
+      var page = new window.app.PromoteCampaingGeneralPageView();
+    });
+  </script>
+{% endblock %}

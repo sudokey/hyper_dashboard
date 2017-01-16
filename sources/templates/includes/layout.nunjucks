@@ -5,6 +5,7 @@
   <title>Hyper Dashboard</title>
 
   <link rel="stylesheet" href="vendor/select2/css/select2.min.css">
+  <link rel="stylesheet" href="vendor/rangeslider/rangeslider.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -28,6 +29,7 @@
   <script src="vendor/clipboard/clipboard.min.js"></script>
   <script src="vendor/tablesorter/js/jquery.tablesorter.min.js"></script>
   <script src="vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="vendor/rangeslider/rangeslider.min.js"></script>
 
   <script src="js/app.js"></script>
   <script src="js/config/chart.js"></script>
