@@ -7,7 +7,7 @@
       <div class="inline__item">
         <div class="field">
           <div class="select-small-wrapper">
-            <select class="js-select" placeholder="Select Campaign" style="width: 18rem">
+            <select class="js-select" placeholder="Select Campaign" style="width: 17rem">
               <option value="" disabled selected>Select Campaign</option>
               <option value="1">Test 1</option>
               <option value="2">Test 2</option>
@@ -17,11 +17,12 @@
       </div>
       <div class="inline__item">
         <div class="field">
-          <div class="select-small-wrapper">
-            <select class="js-select" placeholder="Group by" style="width: 12rem">
-              <option value="" disabled selected>Group by</option>
-              <option value="1">Test 1</option>
-              <option value="2">Test 2</option>
+          <div class="select-tags-wrapper">
+            <select class="js-tag-select" style="width: 17rem" placeholder="Group By" multiple>
+              <option value="test">Test</option>
+              <option value="impressions">Impressions</option>
+              <option value="clicks">Clicks</option>
+              <option value="earning">Earning</option>
             </select>
           </div>
         </div>

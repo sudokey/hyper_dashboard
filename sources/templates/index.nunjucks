@@ -68,10 +68,22 @@
           </div>
 
           <div class="pan__section pan__section_right">
-            <a href="monetize_create_app.html" class="button button_green">
-              <span class="icon icon_plus icon_white"></span>
-              <span class="button__text">Create New App</span>
-            </a>
+            <div class="inline inline_size_md">
+              <div class="inline__item">
+                <span class="tooltip">
+                  <span class="icon icon_tooltip"></span>
+                  <span class="tooltip__content tooltip__content_left">
+                    This is the Top<br>Perfoming Placements
+                  </span>
+                </span>
+              </div>
+              <div class="inline__item">
+                <a href="monetize_create_app.html" class="button button_green">
+                  <span class="icon icon_plus icon_white"></span>
+                  <span class="button__text">Create New App</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
