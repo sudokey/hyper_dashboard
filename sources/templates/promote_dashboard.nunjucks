@@ -90,7 +90,7 @@
         <div class="grid__section">
           <div class="panel panel_goals">
             <div class="indicator">
-              <div class="indicator__value indicator__value_yellow">5.782</div>
+              <div class="indicator__value indicator__value_red">5.782</div>
               <div class="indicator__name">Goals</div>
             </div>
           </div>

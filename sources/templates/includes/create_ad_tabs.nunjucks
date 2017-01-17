@@ -4,6 +4,6 @@
     <a class="tabs__item {% if activeTab == 'targeting' %} tabs__item_active {% endif %}" href="promote_create_campaing_targeting.html">Targeting</a>
     <a class="tabs__item {% if activeTab == 'bidding' %} tabs__item_active {% endif %}" href="promote_create_campaing_bidding.html">Bidding</a>
     <a class="tabs__item {% if activeTab == 'tracking' %} tabs__item_active {% endif %}" href="promote_create_campaing_tracking.html">Tracking</a>
-    <div class="tabs__item {% if activeTab == 'creatives' %} tabs__item_active {% endif %}">Creatives</div>
+    <a class="tabs__item {% if activeTab == 'creatives' %} tabs__item_active {% endif %}" href="promote_create_campaing_creatives.html">Creatives</a>
   </div>
 </div>

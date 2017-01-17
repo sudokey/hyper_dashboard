@@ -1,0 +1,347 @@
+{% set activeSection = 'promote' %}
+{% set activePage = 'campaigns_list' %}
+{% set activeTab = 'creatives' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_promote.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      {% include "create_ad_tabs.nunjucks" %}
+
+      <div class="content__title">
+        <h1 class="title">Ads Creatives</h1>
+      </div>
+
+      <form class="form form_indented">
+        <div class="content__section">
+          <div class="panel">
+            <div class="panel__title">Create your ads by uploading creatives</div>
+            <p class="hint hint_md">You can skip this step and create ads later. Simply save campaign at the bottom of this page.</p>
+
+            <div class="field field_separated">
+              <div class="field__inner">
+                <div class="field__section" style="width: 57rem">
+                  <select class="js-select js-ad-type" style="width: 100%" placeholder="Select Creative Type">
+                    <option value="" disabled selected>Select Creative Type</option>
+                    <option value="banner">Banner</option>
+                    <option value="banner-2">Banner 2</option>
+                    <option value="native">Native</option>
+                    <option value="native-2">Native 2</option>
+                    <option value="video">Video</option>
+                    <option value="video-2">Video 2</option>
+                  </select>
+                </div>
+                <div class="field__section">
+                  <span class="tooltip">
+                    <span class="icon icon_tooltip"></span>
+                    <span class="tooltip__content">Lorem ipsum dolor sit amet.</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="fields js-form js-form-banner" style="display: none">
+              <div class="field">
+                <div class="field__label">
+                  <span class="inline inline_size_sm">
+                    <span class="inline__item">Assets</span>
+                    <span class="inline__item">
+                      <span class="tooltip">
+                        <span class="icon icon_tooltip"></span>
+                        <span class="tooltip__content tooltip__content_right">
+                          Banner Image 320x50<br>
+                          Leader Image 728x90<br>
+                          Mrec Image 300x250<br>
+                          Portrait Interstitial 320x480, 320x512, 768x1024<br>
+                          Landscape Interstitial 480x320, 512x320, 1024x768
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+
+                <div class="upload">
+                  <div class="upload__title">
+                    Drop files or <a href="javascript:void(0)">click here</a> to upload
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fields js-form js-form-banner-2" style="display: none">
+              <div class="field">
+                <div class="field__label">
+                  <span class="inline inline_size_sm">
+                    <span class="inline__item">Assets</span>
+                    <span class="inline__item">
+                      <span class="tooltip">
+                        <span class="icon icon_tooltip"></span>
+                        <span class="tooltip__content tooltip__content_right">
+                          Banner Image 320x50<br>
+                          Leader Image 728x90<br>
+                          Mrec Image 300x250<br>
+                          Portrait Interstitial 320x480, 320x512, 768x1024<br>
+                          Landscape Interstitial 480x320, 512x320, 1024x768
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+
+                <div class="upload">
+                  <div class="upload__title">
+                    Drop files or <a href="javascript:void(0)">click here</a> to upload
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="field">
+                <p>You can manage your creatives at <a href="#">Manage Creatives</a> menu</p>
+
+                <div class="list list_banners">
+                  {% for i in range(1, 4) -%}
+                    <div class="list__item">
+                      <div class="inline">
+                        <div class="inline__item">
+                          <img src="img/banner.png">
+                        </div>
+                        <div class="inline__item">
+                          <strong>Image {{i}}</strong> (1200x627)
+                          <br>
+                          <small>235kB</small>
+                        </div>
+                      </div>
+                    </div>
+                  {%- endfor %}
+                </div>
+              </div>
+            </div>
+
+            <div class="fields js-form js-form-native" style="display: none">
+              <div class="field">
+                <div class="field__label">
+                  <span class="inline inline_size_sm">
+                    <span class="inline__item">Assets</span>
+                    <span class="inline__item">
+                      <span class="tooltip">
+                        <span class="icon icon_tooltip"></span>
+                        <span class="tooltip__content tooltip__content_right">
+                          Native Image 1200x627<br>
+                          App Icon at least 300x300 but less than 600x600
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+
+                <div class="upload">
+                  <div class="upload__title">
+                    Drop files or <a href="javascript:void(0)">click here</a> to upload
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel__title">Create text for native ads</div>
+
+              <div class="field" style="width: 57rem">
+                <input type="text" class="field__data" placeholder="Enter Title">
+                <div class="field__hint">Must be no more than 50 chars</div>
+              </div>
+
+              <div class="field" style="width: 57rem">
+                <input type="text" class="field__data" placeholder="Enter Subline">
+                <div class="field__hint">Must be no more than 100 chars</div>
+              </div>
+
+              <div class="field" style="width: 57rem">
+                <input type="text" class="field__data" placeholder="Enter Button Text">
+                <div class="field__hint">Must be no more than 12 chars</div>
+              </div>
+
+              <div class="field" style="width: 57rem">
+                <input type="text" class="field__data" placeholder="Enter Star Rating">
+                <div class="field__hint">Must be a multiple of 0.5 between 0 – 5</div>
+              </div>
+            </div>
+
+            <div class="fields js-form js-form-native-2" style="display: none">
+              <div class="field">
+                <div class="field__label">
+                  <span class="inline inline_size_sm">
+                    <span class="inline__item">Assets</span>
+                    <span class="inline__item">
+                      <span class="tooltip">
+                        <span class="icon icon_tooltip"></span>
+                        <span class="tooltip__content tooltip__content_right">
+                          Native Image 1200x627<br>
+                          App Icon at least 300x300 but less than 600x600
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+
+                <div class="upload">
+                  <div class="upload__title">
+                    Drop files or <a href="javascript:void(0)">click here</a> to upload
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <p>You can manage your creatives at <a href="#">Manage Creatives</a> menu</p>
+
+                <div class="list list_banners">
+                  {% for i in range(1, 4) -%}
+                    <div class="list__item">
+                      <div class="inline">
+                        <div class="inline__item">
+                          <img src="img/banner.png">
+                        </div>
+                        <div class="inline__item">
+                          <strong>Image {{i}}</strong> (1200x627)
+                          <br>
+                          <small>235kB</small>
+                        </div>
+                      </div>
+                    </div>
+                  {%- endfor %}
+                </div>
+              </div>
+
+              <div class="panel__title">Create text for native ads</div>
+
+              <div class="field" style="width: 57rem">
+                <input type="text" class="field__data" placeholder="Enter Title">
+                <div class="field__hint">Must be no more than 50 chars</div>
+              </div>
+
+              <div class="field" style="width: 57rem">
+                <input type="text" class="field__data" placeholder="Enter Subline">
+                <div class="field__hint">Must be no more than 100 chars</div>
+              </div>
+
+              <div class="field" style="width: 57rem">
+                <input type="text" class="field__data" placeholder="Enter Button Text">
+                <div class="field__hint">Must be no more than 12 chars</div>
+              </div>
+
+              <div class="field" style="width: 57rem">
+                <input type="text" class="field__data" placeholder="Enter Star Rating">
+                <div class="field__hint">Must be a multiple of 0.5 between 0 – 5</div>
+              </div>
+            </div>
+
+            <div class="fields js-form js-form-video" style="display: none">
+              <div class="field">
+                <div class="field__label">
+                  <span class="inline inline_size_sm">
+                    <span class="inline__item">Assets</span>
+                    <span class="inline__item">
+                      <span class="tooltip">
+                        <span class="icon icon_tooltip"></span>
+                        <span class="tooltip__content tooltip__content_right">
+                          App Icon at least 300x300 but less than 600x600<br>
+                          Foreground Object Image 192x192<br>
+                          Portrait Short Video must be under 15 sec<br>
+                          Portrait Long Video must be over 15 sec<br>
+                          Landscape Short Video must be under 15 sec<br>
+                          Landscape Long Video must be over 15 sec
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+
+                <div class="upload">
+                  <div class="upload__title">
+                    Drop files or <a href="javascript:void(0)">click here</a> to upload
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fields js-form js-form-video-2" style="display: none">
+              <div class="field">
+                <div class="field__label">
+                  <span class="inline inline_size_sm">
+                    <span class="inline__item">Assets</span>
+                    <span class="inline__item">
+                      <span class="tooltip">
+                        <span class="icon icon_tooltip"></span>
+                        <span class="tooltip__content tooltip__content_right">
+                          App Icon at least 300x300 but less than 600x600<br>
+                          Foreground Object Image 192x192<br>
+                          Portrait Short Video must be under 15 sec<br>
+                          Portrait Long Video must be over 15 sec<br>
+                          Landscape Short Video must be under 15 sec<br>
+                          Landscape Long Video must be over 15 sec
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+
+                <div class="upload">
+                  <div class="upload__title">
+                    Drop files or <a href="javascript:void(0)">click here</a> to upload
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <p>You can manage your creatives at <a href="#">Manage Creatives</a> menu</p>
+
+                <div class="list list_media">
+                  {% for i in range(1, 4) -%}
+                    <div class="list__item">
+                      <div class="inline">
+                        <div class="inline__item">
+                          <div class="media media_video">
+                            <img src="img/video.png">
+                          </div>
+                        </div>
+                        <div class="inline__item">
+                          <strong>Video {{i}}</strong>
+                          <br>
+                          <small>235kB</small>
+                        </div>
+                      </div>
+                    </div>
+                  {%- endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__section">
+          <div class="pan">
+            <div class="pan__section pan__section_left">
+              <button class="button button_submit button_blue">Let’s Rock!</button>
+            </div>
+            <div class="pan__section pan__section_right">
+              <a href="javascript:void(0)">Save as Draft</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    $(function () {
+      'use strict';
+
+      var page = new window.app.PromoteCampaingCreativesPageView();
+    });
+  </script>
+{% endblock %}

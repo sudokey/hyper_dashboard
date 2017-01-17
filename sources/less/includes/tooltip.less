@@ -4,9 +4,19 @@
 
   &:hover {
     .tooltip__content {
+      left: 50%;
       opacity: 1;
-      z-index: 0;
-      transition: opacity 0.2s ease, z-index 0s linear 0s;
+      transition: opacity 0.2s ease, left 0s linear 0s;
+    }
+
+    .tooltip__content_right {
+      left: 100%;
+    }
+
+    .tooltip__content_left {
+      right: 100%;
+      left: auto;
+      transition: opacity 0.2s ease, right 0s linear 0s;
     }
   }
 }
@@ -14,8 +24,7 @@
 .tooltip__content {
   position: absolute;
   bottom: 100%;
-  left: 50%;
-  z-index: -1;
+  left: -9999px;
   opacity: 0;
   transform: translateX(-50%);
   line-height: 1.5;
@@ -28,7 +37,7 @@
   white-space: nowrap;
   background: @black;
   color: #fff;
-  transition: opacity 0.2s ease, z-index 0s linear 0.2s;
+  transition: opacity 0.2s ease, left 0s linear 0.2s;
 
   &:after {
     content: '';
@@ -60,11 +69,12 @@
 
 .tooltip__content_left {
   bottom: auto;
+  right: 9999px;
   left: auto;
-  right: 100%;
   top: 50%;
   transform: translateY(-50%);
   margin: 0 1rem 0 0;
+  transition: opacity 0.2s ease, right 0s linear 0.2s;
 
   &:after {
     top: 50%;
@@ -73,5 +83,23 @@
     margin: -0.4rem 0 0;
     border-width: 0.5rem 0 0.5rem 0.865rem;
     border-color: transparent transparent transparent @black;
+  }
+}
+
+.tooltip__content_right {
+  bottom: auto;
+  right: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 0 0 1rem;
+
+  &:after {
+    top: 50%;
+    bottom: auto;
+    left: auto;
+    right: 100%;
+    margin: -0.4rem 0 0;
+    border-width: 0.5rem 0.865rem 0.5rem 0;
+    border-color: transparent @black transparent transparent;
   }
 }
