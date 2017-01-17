@@ -29,7 +29,7 @@
                 My Campaigns
               </span>
             </a>
-            <a class="sub-menu__item {% if activePage == 'campaigns_draft' %} sub-menu__item_active {% endif %}" href="promote_campaigns_draft.html">
+            <a class="sub-menu__item {% if activePage == 'campaigns_draft' %} sub-menu__item_active {% endif %}" href="promote_campaings_draft.html">
               <span class="menu-item__label">
                 Draft Campaigns
               </span>
