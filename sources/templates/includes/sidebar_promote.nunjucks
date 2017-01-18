@@ -13,7 +13,7 @@
           </a>
         </div>
 
-        <div class="menu-item js-collapsed {% if activePage == 'campaigns_list' or activePage == 'campaigns_draft' or activePage == 'campaigns_manage_creatives' or activePage == 'campaigns' %} menu-item_active_no-link active {% endif %}">
+        <div class="menu-item js-collapsed {% if activePage == 'campaigns_list' or activePage == 'campaigns_draft' or activePage == 'campaigns_creatives' or activePage == 'campaigns' %} menu-item_active_no-link active {% endif %}">
           <a href="javascript:void(0)" class="menu-item__title js-toggle">
             <span class="menu-icon menu-icon_campaigns"></span>
             <span class="menu-item__label">
@@ -34,7 +34,7 @@
                 Draft Campaigns
               </span>
             </a>
-            <a class="sub-menu__item {% if activePage == 'campaigns_manage_creatives' %} sub-menu__item_active {% endif %}" href="promote_campaigns_manage_creatives.html">
+            <a class="sub-menu__item {% if activePage == 'campaigns_creatives' %} sub-menu__item_active {% endif %}" href="promote_campaigns_creatives.html">
               <span class="menu-item__label">
                 Manage Creatives
               </span>

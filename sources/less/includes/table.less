@@ -90,6 +90,45 @@
   }
 }
 
+.table_data_flat {
+  td {
+    padding: 1rem 0.5rem;
+  }
+
+  th {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  td, th {
+    border-bottom: 1px solid #f8fafb;
+
+    &:first-child {
+      padding-left: 3rem;
+    }
+
+    &:last-child {
+      padding-right: 3rem;
+    }
+  }
+
+  tr {
+    &:last-child {
+      td {
+        border-bottom: none;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(odd) {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
 .table-wrapper {
   position: relative;
   z-index: 0;

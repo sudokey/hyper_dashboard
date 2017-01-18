@@ -1,0 +1,145 @@
+{% set activeSection = 'promote' %}
+{% set activePage = 'campaigns_creatives' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_promote.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <h1 class="title">Manage Creatives</h1>
+      </div>
+
+      <div class="content__section">
+        <div class="pan">
+          <div class="pan__section pan__section_left">
+            <div class="inline inline_size_md">
+              <div class="inline__item">
+                {% include "popover_filters.nunjucks" %}
+              </div>
+              <div class="inline__item">
+                <div class="select-tags-wrapper">
+                  <select class="js-tag-select" style="width: 160px" placeholder="Creative Type" multiple>
+                    <option value="test">Test</option>
+                    <option value="impressions">Impressions</option>
+                    <option value="clicks">Clicks</option>
+                    <option value="earning">Earning</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pan__section pan__section_right">
+            <button class="button button_blue">Search</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__section">
+        <div class="panel panel_table">
+          <div class="table-wrapper">
+            <div class="table-wrapper__inner">
+              <table class="table table_data table_data_flat">
+                <thead>
+                  <tr>
+                    <th>Creative</th>
+                    <th>ID</th>
+                    <th>Type</th>
+                    <th>Size</th>
+                    <th>Imp</th>
+                    <th>Clicls</th>
+                    <th>Conv</th>
+                    <th>CTR</th>
+                    <th>CR</th>
+                    <th>Spent</th>
+                    <th>Status</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="media media_banner">
+                        <img src="img/banner.png">
+                      </div>
+                    </td>
+                    <td>1654785</td>
+                    <td>Banner</td>
+                    <td>320x50</td>
+                    <td>320450</td>
+                    <td>27642</td>
+                    <td>2.891</td>
+                    <td>3.05</td>
+                    <td>10</td>
+                    <td>1780</td>
+                    <td><span class="badge badge_green">Active</span></td>
+                    <td><a href="javascript:void(0)" class="icon icon_remove icon_black"></a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="media media_video">
+                        <img src="img/video.png">
+                      </div>
+                    </td>
+                    <td>1654785</td>
+                    <td>Banner</td>
+                    <td>320x50</td>
+                    <td>320450</td>
+                    <td>27642</td>
+                    <td>2.891</td>
+                    <td>3.05</td>
+                    <td>10</td>
+                    <td>1780</td>
+                    <td><span class="badge badge_green">Active</span></td>
+                    <td><a href="javascript:void(0)" class="icon icon_remove icon_black"></a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="media media_banner">
+                        <img src="img/banner.png">
+                      </div>
+                    </td>
+                    <td>1654785</td>
+                    <td>Banner</td>
+                    <td>320x50</td>
+                    <td>320450</td>
+                    <td>27642</td>
+                    <td>2.891</td>
+                    <td>3.05</td>
+                    <td>10</td>
+                    <td>1780</td>
+                    <td><span class="badge badge_green">Active</span></td>
+                    <td><a href="javascript:void(0)" class="icon icon_remove icon_black"></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__section">
+        <div class="paggination">
+          <a href="#" class="paggination__item paggination__item_active">1</a>
+          <a href="#" class="paggination__item">2</a>
+          <a href="#" class="paggination__item">3</a>
+          <a href="#" class="paggination__item">4</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    $(function () {
+      'use strict';
+
+      var page = new window.app.PageView();
+    });
+  </script>
+{% endblock %}
