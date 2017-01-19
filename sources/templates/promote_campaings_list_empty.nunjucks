@@ -1,0 +1,33 @@
+{% set activeSection = 'promote' %}
+{% set activePage = 'campaigns_list' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_promote.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <h1 class="title">My Campaigns</h1>
+      </div>
+
+      <div class="add add_campaing">
+        <h1 class="add__title">Create new ad campaign to start getting new<br>users to your apps</h1>
+        <a href="promote_create_campaing_general.html" class="button button_green button_submit">Create Campaign</a>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    $(function () {
+      'use strict';
+
+      var page = new window.app.PageView();
+    });
+  </script>
+{% endblock %}

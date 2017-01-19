@@ -1,0 +1,5 @@
+<div class="tabs">
+  <a class="tabs__item {% if activeTab == 'ads' %} tabs__item_active {% endif %}" href="promote_campaings_item.html">Ads</a>
+  <a class="tabs__item {% if activeTab == 'sources' %} tabs__item_active {% endif %}" href="promote_campaings_item_sources.html">Sources</a>
+  <a class="tabs__item {% if activeTab == 'countries' %} tabs__item_active {% endif %}" href="promote_campaings_item_countries.html">Countries</a>
+</div>

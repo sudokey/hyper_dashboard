@@ -143,7 +143,7 @@
                   <div class="inline inline_table inline_size_sm">
                     <span class="inline__item"><span class="icon icon_apple"></span></span>
                     <span class="inline__item"><img src="img/evernote.png" class="pick pick_app"></span>
-                    <span class="inline__item"><a href="#">Slack Be less busy</a></span>
+                    <span class="inline__item"><a href="promote_campaings_item.html" class="js-stop-propagation">Slack Be less busy</a></span>
                   </div>
                 </div>
               </div>

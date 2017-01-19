@@ -1,0 +1,475 @@
+{% set activeSection = 'promote' %}
+{% set activePage = 'campaigns_list' %}
+{% set activeTab = 'ads' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_promote.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <div class="pan">
+          <div class="pan__section pan__section_left">
+            <div class="inline inline_size_md">
+              <div class="inline__item">
+                <h1 class="title">Campaign 1</h1>
+              </div>
+              <div class="inline__item">
+                <div class="popover js-popover">
+                  <div class="popover__toggler js-popover-toggle">
+                    <span class="icon icon_settings"></span>
+                  </div>
+                  <div class="popover__content popover__content_bottom-center">
+                    <div class="panel panel_popover">
+                      <label class="checkbox">
+                        <input type="checkbox" checked>
+                        <span class="checkbox__content">
+                          <span class="checkbox__ctrl"></span>
+                          <span class="checkbox__label">Lorem ipsum dolor sit.</span>
+                        </span>
+                      </label>
+                      <label class="checkbox">
+                        <input type="checkbox" checked>
+                        <span class="checkbox__content">
+                          <span class="checkbox__ctrl"></span>
+                          <span class="checkbox__label">Lorem ipsum dolor sit amet.</span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pan__section pan__section_right">
+            <div class="inline">
+              <div class="inline__item">
+                Spend <strong>$140</strong> from <strong>$1.000</strong>
+              </div>
+              <div class="inline__item">
+                <a href="promote_create_campaing_general.html" class="button button_green">
+                  <span class="icon icon_plus icon_white"></span>
+                  <span class="button__text">Create Campaing</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__section">
+        <div class="table-panel">
+          <div class="table-panel__header">
+            <div class="pan">
+              <div class="pan__section pan__section_left">
+                <div class="inline inline_size_md">
+                  <div class="inline__item">
+                    {% include "campaings_table_tabs.nunjucks" %}
+                  </div>
+                  <div class="inline__item">
+                    {% include "popover_filters.nunjucks" %}
+                  </div>
+                </div>
+              </div>
+
+              <div class="pan__section pan__section_right">
+                <div class="inline inline_size_md">
+                  <div class="inline__item">
+                    <a class="js-daterange" href="javascript:void(0)"></a>
+                  </div>
+                  <div class="inline__item">
+                    <a href="#" class="button button_bordered_blue button_small">
+                      <span class="button__icon">
+                        <span class="icon icon_export icon_white"></span>
+                        <span class="icon icon_export icon_blue"></span>
+                      </span>
+                      Export
+                    </a>
+                  </div>
+                  <div class="inline__item">
+                    <a href="#" class="button button_blue button_small"><strong>Create ads</strong></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-wrapper">
+            <div class="table-wrapper__settings">
+              <div class="popover js-popover">
+                <div class="popover__toggler js-popover-toggle">
+                  <span class="icon icon_settings"></span>
+                </div>
+
+                <div class="popover__content popover__content_bottom-right">
+                  <div class="panel panel_popover panel_settings">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Ad Name</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Imp</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Clicks</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">CTR</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Spend</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">CPC</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">CPC</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Conv</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">CR</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">CPI</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Goals</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Deposit</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">CPA</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <span class="checkbox__content">
+                        <span class="checkbox__ctrl"></span>
+                        <span class="checkbox__label">Date</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="table-wrapper__inner">
+              <table class="table table_data table_data_sm">
+                <thead>
+                  <th>Ad Name</th>
+                  <th>Date</th>
+                  <th>Type</th>
+                  <th>Imp</th>
+                  <th>Clicks</th>
+                  <th>CTR</th>
+                  <th>Spend</th>
+                  <th>CPC</th>
+                  <th>Conv</th>
+                  <th>CR</th>
+                  <th>CPI</th>
+                  <th>Goals</th>
+                  <th>Deposit</th>
+                  <th>CPA</th>
+                  <th>Status</th>
+                  <th></th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="#">Campaign Ad1</a></td>
+                    <td>24.12.2016</td>
+                    <td>Banner</td>
+                    <td>1.3M</td>
+                    <td>87k</td>
+                    <td>3.4%</td>
+                    <td>$2.534</td>
+                    <td>$0.35</td>
+                    <td>8.700</td>
+                    <td>10%</td>
+                    <td>$2.3</td>
+                    <td>15.450</td>
+                    <td>35</td>
+                    <td>$15</td>
+                    <td><span class="badge badge_green">Active</span></td>
+                    <td>
+                      <label class="checkbox checkbox_radio">
+                        <input type="checkbox">
+                        <span class="checkbox__content">
+                          <span class="checkbox__ctrl"></span>
+                        </span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Campaign Ad1</a></td>
+                    <td>24.12.2016</td>
+                    <td>Banner</td>
+                    <td>1.3M</td>
+                    <td>87k</td>
+                    <td>3.4%</td>
+                    <td>$2.534</td>
+                    <td>$0.35</td>
+                    <td>8.700</td>
+                    <td>10%</td>
+                    <td>$2.3</td>
+                    <td>15.450</td>
+                    <td>35</td>
+                    <td>$15</td>
+                    <td><span class="badge badge_green">Active</span></td>
+                    <td>
+                      <label class="checkbox checkbox_radio">
+                        <input type="checkbox">
+                        <span class="checkbox__content">
+                          <span class="checkbox__ctrl"></span>
+                        </span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Campaign Ad1</a></td>
+                    <td>24.12.2016</td>
+                    <td>Banner</td>
+                    <td>1.3M</td>
+                    <td>87k</td>
+                    <td>3.4%</td>
+                    <td>$2.534</td>
+                    <td>$0.35</td>
+                    <td>8.700</td>
+                    <td>10%</td>
+                    <td>$2.3</td>
+                    <td>15.450</td>
+                    <td>35</td>
+                    <td>$15</td>
+                    <td><span class="badge badge_green">Active</span></td>
+                    <td>
+                      <label class="checkbox checkbox_radio">
+                        <input type="checkbox">
+                        <span class="checkbox__content">
+                          <span class="checkbox__ctrl"></span>
+                        </span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Campaign Ad1</a></td>
+                    <td>24.12.2016</td>
+                    <td>Banner</td>
+                    <td>1.3M</td>
+                    <td>87k</td>
+                    <td>3.4%</td>
+                    <td>$2.534</td>
+                    <td>$0.35</td>
+                    <td>8.700</td>
+                    <td>10%</td>
+                    <td>$2.3</td>
+                    <td>15.450</td>
+                    <td>35</td>
+                    <td>$15</td>
+                    <td><span class="badge badge_green">Active</span></td>
+                    <td>
+                      <label class="checkbox checkbox_radio">
+                        <input type="checkbox">
+                        <span class="checkbox__content">
+                          <span class="checkbox__ctrl"></span>
+                        </span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Campaign Ad1</a></td>
+                    <td>24.12.2016</td>
+                    <td>Banner</td>
+                    <td>1.3M</td>
+                    <td>87k</td>
+                    <td>3.4%</td>
+                    <td>$2.534</td>
+                    <td>$0.35</td>
+                    <td>8.700</td>
+                    <td>10%</td>
+                    <td>$2.3</td>
+                    <td>15.450</td>
+                    <td>35</td>
+                    <td>$15</td>
+                    <td><span class="badge badge_green">Active</span></td>
+                    <td>
+                      <label class="checkbox checkbox_radio">
+                        <input type="checkbox">
+                        <span class="checkbox__content">
+                          <span class="checkbox__ctrl"></span>
+                        </span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Campaign Ad1</a></td>
+                    <td>24.12.2016</td>
+                    <td>Banner</td>
+                    <td>1.3M</td>
+                    <td>87k</td>
+                    <td>3.4%</td>
+                    <td>$2.534</td>
+                    <td>$0.35</td>
+                    <td>8.700</td>
+                    <td>10%</td>
+                    <td>$2.3</td>
+                    <td>15.450</td>
+                    <td>35</td>
+                    <td>$15</td>
+                    <td><span class="badge">Paused</span></td>
+                    <td>
+                      <label class="checkbox checkbox_radio">
+                        <input type="checkbox">
+                        <span class="checkbox__content">
+                          <span class="checkbox__ctrl"></span>
+                        </span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Campaign Ad1</a></td>
+                    <td>24.12.2016</td>
+                    <td>Banner</td>
+                    <td>1.3M</td>
+                    <td>87k</td>
+                    <td>3.4%</td>
+                    <td>$2.534</td>
+                    <td>$0.35</td>
+                    <td>8.700</td>
+                    <td>10%</td>
+                    <td>$2.3</td>
+                    <td>15.450</td>
+                    <td>35</td>
+                    <td>$15</td>
+                    <td><span class="badge badge_green">Active</span></td>
+                    <td>
+                      <label class="checkbox checkbox_radio">
+                        <input type="checkbox" checked>
+                        <span class="checkbox__content">
+                          <span class="checkbox__ctrl"></span>
+                        </span>
+                      </label>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></strong>1.3M</strong></td>
+                    <td><strong>87k</strong></td>
+                    <td><strong>3.4%</strong></td>
+                    <td>$2.534</td>
+                    <td>$0.35</td>
+                    <td><strong>8.700</strong></td>
+                    <td><strong>10%</strong></td>
+                    <td><strong>$2.3</strong></td>
+                    <td><strong>15.450</strong></td>
+                    <td><strong>35</strong></td>
+                    <td><strong>$15</strong></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__section">
+        <div class="pan">
+          <div class="pan__section pan__section_left">
+            <div class="paggination">
+              <a href="#" class="paggination__item paggination__item_active">1</a>
+              <a href="#" class="paggination__item">2</a>
+              <a href="#" class="paggination__item">3</a>
+              <a href="#" class="paggination__item">4</a>
+            </div>
+          </div>
+          <div class="pan__section pan__section_right">
+            <a href="promote_campaings_list.html">Back to Campaigns</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    $(function () {
+      'use strict';
+
+      var page = new window.app.PageView();
+    });
+  </script>
+{% endblock %}

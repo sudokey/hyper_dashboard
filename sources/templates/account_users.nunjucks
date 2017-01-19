@@ -10,8 +10,8 @@
     </div>
 
     <div class="content__col content__col_main content__col_vam">
-      <div class="add-users">
-        <h1 class="add-users__title">Add more users to your account and select specific privileges.</h1>
+      <div class="add add_users">
+        <h1 class="add__title">Add more users to your account and select specific privileges.</h1>
         <a href="account_create_new_user.html" class="button button_green button_submit">Add more users</a>
       </div>
     </div>
