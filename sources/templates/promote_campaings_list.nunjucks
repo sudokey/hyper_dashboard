@@ -1,0 +1,64 @@
+{% set activeSection = 'promote' %}
+{% set activePage = 'campaigns_list' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_promote.nunjucks" %}
+    </div>
+
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <div class="pan">
+          <div class="pan__section pan__section_left">
+            <h1 class="title">My Campaigns</h1>
+          </div>
+          <div class="pan__section pan__section_right">
+            <a href="promote_create_campaing_general.html" class="button button_green">
+              <span class="icon icon_plus icon_white"></span>
+              <span class="button__text">Create Campaing</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__section">
+        <div class="pan">
+          <div class="pan__section pan__section_left">
+            <div class="inline">
+              <div class="inline__item">
+                {% include "popover_filters.nunjucks" %}
+              </div>
+              <div class="inline__item">
+                <div class="select-tags-wrapper">
+                  <select class="js-tag-select" style="width: 160px" placeholder="Group By" multiple>
+                    <option value="test">Test</option>
+                    <option value="impressions">Impressions</option>
+                    <option value="clicks">Clicks</option>
+                    <option value="earning">Earning</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pan__section pan__section_right">
+            <a class="js-daterange" href="javascript:void(0)"></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    $(function () {
+      'use strict';
+
+      var page = new window.app.PageView();
+    });
+  </script>
+{% endblock %}
