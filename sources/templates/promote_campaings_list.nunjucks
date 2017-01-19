@@ -49,6 +49,212 @@
         </div>
       </div>
 
+      <div class="content__section">
+        <div class="panel">
+          <div class="campaigns-list campaigns-list_main js-collapsed">
+            <div class="campaigns-list__section campaigns-list__section_header">
+              <div class="campaigns-list__col campaigns-list__col_name">Campaign Name</div>
+              <div class="campaigns-list__col campaigns-list__col_type">
+                <a href="javascript:void(0)">
+                  <span class="inline inline_size_xs">
+                    <span class="inline__item">Campaign Type</span>
+                    <span class="inline__item">
+                      <span class="icon icon_sort"></span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div class="campaigns-list__col campaigns-list__col_sources">
+                <a href="javascript:void(0)">
+                  <span class="inline inline_size_xs">
+                    <span class="inline__item">Sources</span>
+                    <span class="inline__item">
+                      <span class="icon icon_sort"></span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div class="campaigns-list__col campaigns-list__col_ads">
+                <a href="javascript:void(0)">
+                  <span class="inline inline_size_xs">
+                    <span class="inline__item">Ads</span>
+                    <span class="inline__item">
+                      <span class="icon icon_sort"></span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div class="campaigns-list__col campaigns-list__col_spend">
+                <a href="javascript:void(0)">
+                  <span class="inline inline_size_xs">
+                    <span class="inline__item">Spend</span>
+                    <span class="inline__item">
+                      <span class="icon icon_sort"></span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div class="campaigns-list__col campaigns-list__col_conversions">
+                <a href="javascript:void(0)">
+                  <span class="inline inline_size_xs">
+                    <span class="inline__item">Conv</span>
+                    <span class="inline__item">
+                      <span class="icon icon_sort"></span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div class="campaigns-list__col campaigns-list__col_goals">
+                <a href="javascript:void(0)">
+                  <span class="inline inline_size_xs">
+                    <span class="inline__item">Goals</span>
+                    <span class="inline__item">
+                      <span class="icon icon_sort"></span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div class="campaigns-list__col campaigns-list__col_deposits">
+                <a href="javascript:void(0)">
+                  <span class="inline inline_size_xs">
+                    <span class="inline__item">Deposits</span>
+                    <span class="inline__item">
+                      <span class="icon icon_sort"></span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div class="campaigns-list__col campaigns-list__col_status">
+                <a href="javascript:void(0)">
+                  <span class="inline inline_size_xs">
+                    <span class="inline__item">Status</span>
+                    <span class="inline__item">
+                      <span class="icon icon_sort"></span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div class="campaigns-list__col campaigns-list__col_toggle"></div>
+            </div>
+
+            <div class="campaigns-list__section campaigns-list__section_main js-toggle">
+              <div class="campaigns-list__col campaigns-list__col_name">
+                <div class="app-name">
+                  <div class="inline inline_table inline_size_sm">
+                    <span class="inline__item"><span class="icon icon_apple"></span></span>
+                    <span class="inline__item"><img src="img/evernote.png" class="pick pick_app"></span>
+                    <span class="inline__item"><a href="#">Slack Be less busy</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="campaigns-list__col campaigns-list__col_type">User Acquisition</div>
+              <div class="campaigns-list__col campaigns-list__col_sources"><a href="#">54</a></div>
+              <div class="campaigns-list__col campaigns-list__col_ads"><a href="#">54</a></div>
+              <div class="campaigns-list__col campaigns-list__col_spend"><strong>$3.785</strong></div>
+              <div class="campaigns-list__col campaigns-list__col_conversions">4670</div>
+              <div class="campaigns-list__col campaigns-list__col_goals">4670</div>
+              <div class="campaigns-list__col campaigns-list__col_deposits">36</div>
+              <div class="campaigns-list__col campaigns-list__col_status"><span class="badge badge_green">Active</span></div>
+              <div class="campaigns-list__col campaigns-list__col_toggle">
+                <span class="icon icon_cursor icon_cursor_right"></span>
+                <span class="icon icon_cursor icon_cursor_down"></span>
+              </div>
+            </div>
+
+            <div class="campaigns-list__section campaigns-list__section_extra">
+              <div class="campaigns-list__col campaigns-list__col_title">Targetings</div>
+              <div class="campaigns-list__col campaigns-list__col_targetings">
+                <ul>
+                  <li><strong>Country:</strong> RU, US, UK</li>
+                  <li><strong>Device Type:</strong> Smart Phone</li>
+                  <li><strong>Connections:</strong> All Types</li>
+                  <li><strong>Categories:</strong> Games, Casual...</li>
+                  <li><strong>Bid:</strong> $1.2 CPM</li>
+                  <li><strong>Ad Formats:</strong> Banner, Native, Video</li>
+                  <li><strong>Budget:</strong> $100/Daily</li>
+                </ul>
+              </div>
+              <div class="campaigns-list__col campaigns-list__col_tools">
+                <div class="inline inline_size_md">
+                  <span class="inline__item">
+                    <a href="#" class="icon icon_target"></a>
+                  </span>
+                  <span class="inline__item">
+                    <a href="#" class="icon icon_preferences"></a>
+                  </span>
+                  <span class="inline__item">
+                    <a href="#" class="icon icon_waves"></a>
+                  </span>
+                  <span class="inline__item">
+                    <a href="#" class="icon icon_black icon_remove"></a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__section">
+        <div class="panel">
+          <div class="campaigns-list campaigns-list_main js-collapsed">
+            <div class="campaigns-list__section campaigns-list__section_main js-toggle">
+              <div class="campaigns-list__col campaigns-list__col_name">
+                <div class="app-name">
+                  <div class="inline inline_table inline_size_sm">
+                    <span class="inline__item"><span class="icon icon_apple"></span></span>
+                    <span class="inline__item"><img src="img/slack.png" class="pick pick_app"></span>
+                    <span class="inline__item"><a href="#">Slack Be less busy</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="campaigns-list__col campaigns-list__col_type">User Acquisition</div>
+              <div class="campaigns-list__col campaigns-list__col_sources"><a href="#">54</a></div>
+              <div class="campaigns-list__col campaigns-list__col_ads"><a href="#">54</a></div>
+              <div class="campaigns-list__col campaigns-list__col_spend"><strong>$3.785</strong></div>
+              <div class="campaigns-list__col campaigns-list__col_conversions">4670</div>
+              <div class="campaigns-list__col campaigns-list__col_goals">4670</div>
+              <div class="campaigns-list__col campaigns-list__col_deposits">36</div>
+              <div class="campaigns-list__col campaigns-list__col_status"><span class="badge badge_green">Active</span></div>
+              <div class="campaigns-list__col campaigns-list__col_toggle">
+                <span class="icon icon_cursor icon_cursor_right"></span>
+                <span class="icon icon_cursor icon_cursor_down"></span>
+              </div>
+            </div>
+
+            <div class="campaigns-list__section campaigns-list__section_extra">
+              <div class="campaigns-list__col campaigns-list__col_title">Targetings</div>
+              <div class="campaigns-list__col campaigns-list__col_targetings">
+                <ul>
+                  <li><strong>Country:</strong> RU, US, UK</li>
+                  <li><strong>Device Type:</strong> Smart Phone</li>
+                  <li><strong>Connections:</strong> All Types</li>
+                  <li><strong>Categories:</strong> Games, Casual...</li>
+                  <li><strong>Bid:</strong> $1.2 CPM</li>
+                  <li><strong>Ad Formats:</strong> Banner, Native, Video</li>
+                  <li><strong>Budget:</strong> $100/Daily</li>
+                </ul>
+              </div>
+              <div class="campaigns-list__col campaigns-list__col_tools">
+                <div class="inline inline_size_md">
+                  <span class="inline__item">
+                    <a href="#" class="icon icon_target"></a>
+                  </span>
+                  <span class="inline__item">
+                    <a href="#" class="icon icon_preferences"></a>
+                  </span>
+                  <span class="inline__item">
+                    <a href="#" class="icon icon_waves"></a>
+                  </span>
+                  <span class="inline__item">
+                    <a href="#" class="icon icon_black icon_remove"></a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 {% endblock %}
