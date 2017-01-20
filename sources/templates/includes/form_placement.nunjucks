@@ -1,6 +1,6 @@
 <form class="form">
-  <div class="panel">
-    <div class="panel__section">
+  <div class="content__section">
+    <div class="panel">
       <div class="field">
         <input type="text" class="field__data" placeholder="Placement Name">
       </div>
@@ -16,7 +16,7 @@
         </select>
       </div>
 
-      <div class="js-rewarded-video-fields" style="display: none">
+      <div class="fields js-rewarded-video-fields" style="display: none">
         <div class="field">
           <select class="js-select" placeholder="Device" style="width: 100%">
             <option value="" disabled selected>Device</option>
@@ -35,10 +35,10 @@
           <input type="text" class="field__data" placeholder="Name">
         </div>
       </div>
-    </div>
 
-    <div class="panel__section">
-      <h2 class="panel__title">Frequency caps</h2>
+      <p class="hint hint_md">Rewarded Video Ad unit let you reward your users for watching a video ad. Manage your currencies in account settings.</p>
+
+      <div class="panel__title">Frequency caps</div>
 
       <div class="field field_separated">
         <div class="field__inner">
@@ -71,6 +71,30 @@
           </div>
           <div class="field__section field__section_label" style="width: 20%">Interval between impressions</div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content__section js-rewarded-video-fields" style="display: none">
+    <div class="panel">
+      <div class="panel__title">Reward</div>
+      <div class="field">
+        <select class="js-select" placeholder="Choose a Currency" style="width: 100%">
+          <option value="" disabled selected></option>
+          <option value="rub">RUB</option>
+        </select>
+      </div>
+      <div class="field">
+        <input type="text" value="Gold" class="field__data">
+      </div>
+    </div>
+  </div>
+
+  <div class="content__section">
+    <div class="panel">
+      <div class="panel__title">Server-side Callback URL</div>
+      <div class="field">
+        <input type="text" class="field__data" placeholder="Optional, https://yandex.ru">
       </div>
     </div>
   </div>
