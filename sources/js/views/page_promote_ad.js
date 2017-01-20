@@ -25,11 +25,18 @@ $(function() {
       var adType = this.$('.js-ad-type').val();
       var creativeType = this.$('.js-creative-type').val();
       var $extraFields = this.$('.js-extra-fields');
+      var $nativeFields = this.$('.js-native-fields');
 
       if (adType && creativeType) {
         $extraFields.show();
       } else {
         $extraFields.hide();
+      }
+
+      if (adType == 'native-video' || adType == 'native') {
+        $nativeFields.show();
+      } else {
+        $nativeFields.hide();
       }
     },
 

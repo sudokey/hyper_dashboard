@@ -56,6 +56,26 @@
   </div>
 
   <div class="fields js-extra-fields">
+    <div class="fields js-native-fields">
+      <div class="field">
+        <select class="js-select" placeholder="Device" style="width: 100%">
+          <option value="" disabled selected>Device</option>
+          <option value="rewarded-video">Test</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <select class="js-select" placeholder="Format" style="width: 100%">
+          <option value="" disabled selected>Format</option>
+          <option value="rewarded-video">Test</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <input type="text" class="field__data" placeholder="Name">
+      </div>
+    </div>
+
     <div class="field">
       <input type="text" class="field__data" placeholder="Enter Title">
       <div class="field__hint">Must be no more than 50 chars</div>
