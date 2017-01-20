@@ -70,13 +70,37 @@
               </span>
             </label>
 
-            <label class="checkbox">
-              <input type="checkbox">
-              <span class="checkbox__content">
-                <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
-                <span class="checkbox__label">Specific Categories</span>
-              </span>
-            </label>
+            <div class="collapsed js-collapsed">
+              <div class="collapsed__header">
+                <span class="collapsed__toggler js-toggle">
+                  <span class="icon icon_cursor icon_cursor_right"></span>
+                  <span class="icon icon_cursor icon_cursor_down"></span>
+                </span>
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox__content">
+                    <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                    <span class="checkbox__label">Specific Categories</span>
+                  </span>
+                </label>
+              </div>
+              <div class="collapsed__content">
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox__content">
+                    <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                    <span class="checkbox__label">Pazzles</span>
+                  </span>
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox__content">
+                    <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                    <span class="checkbox__label">adventures</span>
+                  </span>
+                </label>
+              </div>
+            </div>
           </div>
         </div>
 
