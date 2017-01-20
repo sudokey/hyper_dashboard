@@ -20,6 +20,19 @@
         </div>
 
         <div class="content__section">
+          <div class="panel">
+            <div class="panel__title">Status</div>
+            <div class="field">
+              <select class="js-select" placeholder="Status">
+                <option value="" disabled selected>Status</option>
+                <option value="1">Active</option>
+                <option value="0">Paused</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__section">
           <div class="pan">
             <div class="pan__section pan__section_left">
               <button class="button button_blue button_submit">Create ad</button>
