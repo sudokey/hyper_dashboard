@@ -53,6 +53,10 @@ $(function () {
         return new app.DaterangeView({ el: el });
       });
 
+      this.filtersViews = this.$('.js-filters').map(function (i, el) {
+        new app.FiltersView({ el: el });
+      });
+
       $('.js-range').rangeslider({
         polyfill: false
       });

@@ -1,4 +1,4 @@
-<div class="popover js-popover">
+<div class="popover js-popover js-filters">
   <div class="popover__toggler">
     <button class="button button_bordered_blue button_small js-popover-toggle">
       <span class="button__icon">
@@ -6,7 +6,7 @@
         <span class="icon icon_plus icon_white"></span>
       </span>
       <span class="button__text">Add Filters</span>
-      <span class="badge">6</span>
+      <span class="badge js-filters-count">0</span>
     </button>
   </div>
 
@@ -45,7 +45,7 @@
         </div>
       </div>
 
-      <button class="button button_blue button_full-width js-popover-toggle">Apply</button>
+      <button class="button button_blue button_full-width js-popover-toggle js-filters-apply">Apply</button>
     </div>
   </div>
  </div>
