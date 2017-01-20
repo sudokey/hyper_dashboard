@@ -23,7 +23,7 @@
           <div class="panel">
             <div class="panel__title">Status</div>
             <div class="field">
-              <select class="js-select" placeholder="Status">
+              <select class="js-select" placeholder="Status" style="width: 100%">
                 <option value="" disabled selected>Status</option>
                 <option value="1">Active</option>
                 <option value="0">Paused</option>
