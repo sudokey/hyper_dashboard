@@ -84,7 +84,7 @@
                 </div>
 
                 <div class="panel__footer">
-                  <span class="inline inline_size_md cursor">
+                  <span class="inline inline_size_md cursor js-getstarted-hide">
                     <span class="inline__item">
                       <span class="icon icon_set-default"></span>
                     </span>

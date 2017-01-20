@@ -11,7 +11,9 @@ $(function () {
     },
 
     render: function () {
-      this.getStartedView = new app.GetStartedView({ el: '.js-getstarted' });
+      this.getStartedViews = this.$('.js-getstarted').map(function (e, el) {
+        return new app.GetStartedView({ el: el });
+      });
 
       this.popoverViews = this.$('.js-popover').map(function (i, el) {
         return new window.app.PopoverView({ el: el });
