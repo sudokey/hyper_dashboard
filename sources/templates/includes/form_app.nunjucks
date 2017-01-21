@@ -39,11 +39,12 @@
     </div>
   </div>
 
-  <div class="field">
+  <div class="field field_fail">
     <input type="text" class="field__data" placeholder="Name">
+    <span class="field__error field__error_fixed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, eligendi!</span>
   </div>
 
-  <div class="field">
+  <div class="field field_fail">
     <select class="js-select field__select" placeholder="Category" style="width: 100%">
       <option value="" disabled selected hidden>Category</option>
       <option value="test1">Test 1</option>
@@ -52,12 +53,15 @@
       <option value="test4">Test 4</option>
       <option value="test5">Test 5</option>
     </select>
+
+    <span class="field__error">Lorem ipsum dolor sit amet.</span>
   </div>
 
-  <div class="field">
+  <div class="field field_fail">
     <select class="js-select" placeholder="Subcategory" style="width: 100%">
       <option value="" disabled selected hidden>Subcategory</option>
       <option value="test">Test</option>
     </select>
+    <span class="field__error">Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit. Magnam, aspernatur!</span>
   </div>
 </div>
