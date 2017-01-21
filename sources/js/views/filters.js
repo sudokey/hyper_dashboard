@@ -17,7 +17,12 @@ $(function () {
         count = count + $(el).val().length;
       });
 
-      this.$('.js-filters-count').html(count);
+      if (count === 0) {
+        this.$('.js-filters-count').hide();
+      } else {
+        this.$('.js-filters-count').html(count)
+          .show();
+      }
     }
   });
 });

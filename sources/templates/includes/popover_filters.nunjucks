@@ -6,7 +6,7 @@
         <span class="icon icon_plus icon_white"></span>
       </span>
       <span class="button__text">Add Filters</span>
-      <span class="badge js-filters-count">0</span>
+      <span class="badge js-filters-count" style="display: none">0</span>
     </button>
   </div>
 
@@ -16,7 +16,7 @@
         <div class="filter-select-wrapper">
           <select class="js-filter-select" style="width: 27rem" placeholder="Placement" multiple>
             <option value="test">Test</option>
-            <option value="lorem1" selected>Lorem ipsum</option>
+            <option value="lorem1">Lorem ipsum</option>
             <option value="lorem2">Lorem ipsum dolor</option>
             <option value="lorem3">Lorem ipsum dolor sit amet</option>
           </select>
@@ -27,7 +27,7 @@
         <div class="filter-select-wrapper">
           <select class="js-filter-select" style="width: 27rem" placeholder="Placement" multiple>
             <option value="test">Test</option>
-            <option value="lorem1" selected>Lorem ipsum</option>
+            <option value="lorem1">Lorem ipsum</option>
             <option value="lorem2">Lorem ipsum dolor</option>
             <option value="lorem3">Lorem ipsum dolor sit amet</option>
           </select>
@@ -38,7 +38,7 @@
         <div class="filter-select-wrapper">
           <select class="js-filter-select" style="width: 27rem" placeholder="Placement" multiple>
             <option value="test">Test</option>
-            <option value="lorem1" selected>Lorem ipsum</option>
+            <option value="lorem1">Lorem ipsum</option>
             <option value="lorem2">Lorem ipsum dolor</option>
             <option value="lorem3">Lorem ipsum dolor sit amet</option>
           </select>
