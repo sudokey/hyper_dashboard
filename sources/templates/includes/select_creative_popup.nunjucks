@@ -1,0 +1,47 @@
+<div class="popup js-draft-campaigns-popup">
+  <div class="popup__inner">
+    <div class="popup__container">
+      <form>
+        <div class="panel panel_drafts">
+          <div class="popup__close">
+            <div class="icon icon_close js-hide"></div>
+          </div>
+
+          <h2 class="title">Select Creative</h2>
+
+          <div class="list list_apps">
+            {% for i in range(0, 3) -%}
+              <div class="list__item">
+                <div class="pan">
+                  <div class="pan__section pan__section_left" style="width: 70%">
+                    <div class="app-name">
+                      <div class="inline inline_size_md inline_table">
+                        <div class="inline__item">
+                          <div class="icon icon_apple"></div>
+                        </div>
+                        <div class="inline__item">
+                          <img src="img/slack.png" class="pick pick_app">
+                        </div>
+                        <div class="inline__item" style="width: 99%">
+                          <a href="javascript:void(0)">Slack Be less busy</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pan__section pan__section_right">
+                    <label class="button-checkbox">
+                      <input type="radio" {% if i == '1' %} checked {% endif %} value="{{ i }}" name="app-draft">
+                      <div class="button button_bordered_blue button_small">Chosen</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            {%- endfor %}
+          </div>
+
+          <button class="button button_blue button_submit">Continue</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

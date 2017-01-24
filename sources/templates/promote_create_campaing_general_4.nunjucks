@@ -1,7 +1,7 @@
 {% set activeSection = 'promote' %}
 {% set activePage = 'campaigns_list' %}
 {% set activeTab = 'general' %}
-{% set step = 1 %}
+{% set step = 4 %}
 
 {% extends "layout.nunjucks" %}
 
@@ -33,6 +33,8 @@
       'use strict';
 
       var page = new window.app.PromoteCampaingGeneralPageView();
+
+      page.draftCampaignsPopup.show();
     });
   </script>
 {% endblock %}

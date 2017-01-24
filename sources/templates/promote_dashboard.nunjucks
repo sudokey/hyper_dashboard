@@ -43,7 +43,7 @@
               <div class="inline__item">
                 <span class="tooltip">
                   <span class="icon icon_tooltip"></span>
-                  <span class="tooltip__content tooltip__content_bottom">
+                  <span class="tooltip__content tooltip__content_left">
                     This is the Top<br>Perfoming Placements
                   </span>
                 </span>

@@ -8,31 +8,7 @@ $(function () {
       'click .js-clear-end-date': 'clearEndDate',
       'click .js-add-specific-days': 'addSpecificDays',
       'click .js-remove-specific-days': 'removeSpecificDays',
-      'click .js-show-draft-campaigns-popup': 'showDraftCampaignsPopup',
-      'change .js-app-type': 'renderForm',
-      'input .js-app-link': 'renderForm',
-      'click .js-toggle-edit-app': 'toggleAppEditForm'
-    },
-
-    toggleAppEditForm: function () {
-      var appType = this.$('.js-app-type:checked').val();
-      var appLink = this.$('.js-app-link').val();
-
-      if (appLink && appType) {
-        this.$('.js-field-group-3').toggle();
-        this.$('.js-field-group-1').toggle();
-      }
-    },
-
-    renderForm: function () {
-      var appType = this.$('.js-app-type:checked').val();
-      var appLink = this.$('.js-app-link').val();
-
-      if (appLink && appType) {
-        this.$('.js-field-group-2').show();
-      } else {
-        this.$('.js-field-group-2').hide();
-      }
+      'click .js-show-draft-campaigns-popup': 'showDraftCampaignsPopup'
     },
 
     render: function () {
