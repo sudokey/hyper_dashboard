@@ -11,91 +11,12 @@
     </div>
 
     <div class="content__col content__col_main">
-      <div class="content__title">
-        <div class="pan">
-          <div class="pan__section pan__section_left">
-            <div class="inline inline_size_md">
-              <div class="inline__item">
-                <h1 class="title">Campaign 1</h1>
-              </div>
-              <div class="inline__item">
-                <div class="popover js-popover">
-                  <div class="popover__toggler js-popover-toggle">
-                    <span class="icon icon_settings"></span>
-                  </div>
-                  <div class="popover__content popover__content_bottom-center">
-                    <div class="panel panel_popover">
-                      <label class="checkbox">
-                        <input type="checkbox" checked>
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">Lorem ipsum dolor sit.</span>
-                        </span>
-                      </label>
-                      <label class="checkbox">
-                        <input type="checkbox" checked>
-                        <span class="checkbox__content">
-                          <span class="checkbox__ctrl"></span>
-                          <span class="checkbox__label">Lorem ipsum dolor sit amet.</span>
-                        </span>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pan__section pan__section_right">
-            <div class="inline">
-              <div class="inline__item">
-                Spend <strong>$140</strong> from <strong>$1.000</strong>
-              </div>
-              <div class="inline__item">
-                <a href="promote_create_campaing_general.html" class="button button_green">
-                  <span class="icon icon_plus icon_white"></span>
-                  <span class="button__text">Create Campaing</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {% include "campaing_title.nunjucks" %}
 
       <div class="content__section">
         <div class="table-panel">
           <div class="table-panel__header">
-            <div class="pan">
-              <div class="pan__section pan__section_left">
-                <div class="inline inline_size_md">
-                  <div class="inline__item">
-                    {% include "campaings_table_tabs.nunjucks" %}
-                  </div>
-                  <div class="inline__item">
-                    {% include "popover_filters.nunjucks" %}
-                  </div>
-                </div>
-              </div>
-
-              <div class="pan__section pan__section_right">
-                <div class="inline inline_size_md">
-                  <div class="inline__item">
-                    <a class="js-daterange" href="javascript:void(0)"></a>
-                  </div>
-                  <div class="inline__item">
-                    <a href="#" class="button button_bordered_blue button_small">
-                      <span class="button__icon">
-                        <span class="icon icon_export icon_white"></span>
-                        <span class="icon icon_export icon_blue"></span>
-                      </span>
-                      Export
-                    </a>
-                  </div>
-                  <div class="inline__item">
-                    <a href="#" class="button button_blue button_small"><strong>Create ads</strong></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {% include "campaings_filters.nunjucks" %}
           </div>
 
           <div class="table-wrapper">
