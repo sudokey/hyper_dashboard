@@ -92,13 +92,15 @@
           <div class="panel">
             <div class="panel__title">Yours campaigns will run only an inventory than matches the selected categories</div>
 
-            <label class="checkbox">
-              <input type="checkbox">
-              <span class="checkbox__content">
-                <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
-                <span class="checkbox__label">All Categories</span>
-              </span>
-            </label>
+            <div class="collapsed">
+              <label class="checkbox">
+                <input type="checkbox">
+                <span class="checkbox__content">
+                  <span class="checkbox__ctrl checkbox__ctrl_space_sm"></span>
+                  <span class="checkbox__label">All Categories</span>
+                </span>
+              </label>
+            </div>
 
             <div class="collapsed js-collapsed">
               <div class="collapsed__header">
