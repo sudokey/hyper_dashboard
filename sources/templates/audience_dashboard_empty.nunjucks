@@ -1,0 +1,86 @@
+{% set activeSection = 'audience' %}
+{% set activePage = 'dashboard' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_audience.nunjucks" %}
+    </div>
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <div class="inline inline_size_sm">
+          <div class="inline__item">
+            <h1 class="title">Apps</h1>
+          </div>
+          <div class="inline__item">
+            <span class="badge badge_md">4</span>
+          </div>
+          <div class="inline__item">
+            <span class="icon icon_cursor icon_cursor_up"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__section">
+        <div class="grid grid_size_4 grid_md-size_2">
+          <div class="grid__section">
+            <a class="app-block app-block_add" href="#">
+              <div class="inline inline_size_sm">
+                <div class="inline__item">
+                  <span class="icon icon_plus icon_green"></span>
+                </div>
+                <div class="inline__item">
+                  Add Application
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid__section">
+            <a class="app-block app-block_add" href="#">
+              <div class="inline inline_size_sm">
+                <div class="inline__item">
+                  <span class="icon icon_plus icon_green"></span>
+                </div>
+                <div class="inline__item">
+                  Add Application
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid__section">
+            <a class="app-block app-block_add" href="#">
+              <div class="inline inline_size_sm">
+                <div class="inline__item">
+                  <span class="icon icon_plus icon_green"></span>
+                </div>
+                <div class="inline__item">
+                  Add Application
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="grid__section">
+            <a class="app-block app-block_add" href="#">
+              <div class="inline inline_size_sm">
+                <div class="inline__item">
+                  <span class="icon icon_plus icon_green"></span>
+                </div>
+                <div class="inline__item">
+                  Add Application
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="add add_audience">
+        <h1 class="add__title add__title_with-text">Add audience to create segments</h1>
+        <div class="add__text">or <a href="#">Watch Tutorial</a> how to add your audience</div>
+        <a href="account_create_new_user.html" class="button button_green button_submit">Add audience</a>
+      </div>
+    </div>
+  </div>
+{% endblock %}

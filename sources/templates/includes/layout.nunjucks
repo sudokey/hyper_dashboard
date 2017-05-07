@@ -53,6 +53,7 @@
   <script src="js/views/page_promote_campaing_general.js"></script>
   <script src="js/views/page_promote_campaing_targeting.js"></script>
   <script src="js/views/page_promote_campaing_creatives.js"></script>
+  <script src="js/views/page_audience_rules.js"></script>
   <script src="js/views/get_started.js"></script>
 
   {% block scripts %}

@@ -1,0 +1,69 @@
+<div class="content__title">
+  <div class="inline inline_size_sm">
+    <div class="inline__item">
+      <h1 class="title">Apps</h1>
+    </div>
+    <div class="inline__item">
+      <span class="badge badge_md">4</span>
+    </div>
+    <div class="inline__item">
+      <span class="icon icon_cursor icon_cursor_up"></span>
+    </div>
+  </div>
+</div>
+
+<div class="content__section">
+  <div class="grid grid_size_4 grid_md-size_2">
+    <div class="grid__section">
+      <a class="app-block app-block_active" href="#">
+        <div class="inline inline_size_sm">
+          <div class="inline__item">
+            <span class="icon icon_apple icon_blue"></span>
+            <span class="icon icon_apple icon_white"></span>
+          </div>
+          <div class="inline__item">
+            <span class="app-block__name">Angry Birds</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="grid__section">
+      <a class="app-block" href="#">
+        <div class="inline inline_size_sm">
+          <div class="inline__item">
+            <span class="icon icon_apple icon_blue"></span>
+            <span class="icon icon_apple icon_white"></span>
+          </div>
+          <div class="inline__item">
+            <span class="app-block__name">Slack</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="grid__section">
+      <a class="app-block" href="#">
+        <div class="inline inline_size_sm">
+          <div class="inline__item">
+            <span class="icon icon_android icon_blue"></span>
+            <span class="icon icon_android icon_white"></span>
+          </div>
+          <div class="inline__item">
+            <span class="app-block__name">Twitter</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="grid__section">
+      <a class="app-block app-block_add" href="#">
+        <div class="inline inline_size_sm">
+          <div class="inline__item">
+            <span class="icon icon_plus icon_green"></span>
+          </div>
+          <div class="inline__item">
+            Add Application
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

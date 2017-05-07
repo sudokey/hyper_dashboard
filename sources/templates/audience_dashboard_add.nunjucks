@@ -1,0 +1,91 @@
+{% set activeSection = 'audience' %}
+{% set activePage = 'dashboard' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_audience.nunjucks" %}
+    </div>
+    <div class="content__col content__col_main">
+      <div class="content__title">
+        <h1 class="title">Add New Audience</h1>
+      </div>
+
+      <form class="form form_indented">
+        <div class="content__section">
+          <div class="panel">
+            <div class="field field_separated">
+              <div class="field__label">Provide provide a link to your app or select from the list</div>
+
+              <div class="field__inner">
+                <div class="field__section">
+                  <input type="text" class="field__data field__data_link" placeholder="Add app url or bundle id orchoose from defaults" value="https://itunes.apple.com/us/app/slack-business-communication/id618783545?mt=8">
+                </div>
+
+                <div class="field__section" style="width: 7rem">
+                  <div class="inline inline_size_sm">
+                    <div class="inline__item">
+                      <span class="icon icon_toggle"></span>
+                    </div>
+                    <div class="inline__item">
+                      <span class="tooltip">
+                        <span class="icon icon_tooltip"></span>
+                        <span class="tooltip__content">Lorem ipsum dolor sit amet,<br>consectetur adipisicing elit.</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="app-name">
+                <div class="inline inline_size_md">
+                  <div class="inline__item">
+                    <div class="icon icon_apple"></div>
+                  </div>
+                  <div class="inline__item">
+                    <img src="img/slack_lg.png">
+                  </div>
+                  <div class="inline__item">
+                    <p>Slack - Business Communication for Teams</p>
+                    <p><small>ID 37844222454</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="field__label">Please select type of integration</div>
+              <div class="field__label field__label_tin">If you have any questons please use <a href="#">Tutorial</a></div>
+
+              <div class="field__checkboxs">
+                <label class="checkbox">
+                  <input type="checkbox" checked>
+                  <span class="checkbox__content">
+                    <span class="checkbox__ctrl"></span>
+                    <span class="checkbox__label">Hyper SDK Integration</span>
+                  </span>
+                </label>
+
+                <label class="checkbox">
+                  <input type="checkbox">
+                  <span class="checkbox__content">
+                    <span class="checkbox__ctrl"></span>
+                    <span class="checkbox__label">Developers 3rd party tracking platform</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__section">
+          <a class="button button_blue button_submit" href="#">Continue</a>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}

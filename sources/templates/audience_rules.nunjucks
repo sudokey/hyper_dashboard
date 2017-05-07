@@ -1,0 +1,211 @@
+{% set activeSection = 'audience' %}
+{% set activePage = 'rules' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_audience.nunjucks" %}
+    </div>
+    <div class="content__col content__col_main">
+      {% include "audience_top.nunjucks" %}
+
+      <div class="content__title">
+        <h1 class="title">Create New Rule</h1>
+      </div>
+
+      <form class="form form_indented">
+        <div class="content__section">
+          <div class="panel">
+            <div class="field">
+              <select class="js-select" placeholder="Category" style="width: 100%">
+                <option value="" selected disabled>Category</option>
+                <option value="rewarded-video">Custom segment</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <input type="text" class="field__data" placeholder="Name">
+            </div>
+
+            <div class="field">
+              <h2 class="field__label">Choose audience for your rule</h2>
+              <p>
+                Users who match
+                <span class="popover js-popover">
+                  <a class="popover__toggler js-popover-toggle" href="javascript:void(0)">all these rules</a>
+                  <span class="popover__content popover__content_bottom-left">
+                    <span class="dropdown">
+                      <span class="dropdown__item dropdown__item_active">who match all these rules</span>
+                      <span class="dropdown__item">who match any of these rules</span>
+                    </span>
+                  </span>
+                </span>
+              </p>
+
+              <div class="rules">
+                <div class="rules__item">
+                  <div class="rule">
+                    <div class="rule__close"></div>
+                    <div class="rule__icon rule__icon_calendar"></div>
+                    <div class="rule__title">Signed up</div>
+                    <div class="rule__text">signed up exactly 20 days ago</div>
+                  </div>
+                </div>
+                <div class="rules__item rules__item_and">and</div>
+                <div class="rules__item">
+                  <div class="rule">
+                    <div class="rule__close"></div>
+                    <div class="rule__icon rule__icon_calendar"></div>
+                    <div class="rule__title">Signed up</div>
+                    <div class="rule__text">signed up exactly 20 days ago</div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="button button_bordered_blue button_small js-show-rule-popup" type="button">
+                <span class="button__icon">
+                  <span class="icon icon_plus icon_blue"></span>
+                  <span class="icon icon_plus icon_white"></span>
+                </span>
+                <span class="button__text">Add Rule</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__section">
+          <div class="field">
+            <input type="text" class="field__data" placeholder="Provide a name for custom segment">
+          </div>
+        </div>
+
+        <div class="content__section">
+          <button type="submit" class="button button_submit button_blue">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}
+
+{% block popups %}
+  <div class="popup js-rule-popup">
+    <div class="popup__inner">
+      <div class="popup__container">
+        <div class="rule-form">
+          <div class="rule-form__side">
+            <div class="rule-form__search">
+              <span class="icon icon_search"></span>
+              <input type="text" placeholder="Search for an attribute...">
+            </div>
+            <div class="rule-form__attrs">
+              <ul>
+                <li><a href="javascript:void(0)">Name</a></li>
+                <li><a href="javascript:void(0)">Email</a></li>
+                <li><a href="javascript:void(0)">Phone</a></li>
+                <li><a href="javascript:void(0)">User ID</a></li>
+                <li><a href="javascript:void(0)">First Seen</a></li>
+                <li><a href="javascript:void(0)">Signed Up</a></li>
+                <li><a href="javascript:void(0)">Last Seen</a></li>
+                <li><a href="javascript:void(0)">Last Contacted</a></li>
+                <li><a href="javascript:void(0)">Last Heard From</a></li>
+                <li><a href="javascript:void(0)">Web Sessions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="rule-form__main">
+            <div class="rule-form__rules-list">
+              <div class="rules">
+                <div class="rules__item">
+                  <div class="rule">
+                    <div class="rule__close"></div>
+                    <div class="rule__icon rule__icon_calendar"></div>
+                    <div class="rule__title">Signed up</div>
+                    <div class="rule__text">signed up exactly 20 days ago</div>
+                  </div>
+                </div>
+                <div class="rules__item rules__item_and">and</div>
+                <div class="rules__item">
+                  <div class="rule">
+                    <div class="rule__close"></div>
+                    <div class="rule__icon rule__icon_calendar"></div>
+                    <div class="rule__title">Web sessions</div>
+                    <div class="rule__options">
+                      <ul>
+                        <li>
+                          <label class="checkbox">
+                            <input type="radio" name="type" value="1">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">greater than</span>
+                            </span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="radio" name="type" value="2">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">less than</span>
+                            </span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="radio" name="type" value="3">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">is</span>
+                            </span>
+                          </label>
+                          <div class="field">
+                            <input type="text" class="field__data">
+                          </div>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="radio" name="type" value="4">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">is not</span>
+                            </span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="checkbox">
+                            <input type="radio" name="type" value="5">
+                            <span class="checkbox__content">
+                              <span class="checkbox__ctrl"></span>
+                              <span class="checkbox__label">in unknown</span>
+                            </span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rule-form__rules-action">
+              <ul>
+                <li><button type="submit" class="button button_submit button_blue">Add rule</button></li>
+                <li><a href="javascript:void(0)" class="js-hide">Cancel</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    $(function () {
+      'use strict';
+
+      var page = new window.app.AudienceRulesPageView();
+    });
+  </script>
+{% endblock %}

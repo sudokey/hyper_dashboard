@@ -20,6 +20,24 @@
   }
 }
 
+.panel_app {
+  height: 16rem;
+}
+
+.panel_add {
+  position: relative;
+  box-shadow: none;
+  background: #f8fafb;
+  cursor: pointer;
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1.2rem 0 0 -1.2rem;
+  }
+}
+
 .panel_apps {
   background-image: data-uri('../img/panel_apps.png');
 }
@@ -107,6 +125,12 @@
   color: @gray;
 }
 
+.panel__details {
+  line-height: 6rem;
+  text-align: center;
+  margin-bottom: -2.5rem;
+}
+
 .panel_creatives,
 .panel_drafts {
   position: relative;
@@ -133,4 +157,47 @@
 
 .panel_table {
   padding: 0;
+}
+
+.panel_segments {
+  padding-top: 2rem;
+
+  .panel__header {
+    margin-bottom: 2rem;
+    margin-left: -3rem;
+    margin-right: -3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #f8fafb;
+    text-align: center;
+  }
+
+  .panel__title {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: @green;
+  }
+
+  .panel__label {
+    font-size: 1.3rem;
+    color: @gray;
+  }
+}
+
+.panel_segments-custom {
+  position: relative;
+  height: 16rem;
+
+  .panel__header {
+    position: relative;
+    padding-left: 3rem;
+    text-align: left;
+
+  }
+
+  .icon_settings {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+  }
 }

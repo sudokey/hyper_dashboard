@@ -1,0 +1,71 @@
+<div class="sidebar">
+  <div class="sidebar__menu">
+    <div class="sidebar__section">
+      <div class="sidebar__title">Audience</div>
+
+      <nav class="menu">
+        <div class="menu-item {% if activePage == 'insights' %} menu-item_active_link {% endif %}">
+          <a class="menu-item__title" href="audience_insights.html">
+            <span class="menu-icon menu-icon_insights"></span>
+            <span class="menu-item__label">
+              Insights
+            </span>
+          </a>
+        </div>
+
+        <div class="menu-item {% if activePage == 'segments' %} menu-item_active_link {% endif %}">
+          <a class="menu-item__title" href="audience_segments.html">
+            <span class="menu-icon menu-icon_segments"></span>
+            <span class="menu-item__label">
+              Segments
+            </span>
+          </a>
+        </div>
+
+        <div class="menu-item {% if activePage == 'events' %} menu-item_active_link {% endif %}">
+          <a class="menu-item__title" href="audience_events.html">
+            <span class="menu-icon menu-icon_events"></span>
+            <span class="menu-item__label">
+              Events
+            </span>
+          </a>
+        </div>
+
+        <div class="menu-item {% if activePage == 'rules' %} menu-item_active_link {% endif %}">
+          <a class="menu-item__title" href="audience_rules.html">
+            <span class="menu-icon menu-icon_ad-rules"></span>
+            <span class="menu-item__label">
+              Ad Rules
+            </span>
+          </a>
+        </div>
+
+        <div class="menu-item {% if activePage == 'attribution' %} menu-item_active_link {% endif %}">
+          <a class="menu-item__title" href="audience_attribution.html">
+            <span class="menu-icon menu-icon_audience-attribution"></span>
+            <span class="menu-item__label">
+              Attribution
+            </span>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="sidebar__section">
+      <nav class="menu">
+        <div class="menu-item" href="#">
+          <div class="menu-item__action menu-item__action_single">
+            <a href="audience_dashboard_add.html" class="button button_green button_full-width">
+              <span class="icon icon_plus icon_white"></span>
+              <span class="button__text">Add Audience</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="sidebar__copy">
+    {% include "copy.nunjucks" %}
+  </div>
+</div>

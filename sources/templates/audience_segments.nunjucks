@@ -1,0 +1,249 @@
+{% set activeSection = 'audience' %}
+{% set activePage = 'segments' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <div class="content">
+    <div class="content__col content__col_side">
+      {% include "sidebar_audience.nunjucks" %}
+    </div>
+    <div class="content__col content__col_main">
+      {% include "audience_top.nunjucks" %}
+
+      <div class="content__section">
+        <h1 class="title">Audience Segments</h1>
+      </div>
+
+      <div class="content__title">
+        <h2 class="title title_size_md">In-app Purchase Prediction</h2>
+      </div>
+
+      <div class="content__section">
+        <div class="grid grid_size_3 grid_md-size_2">
+          <div class="grid__section">
+            <div class="panel panel_segments">
+              <div class="panel__header">
+                <div class="panel__title">Least Likely to Purchase</div>
+                <div class="panel__label">Best for monetization</div>
+              </div>
+
+              <div class="panel__indicators">
+                <div class="inline inline_table">
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">10.2M</div>
+                      <div class="indicator__name indicator__name_light">MAU</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">6M</div>
+                      <div class="indicator__name indicator__name_light">DAU</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">4.5B</div>
+                      <div class="indicator__name indicator__name_light">Events</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">32%</div>
+                      <div class="indicator__name indicator__name_light">Retention</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel__details">
+                <a href="#">Create Rules</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid__section">
+            <div class="panel panel_segments">
+              <div class="panel__header">
+                <div class="panel__title">Least Likely to Purchase</div>
+                <div class="panel__label">Best for monetization</div>
+              </div>
+
+              <div class="panel__indicators">
+                <div class="inline inline_table">
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">10.2M</div>
+                      <div class="indicator__name indicator__name_light">MAU</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">6M</div>
+                      <div class="indicator__name indicator__name_light">DAU</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">4.5B</div>
+                      <div class="indicator__name indicator__name_light">Events</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">32%</div>
+                      <div class="indicator__name indicator__name_light">Retention</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel__details">
+                <a href="#">Create Rules</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid__section">
+            <div class="panel panel_segments">
+              <div class="panel__header">
+                <div class="panel__title">Least Likely to Purchase</div>
+                <div class="panel__label">Best for monetization</div>
+              </div>
+
+              <div class="panel__indicators">
+                <div class="inline inline_table">
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">10.2M</div>
+                      <div class="indicator__name indicator__name_light">MAU</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">6M</div>
+                      <div class="indicator__name indicator__name_light">DAU</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">4.5B</div>
+                      <div class="indicator__name indicator__name_light">Events</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">32%</div>
+                      <div class="indicator__name indicator__name_light">Retention</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel__details">
+                <a href="#">Create Rules</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__title">
+        <h2 class="title title_size_md">Custom Segments</h2>
+      </div>
+
+      <div class="content__section">
+        <div class="grid grid_size_3 grid_md-size_2">
+          <div class="grid__section">
+            <div class="panel panel_segments panel_segments-custom">
+              <a class="icon icon_settings" href="#"></a>
+
+              <div class="panel__header">Segment 01</div>
+
+              <div class="panel__indicators">
+                <div class="inline inline_table">
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">10.2M</div>
+                      <div class="indicator__name indicator__name_light">MAU</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">6M</div>
+                      <div class="indicator__name indicator__name_light">DAU</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">4.5B</div>
+                      <div class="indicator__name indicator__name_light">Events</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">32%</div>
+                      <div class="indicator__name indicator__name_light">Retention</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel__details">
+                <a href="#">Create Rules</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid__section">
+            <div class="panel panel_segments panel_segments-custom">
+              <a class="icon icon_settings" href="#"></a>
+
+              <div class="panel__header">Segment 01</div>
+
+              <div class="panel__indicators">
+                <div class="inline inline_table">
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">10.2M</div>
+                      <div class="indicator__name indicator__name_light">MAU</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">6M</div>
+                      <div class="indicator__name indicator__name_light">DAU</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">4.5B</div>
+                      <div class="indicator__name indicator__name_light">Events</div>
+                    </div>
+                  </div>
+                  <div class="inline__item">
+                    <div class="indicator">
+                      <div class="indicator__value indicator__value_small">32%</div>
+                      <div class="indicator__name indicator__name_light">Retention</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel__details">
+                <a href="#">Create Rules</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid__section">
+            <div class="panel panel_segments panel_segments-custom panel_add">
+              <span class="icon icon_plus-lg icon_green"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

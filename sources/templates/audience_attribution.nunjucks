@@ -1,4 +1,4 @@
-{% set activeSection = 'account' %}
+{% set activeSection = 'audience' %}
 {% set activePage = 'attribution' %}
 
 {% extends "layout.nunjucks" %}
@@ -6,31 +6,38 @@
 {% block content %}
   <div class="content">
     <div class="content__col content__col_side">
-      {% include "sidebar_account.nunjucks" %}
+      {% include "sidebar_audience.nunjucks" %}
     </div>
-
     <div class="content__col content__col_main">
+      {% include "audience_top.nunjucks" %}
+
       <div class="content__title">
-        <h1 class="title">Attribution</h1>
+        <h1 class="title">Attribution Settings</h1>
       </div>
 
       <div class="form form_indented">
-        <p class="content__section">Please inplement the following postback_url on your side in order for conversion and goal tracking. Only for custom tracking solutions.</p>
-
         <div class="content__section">
-          <div class="panel">
-            <h2 class="panel__title">Conversion Tracking</h2>
-            <div class="field">
-              <input type="text" class="field__data field__data_link" value="http://postback.hyperadx.com/tracker?transaction_id=TID">
-            </div>
+          <div class="field">
+            <div class="field__label field__label_normal">For SDK event tracking integration please use the following token</div>
+            <input type="text" class="field__data field__data_link" value="sdfsdFKKnf6d44">
           </div>
         </div>
 
         <div class="content__section">
+          <h2 class="title title_size_md">For custom event tracking integration</h2>
+
+          <p>
+            Please implement the following postback_url on your side in order for conversion and goal tracking.
+            <br>
+            Only for custom tracking solutions.
+          </p>
+        </div>
+
+        <div class="content__section">
           <div class="panel">
-            <h2 class="panel__title">Goal Tracking</h2>
+            <div class="panel__title">Conversion Tracking</div>
             <div class="field">
-              <input type="text" class="field__data field__data_link" value="http://postback.hyperadx.com/tracker?transaction_id=TID">
+              <input type="text" class="field__data field__data_link" value="sdfsdFKKnf6d44">
             </div>
           </div>
         </div>
